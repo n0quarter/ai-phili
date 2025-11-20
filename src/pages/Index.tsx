@@ -130,6 +130,24 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
+              <video 
+                className="w-full aspect-video object-cover"
+                controls
+                poster="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=675&fit=crop"
+              >
+                <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Value Proposition */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
