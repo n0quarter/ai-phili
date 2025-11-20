@@ -136,11 +136,11 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 animate-slide-up">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Why <span className="text-gradient">Dolittle Mobility Manager</span>?
+                Why <span className="text-gradient">Findus</span>?
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Where generic copilots and chatbots fall short with shallow answers and unreliable workflows, 
-                the DMM goes further.
+                Findus goes further.
               </p>
             </div>
 
