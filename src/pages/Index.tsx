@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight, Zap, Shield, TrendingUp, Users } from "lucide-react";
+import videoThumbnail from "@/assets/video-thumbnail.png";
 
 const Index = () => {
   const features = [
@@ -138,7 +139,7 @@ const Index = () => {
               <video 
                 className="w-full aspect-video object-cover"
                 controls
-                poster="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=675&fit=crop"
+                poster={videoThumbnail}
               >
                 <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
                 Your browser does not support the video tag.
