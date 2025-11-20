@@ -184,11 +184,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-destructive/10 text-destructive border-destructive/30">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
                 The Problem
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Customer Support is <span className="text-destructive">Broken</span>
+                Customer Support is <span className="text-electric">Broken</span>
               </h2>
               <p className="text-xl text-muted-foreground">
                 Today's mobility account management is plagued by inefficiency
@@ -198,7 +198,7 @@ const Index = () => {
             <Card className="p-8 md:p-12 border-2 border-border/50">
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center text-destructive font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
                     1
                   </div>
                   <div>
@@ -214,7 +214,7 @@ const Index = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center text-destructive font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
                     2
                   </div>
                   <div>
@@ -226,7 +226,7 @@ const Index = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center text-destructive font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
                     3
                   </div>
                   <div>
@@ -238,7 +238,7 @@ const Index = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-destructive/10 flex items-center justify-center text-destructive font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
                     4
                   </div>
                   <div>
