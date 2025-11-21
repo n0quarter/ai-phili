@@ -391,11 +391,11 @@ const Index = () => {
               <div className="relative w-[400px] h-[400px] flex items-center justify-center animate-fade-in">
                 {/* TAM - Outer Circle */}
                 <div className="absolute w-[380px] h-[380px] rounded-full bg-electric/20 flex items-center justify-center">
-                  <div className="absolute top-12 left-1/2 -translate-x-1/2 text-2xl font-bold text-electric">TAM</div>
+                  <div className="absolute top-20 left-1/2 -translate-x-1/2 text-2xl font-bold text-[hsl(var(--electric))]">TAM</div>
                   
                   {/* SAM - Middle Circle */}
                   <div className="absolute w-[280px] h-[280px] rounded-full bg-electric/40 flex items-center justify-center">
-                    <div className="absolute top-8 left-1/2 -translate-x-1/2 text-xl font-bold text-electric">SAM</div>
+                    <div className="absolute top-12 left-1/2 -translate-x-1/2 text-xl font-bold text-[hsl(var(--electric))]">SAM</div>
                     
                     {/* SOM - Inner Circle */}
                     <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center">
