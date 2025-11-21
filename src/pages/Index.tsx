@@ -380,44 +380,75 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Massive Market Opportunity
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground mb-12">
                 AI for Mobility & Fleet Support across Europe
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 border-border/50 hover:border-electric/50 transition-all">
-                <div className="text-center">
-                  <div className="text-sm font-semibold text-electric mb-3">TAM</div>
-                  <div className="text-5xl font-bold text-gradient mb-4">€5.74B</div>
-                  <div className="text-sm font-semibold mb-2">Total Addressable Market</div>
-                  <p className="text-sm text-muted-foreground">
-                    Based on 23 million company vehicles × €249.60 AI savings potential per year
-                  </p>
+            {/* TAM SAM SOM Visual Funnel */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-16">
+              {/* Nested Circles */}
+              <div className="relative w-[400px] h-[400px] flex items-center justify-center animate-fade-in">
+                {/* TAM - Outer Circle */}
+                <div className="absolute w-[380px] h-[380px] rounded-full bg-electric/20 flex items-center justify-center">
+                  <div className="absolute top-12 left-1/2 -translate-x-1/2 text-2xl font-bold text-electric">TAM</div>
+                  
+                  {/* SAM - Middle Circle */}
+                  <div className="absolute w-[280px] h-[280px] rounded-full bg-electric/40 flex items-center justify-center">
+                    <div className="absolute top-8 left-1/2 -translate-x-1/2 text-xl font-bold text-electric">SAM</div>
+                    
+                    {/* SOM - Inner Circle */}
+                    <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center">
+                      <div className="text-xl font-bold text-white">SOM</div>
+                    </div>
+                  </div>
                 </div>
-              </Card>
+              </div>
 
-              <Card className="p-8 border-border/50 hover:border-growth/50 transition-all">
-                <div className="text-center">
-                  <div className="text-sm font-semibold text-growth mb-3">SAM</div>
-                  <div className="text-5xl font-bold text-gradient mb-4">€2.01B</div>
-                  <div className="text-sm font-semibold mb-2">Serviceable Addressable Market</div>
-                  <p className="text-sm text-muted-foreground">
-                    Approximately 35% of fleets in Europe are outsourced and directly monetizable
-                  </p>
+              {/* Labels and Values */}
+              <div className="space-y-8">
+                <div className="flex items-center gap-4 animate-slide-up">
+                  <div className="w-3 h-3 rounded-full bg-electric/20"></div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <span className="text-3xl font-bold text-gradient">€5.74B</span>
+                      <span className="text-sm font-semibold text-electric">TAM</span>
+                    </div>
+                    <div className="text-base font-semibold mb-1">Total Addressable Market</div>
+                    <p className="text-sm text-muted-foreground max-w-md">
+                      Based on 23 million company vehicles × €249.60 AI savings potential per year
+                    </p>
+                  </div>
                 </div>
-              </Card>
 
-              <Card className="p-8 border-border/50 hover:border-primary-light/50 transition-all">
-                <div className="text-center">
-                  <div className="text-sm font-semibold text-primary-light mb-3">SOM</div>
-                  <div className="text-5xl font-bold text-gradient mb-4">€201M</div>
-                  <div className="text-sm font-semibold mb-2">Serviceable Obtainable Market</div>
-                  <p className="text-sm text-muted-foreground">
-                    10% realistically addressable market with top 10 service providers
-                  </p>
+                <div className="flex items-center gap-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+                  <div className="w-3 h-3 rounded-full bg-electric/40"></div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <span className="text-3xl font-bold text-gradient">€2.01B</span>
+                      <span className="text-sm font-semibold text-electric">SAM</span>
+                    </div>
+                    <div className="text-base font-semibold mb-1">Serviceable Addressable Market</div>
+                    <p className="text-sm text-muted-foreground max-w-md">
+                      Approximately 35% of fleets in Europe are outsourced and directly monetizable
+                    </p>
+                  </div>
                 </div>
-              </Card>
+
+                <div className="flex items-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+                  <div className="w-3 h-3 rounded-full bg-electric"></div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <span className="text-3xl font-bold text-gradient">€201M</span>
+                      <span className="text-sm font-semibold text-electric">SOM</span>
+                    </div>
+                    <div className="text-base font-semibold mb-1">Serviceable Obtainable Market</div>
+                    <p className="text-sm text-muted-foreground max-w-md">
+                      10% realistically addressable market with top 10 service providers
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
