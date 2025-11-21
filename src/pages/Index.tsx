@@ -375,27 +375,49 @@ const Index = () => {
       {/* Market Opportunity */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Massive Market Opportunity
-            </h2>
-            <p className="text-xl text-muted-foreground mb-12">
-              Corporate mobility management is a rapidly growing market with increasing complexity
-            </p>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Massive Market Opportunity
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                AI for Mobility & Fleet Support across Europe
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="p-6">
-                <div className="text-4xl font-bold text-gradient mb-2">€XXB</div>
-                <div className="text-muted-foreground">Market Size</div>
-              </div>
-              <div className="p-6">
-                <div className="text-4xl font-bold text-gradient mb-2">XXX%</div>
-                <div className="text-muted-foreground">YoY Growth</div>
-              </div>
-              <div className="p-6">
-                <div className="text-4xl font-bold text-gradient mb-2">XX,XXX</div>
-                <div className="text-muted-foreground">Target Companies</div>
-              </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="p-8 border-border/50 hover:border-electric/50 transition-all">
+                <div className="text-center">
+                  <div className="text-sm font-semibold text-electric mb-3">TAM</div>
+                  <div className="text-5xl font-bold text-gradient mb-4">€5.74B</div>
+                  <div className="text-sm font-semibold mb-2">Total Addressable Market</div>
+                  <p className="text-sm text-muted-foreground">
+                    Based on 23 million company vehicles × €249.60 AI savings potential per year
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 hover:border-growth/50 transition-all">
+                <div className="text-center">
+                  <div className="text-sm font-semibold text-growth mb-3">SAM</div>
+                  <div className="text-5xl font-bold text-gradient mb-4">€2.01B</div>
+                  <div className="text-sm font-semibold mb-2">Serviceable Addressable Market</div>
+                  <p className="text-sm text-muted-foreground">
+                    Approximately 35% of fleets in Europe are outsourced and directly monetizable
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 hover:border-primary-light/50 transition-all">
+                <div className="text-center">
+                  <div className="text-sm font-semibold text-primary-light mb-3">SOM</div>
+                  <div className="text-5xl font-bold text-gradient mb-4">€201M</div>
+                  <div className="text-sm font-semibold mb-2">Serviceable Obtainable Market</div>
+                  <p className="text-sm text-muted-foreground">
+                    10% realistically addressable market with top 10 service providers
+                  </p>
+                </div>
+              </Card>
             </div>
           </div>
         </div>
