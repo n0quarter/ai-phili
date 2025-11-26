@@ -742,9 +742,7 @@ const Index = () => {
                   <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
                     <h3 className="text-xl font-bold text-center">AI<br />phone<br />Assistant</h3>
                   </Card>
-                  <div className="text-sm text-muted-foreground text-center pt-4">
-                  <br />information to solve<br />customer inqueries
-                  </div>
+                  
                 </div>
 
                 {/* Center - Main Processing Flow */}
