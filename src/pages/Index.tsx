@@ -732,43 +732,48 @@ const Index = () => {
 
             <div className="relative">
               {/* Main Flowchart Container */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                 
-                {/* Left Side - Input Sources */}
+                {/* Left Side - Channels */}
                 <div className="lg:col-span-3 space-y-4">
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-primary/20 text-primary border-primary/30">Channels</Badge>
+                  </div>
+                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
                     <h3 className="text-xl font-bold text-center">Chat or<br />Email</h3>
                   </Card>
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
+                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
                     <h3 className="text-xl font-bold text-center">AI<br />phone<br />Assistant</h3>
                   </Card>
-                  
                 </div>
 
-                {/* Center - Main Processing Flow */}
+                {/* Center - Core Elements */}
                 <div className="lg:col-span-6 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-electric/20 text-electric border-electric/30">Core Elements</Badge>
+                  </div>
                   {/* Top Row - Smart Inbox and Copilot */}
                   <div className="grid grid-cols-2 gap-4">
-                    <Card className="p-8 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <Card className="p-8 bg-electric/90 border-electric text-white">
                       <h3 className="text-2xl font-bold text-center">Smart Inbox</h3>
                     </Card>
-                    <Card className="p-8 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <Card className="p-8 bg-electric/90 border-electric text-white">
                       <h3 className="text-2xl font-bold text-center">Copilot</h3>
                     </Card>
                   </div>
 
                   {/* Workflows */}
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
                     <h3 className="text-2xl font-bold text-center">Workflows</h3>
                   </Card>
 
                   {/* Mail or CRM System */}
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
                     <h3 className="text-2xl font-bold text-center">Mail or CRM System Integration</h3>
                   </Card>
 
                   {/* RAG with Policies */}
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
                     <h3 className="text-xl font-bold text-center mb-2">Rag uploads</h3>
                     <p className="text-sm text-center">
                       Car policies, Ammendments of work contracts, company bike policies, lease plans etc.
@@ -776,23 +781,22 @@ const Index = () => {
                   </Card>
                 </div>
 
-                {/* Right Side - Quality Monitoring */}
+                {/* Right Side - Quality Backbone */}
                 <div className="lg:col-span-3 space-y-4">
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-growth/20 text-growth border-growth/30">Quality Backbone</Badge>
+                  </div>
+                  <Card className="p-6 bg-growth/90 border-growth text-white">
                     <h3 className="text-xl font-bold text-center">Chat Monitor</h3>
                   </Card>
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                  <Card className="p-6 bg-growth/90 border-growth text-white">
                     <h3 className="text-xl font-bold text-center">Evals</h3>
                   </Card>
-                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                  <Card className="p-6 bg-growth/90 border-growth text-white">
                     <h3 className="text-xl font-bold text-center">FAQs</h3>
                   </Card>
-                  
                 </div>
               </div>
-
-              {/* Flow Labels */}
-              
             </div>
           </div>
         </div>
