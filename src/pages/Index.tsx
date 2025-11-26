@@ -759,6 +759,415 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Business Model Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Business Model
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Revenue <span className="text-gradient">Model</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Pricing</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Support Agent (Mail or chat):</span> 4€/vehicle/month
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Support Voice AI:</span> 299€/month + 0.20€/min
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">AM Copilot:</span> 30€/AM/month
+                    </p>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Key Metrics</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Average Revenue per Customer:</span> ~194k€/year
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Customer count for full SOM:</span> ~155
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Recurring revenue share:</span> &gt;80%
+                    </p>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+
+            <Card className="p-8 border-2 border-growth/30 bg-growth/5">
+              <p className="text-xl font-bold text-center">
+                High-margin vertical AI SaaS.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* GTM Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Go-to-Market
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                GTM <span className="text-gradient">Strategy</span>
+              </h2>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <h3 className="text-2xl font-bold mb-6">Tier 1 Markets (fastest adoption)</h3>
+              <p className="text-lg mb-8 font-medium">DE, UK, NL, BE</p>
+
+              <h3 className="text-2xl font-bold mb-6">Tier 2</h3>
+              <p className="text-lg mb-8 font-medium">FR, ES, IT, PL, Nordics</p>
+
+              <h3 className="text-2xl font-bold mb-6">Go-to-Market Motions:</h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    Partner with Fleet Outsourcing Providers & Leasing Networks
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    Land with Account Manager Copilot → Expand to Support Agent
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    Add Voice AI for hotline automation and deep operational workflows
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    Integrate with fleet CRMs, telematics, workshop networks, leasing systems
+                  </p>
+                </li>
+              </ul>
+
+              <div className="mt-8 pt-8 border-t border-border">
+                <p className="text-lg font-bold">
+                  Sales: Enterprise outbound + channel partners + mobility ecosystems.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Roadmap Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Product Roadmap
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Development <span className="text-gradient">Timeline</span>
+              </h2>
+            </div>
+
+            {/* Timeline */}
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute top-12 left-0 right-0 h-1 bg-border"></div>
+              
+              {/* Timeline Stages */}
+              <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                {/* MVP - December 25 */}
+                <div className="relative">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-lg mb-3 border-4 border-background shadow-lg">
+                      MVP
+                    </div>
+                    <p className="text-sm font-semibold">December 25</p>
+                  </div>
+                  <Card className="p-6 border-border/50">
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Call capturing and forwarding transcripts to smart inbox</span>
+                      </li>
+                    </ul>
+                  </Card>
+                </div>
+
+                {/* Pilot - May 25 */}
+                <div className="relative">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-lg mb-3 border-4 border-background shadow-lg">
+                      Pilot
+                    </div>
+                    <p className="text-sm font-semibold">May 25</p>
+                  </div>
+                  <Card className="p-6 border-border/50">
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Automated routing to employees</span>
+                      </li>
+                      <li className="flex gap-2 text-muted-foreground">
+                        <span className="text-xs">✗</span>
+                        <span>Online Receptionist (Chat or Email) - Not developed yet</span>
+                      </li>
+                    </ul>
+                  </Card>
+                </div>
+
+                {/* Market Launch - July 25 */}
+                <div className="relative">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-sm mb-3 border-4 border-background shadow-lg">
+                      Market<br/>launch
+                    </div>
+                    <p className="text-sm font-semibold">July 25</p>
+                  </div>
+                  <Card className="p-6 border-border/50">
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Chat UI for user interaction</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Connectivity to smart inbox</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Automated Assignment of tickets to employees</span>
+                      </li>
+                    </ul>
+                  </Card>
+                </div>
+
+                {/* Further Development */}
+                <div className="relative">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs text-center mb-3 border-4 border-background shadow-lg">
+                      Further<br/>dev
+                    </div>
+                    <p className="text-sm font-semibold">Ongoing</p>
+                  </div>
+                  <Card className="p-6 border-border/50">
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Similar case handling</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                        <span>Automated workflows</span>
+                      </li>
+                    </ul>
+                  </Card>
+                </div>
+              </div>
+
+              {/* Additional Features */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="p-6 border-border/50">
+                  <h3 className="text-lg font-bold mb-4">Smart In box</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Tagging, commenting and filtering of incoming calls</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>SMS Answers</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Integration of most important LLMs</span>
+                    </li>
+                  </ul>
+                </Card>
+
+                <Card className="p-6 border-border/50">
+                  <h3 className="text-lg font-bold mb-4">CO-pilot</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>RAG upload</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Evals</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Monitoring & Transparency</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Connectivity to one relevant Fleet Management Software provider</span>
+                    </li>
+                  </ul>
+                </Card>
+
+                <Card className="p-6 border-border/50 md:col-span-2">
+                  <h3 className="text-lg font-bold mb-4">Market Launch & Beyond</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Connectivity to first Email & mail system, automate ticket routing, follow-up emails, and escalation processes</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Expansion of connectivity to further relevant partners</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                      <span>Proactive Upsell recommendations</span>
+                    </li>
+                  </ul>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5-Year Forecast Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Financial Projections
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                5-Year <span className="text-gradient">Forecast</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Realistic Scenario</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 1:</span>
+                    <span className="text-2xl font-bold">1.5M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 2:</span>
+                    <span className="text-2xl font-bold">4.6M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 3:</span>
+                    <span className="text-2xl font-bold">10.7M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 4:</span>
+                    <span className="text-2xl font-bold">19.9M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 5:</span>
+                    <span className="text-2xl font-bold">30.6M€</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-2 border-growth/30 bg-growth/5">
+                <h3 className="text-2xl font-bold mb-6">Key Factors</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <p className="text-lg">High recurring share</p>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <p className="text-lg">High gross margin (&gt;75%)</p>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <p className="text-lg">Strong upsell potential amongst the modules</p>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <h3 className="text-2xl font-bold mb-6">Vision</h3>
+              <p className="text-lg mb-6">
+                Phili becomes <span className="font-bold text-gradient">the operating system for Corporate Mobility</span>, 
+                automating support, insights & decisions across millions of vehicles and contracts.
+              </p>
+
+              <h3 className="text-2xl font-bold mb-6 mt-8">Investment Ask</h3>
+              <div className="bg-electric/10 p-6 rounded-lg mb-6">
+                <p className="text-3xl font-bold text-electric mb-2">€250,000</p>
+                <p className="text-lg font-semibold">Angel Investment</p>
+              </div>
+
+              <h3 className="text-xl font-bold mb-4">Use of Funds:</h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-semibold">60% Product development</span> (RAGs, FAQ, Monitoring, Evals, Search analysis)
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-semibold">20% Integrations</span> (CRM & Mail)
+                  </p>
+                </li>
+              </ul>
+
+              <div className="mt-8 pt-8 border-t border-border">
+                <p className="text-lg">
+                  <span className="font-bold">Timeline:</span> To expand Voice inbox to omni channel (chat or Email), 
+                  build first CRM & Mail integration, and train Copilot on Fleet specific cases
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
