@@ -687,22 +687,19 @@ const Index = () => {
               {/* Nested Circles */}
               <div className="relative w-[400px] h-[400px] flex items-center justify-center animate-fade-in">
                 {/* TAM - Outer Circle */}
-                <div className="absolute w-[380px] h-[380px] rounded-full bg-electric/20 flex items-center justify-center">
-                  <div className="absolute top-1/2 -translate-y-1/2 right-12 text-2xl font-bold text-white">TAM</div>
-                  
-                  {/* SAM - Middle Circle */}
-                  <div className="absolute w-[280px] h-[280px] rounded-full bg-electric/40 flex items-center justify-center">
-                    <div className="absolute top-1/2 -translate-y-1/2 right-8 text-xl font-bold text-white">SAM</div>
-                    
-                    {/* SOM - Inner Circle */}
-                    <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center">
-                      <div className="flex flex-col items-center justify-center gap-1">
-                        <div className="text-xl font-bold text-white">TAM</div>
-                        <div className="text-xl font-bold text-white">SAM</div>
-                        <div className="text-xl font-bold text-white">SOM</div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="absolute w-[380px] h-[380px] rounded-full bg-electric/20 flex items-center justify-center"></div>
+                
+                {/* SAM - Middle Circle */}
+                <div className="absolute w-[280px] h-[280px] rounded-full bg-electric/40 flex items-center justify-center"></div>
+                
+                {/* SOM - Inner Circle */}
+                <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center"></div>
+                
+                {/* Centered Labels */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                  <div className="text-2xl font-bold text-white">TAM</div>
+                  <div className="text-2xl font-bold text-white">SAM</div>
+                  <div className="text-2xl font-bold text-white">SOM</div>
                 </div>
               </div>
 
