@@ -3,102 +3,73 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight, Zap, Shield, TrendingUp, Users } from "lucide-react";
 import videoThumbnail from "@/assets/video-thumbnail.png";
-
 const Index = () => {
-  const features = [
-    {
-      title: "Phone and Chatbot",
-      description: "Answers user questions based on previous conversations and contract information",
-      accountManager: true,
-      generalManagement: false,
-    },
-    {
-      title: "Upload of user FAQs",
-      description: "Easy integration of frequently asked questions",
-      accountManager: true,
-      generalManagement: false,
-    },
-    {
-      title: "Upload or APIs to relevant contracts",
-      description: "Car policies, leasing contracts, company bike contracts, travel policies",
-      accountManager: true,
-      generalManagement: false,
-    },
-    {
-      title: "Copilot chat",
-      description: "Get insights in customer use cases",
-      accountManager: true,
-      generalManagement: true,
-    },
-    {
-      title: "Task planner",
-      description: "Shows open customer issues including recommendations with next steps",
-      accountManager: true,
-      generalManagement: false,
-    },
-    {
-      title: "Automated workflows",
-      description: "Execute ticket handling to third parties such as making appointments with garages or ordering lost charging cards",
-      accountManager: true,
-      generalManagement: false,
-    },
-    {
-      title: "Upselling recommendations",
-      description: "Smart suggestions for service expansion",
-      accountManager: true,
-      generalManagement: true,
-    },
-    {
-      title: "Usage and cost analysis",
-      description: "Comprehensive analytics and insights",
-      accountManager: false,
-      generalManagement: true,
-    },
-    {
-      title: "Full transparency on AI decisions",
-      description: "Chat monitoring for each interaction",
-      accountManager: false,
-      generalManagement: true,
-    },
-    {
-      title: "Continuous improvement evals",
-      description: "For continuous improvement of chat quality",
-      accountManager: false,
-      generalManagement: true,
-    },
-    {
-      title: "GDPR and AI act compliant",
-      description: "Data handling and hosting",
-      accountManager: false,
-      generalManagement: true,
-    },
-  ];
-
-  const founders = [
-    {
-      name: "Andreas Reichert",
-      role: "CEO",
-      experience: [
-        "8 years of leadership in product & B2B SaaS marketing",
-        "Led 10+ digital ventures as Venture Architect",
-        "Co-founder of MOBIKO (market leader in Germany)",
-        "Closed Series A Investment round with MOBIKO"
-      ],
-    },
-    {
-      name: "Viktor Shcherban",
-      role: "CTO",
-      experience: [
-        "CTO & Software Developer since 2006",
-        "Founded and co-founded 5 companies",
-        "Created istat24.com powered by IP telephony",
-        "Expert in RAG AI assistants and LLM-powered apps"
-      ],
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const features = [{
+    title: "Phone and Chatbot",
+    description: "Answers user questions based on previous conversations and contract information",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Upload of user FAQs",
+    description: "Easy integration of frequently asked questions",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Upload or APIs to relevant contracts",
+    description: "Car policies, leasing contracts, company bike contracts, travel policies",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Copilot chat",
+    description: "Get insights in customer use cases",
+    accountManager: true,
+    generalManagement: true
+  }, {
+    title: "Task planner",
+    description: "Shows open customer issues including recommendations with next steps",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Automated workflows",
+    description: "Execute ticket handling to third parties such as making appointments with garages or ordering lost charging cards",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Upselling recommendations",
+    description: "Smart suggestions for service expansion",
+    accountManager: true,
+    generalManagement: true
+  }, {
+    title: "Usage and cost analysis",
+    description: "Comprehensive analytics and insights",
+    accountManager: false,
+    generalManagement: true
+  }, {
+    title: "Full transparency on AI decisions",
+    description: "Chat monitoring for each interaction",
+    accountManager: false,
+    generalManagement: true
+  }, {
+    title: "Continuous improvement evals",
+    description: "For continuous improvement of chat quality",
+    accountManager: false,
+    generalManagement: true
+  }, {
+    title: "GDPR and AI act compliant",
+    description: "Data handling and hosting",
+    accountManager: false,
+    generalManagement: true
+  }];
+  const founders = [{
+    name: "Andreas Reichert",
+    role: "CEO",
+    experience: ["8 years of leadership in product & B2B SaaS marketing", "Led 10+ digital ventures as Venture Architect", "Co-founder of MOBIKO (market leader in Germany)", "Closed Series A Investment round with MOBIKO"]
+  }, {
+    name: "Viktor Shcherban",
+    role: "CTO",
+    experience: ["CTO & Software Developer since 2006", "Founded and co-founded 5 companies", "Created istat24.com powered by IP telephony", "Expert in RAG AI assistants and LLM-powered apps"]
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative gradient-hero overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
@@ -135,11 +106,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
-              <video 
-                className="w-full aspect-video object-cover"
-                controls
-                poster={videoThumbnail}
-              >
+              <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
                 <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -591,8 +558,7 @@ const Index = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border bg-card">
-                      {features.map((feature, idx) => (
-                        <tr key={idx} className="hover:bg-muted/30 transition-colors">
+                      {features.map((feature, idx) => <tr key={idx} className="hover:bg-muted/30 transition-colors">
                           <td className="px-6 py-4">
                             <div>
                               <div className="font-medium">{feature.title}</div>
@@ -600,21 +566,16 @@ const Index = () => {
                             </div>
                           </td>
                           <td className="px-6 py-4 text-center">
-                            {feature.accountManager && (
-                              <div className="inline-flex items-center justify-center w-6 h-6 rounded bg-growth/10">
+                            {feature.accountManager && <div className="inline-flex items-center justify-center w-6 h-6 rounded bg-growth/10">
                                 <Check className="h-4 w-4 text-growth" />
-                              </div>
-                            )}
+                              </div>}
                           </td>
                           <td className="px-6 py-4 text-center">
-                            {feature.generalManagement && (
-                              <div className="inline-flex items-center justify-center w-6 h-6 rounded bg-growth/10">
+                            {feature.generalManagement && <div className="inline-flex items-center justify-center w-6 h-6 rounded bg-growth/10">
                                 <Check className="h-4 w-4 text-growth" />
-                              </div>
-                            )}
+                              </div>}
                           </td>
-                        </tr>
-                      ))}
+                        </tr>)}
                     </tbody>
                   </table>
                 </div>
@@ -641,8 +602,7 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {founders.map((founder, idx) => (
-                <Card key={idx} className="p-8 border-border/50">
+              {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
                   <div className="mb-6">
                     <div className="w-20 h-20 rounded-full bg-gradient-accent mb-4 flex items-center justify-center">
                       <Users className="h-10 w-10 text-white" />
@@ -651,15 +611,12 @@ const Index = () => {
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
                   <ul className="space-y-3">
-                    {founder.experience.map((item, i) => (
-                      <li key={i} className="flex gap-3">
+                    {founder.experience.map((item, i) => <li key={i} className="flex gap-3">
                         <Check className="h-5 w-5 text-growth flex-shrink-0 mt-0.5" />
                         <span className="text-muted-foreground">{item}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -718,7 +675,9 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+                <div className="flex items-center gap-4 animate-slide-up" style={{
+                animationDelay: '0.1s'
+              }}>
                   <div className="w-3 h-3 rounded-full bg-electric/40"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
@@ -732,7 +691,9 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+                <div className="flex items-center gap-4 animate-slide-up" style={{
+                animationDelay: '0.2s'
+              }}>
                   <div className="w-3 h-3 rounded-full bg-electric"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
@@ -776,13 +737,13 @@ const Index = () => {
                 {/* Left Side - Input Sources */}
                 <div className="lg:col-span-3 space-y-4">
                   <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
-                    <h3 className="text-xl font-bold text-center">Chat or<br/>Email</h3>
+                    <h3 className="text-xl font-bold text-center">Chat or<br />Email</h3>
                   </Card>
                   <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
-                    <h3 className="text-xl font-bold text-center">AI<br/>phone<br/>Assistant</h3>
+                    <h3 className="text-xl font-bold text-center">AI<br />phone<br />Assistant</h3>
                   </Card>
                   <div className="text-sm text-muted-foreground text-center pt-4">
-                    Provides necessary<br/>information to solve<br/>customer inqueries
+                  <br />information to solve<br />customer inqueries
                   </div>
                 </div>
 
@@ -805,12 +766,12 @@ const Index = () => {
 
                   {/* Mail or CRM System */}
                   <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
-                    <h3 className="text-2xl font-bold text-center">Mail or CRM System</h3>
+                    <h3 className="text-2xl font-bold text-center">Mail or CRM System Integration</h3>
                   </Card>
 
                   {/* RAG with Policies */}
                   <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
-                    <h3 className="text-xl font-bold text-center mb-2">Rag</h3>
+                    <h3 className="text-xl font-bold text-center mb-2">Rag uploads</h3>
                     <p className="text-sm text-center">
                       Car policies, Ammendments of work contracts, company bike policies, lease plans etc.
                     </p>
@@ -828,22 +789,12 @@ const Index = () => {
                   <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
                     <h3 className="text-xl font-bold text-center">FAQs</h3>
                   </Card>
-                  <div className="text-sm text-muted-foreground text-center pt-4">
-                    Continuous Quality<br/>Improvement
-                  </div>
+                  
                 </div>
               </div>
 
               {/* Flow Labels */}
-              <div className="mt-8 flex justify-between items-center text-sm text-muted-foreground">
-                <div className="text-center">
-                  <div className="font-semibold mb-1">Request from</div>
-                  <div>Customer/Partner or user</div>
-                </div>
-                <div className="text-center">
-                  <div className="font-semibold">Retrieves Mails</div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -1043,7 +994,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="flex flex-col items-center mb-6">
                     <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-sm mb-3 border-4 border-background shadow-lg">
-                      Market<br/>launch
+                      Market<br />launch
                     </div>
                     <p className="text-sm font-semibold">July 25</p>
                   </div>
@@ -1069,7 +1020,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="flex flex-col items-center mb-6">
                     <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs text-center mb-3 border-4 border-background shadow-lg">
-                      Further<br/>dev
+                      Further<br />dev
                     </div>
                     <p className="text-sm font-semibold">Ongoing</p>
                   </div>
@@ -1291,8 +1242,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
