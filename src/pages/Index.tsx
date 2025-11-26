@@ -759,6 +759,96 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Elements of Phili Flowchart */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Elements of <span className="text-gradient">PHILI</span> Enabling Maximum Stability and Quality
+              </h2>
+            </div>
+
+            <div className="relative">
+              {/* Main Flowchart Container */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                
+                {/* Left Side - Input Sources */}
+                <div className="lg:col-span-3 space-y-4">
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
+                    <h3 className="text-xl font-bold text-center">Chat or<br/>Email</h3>
+                  </Card>
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white rounded-3xl">
+                    <h3 className="text-xl font-bold text-center">AI<br/>phone<br/>Assistant</h3>
+                  </Card>
+                  <div className="text-sm text-muted-foreground text-center pt-4">
+                    Provides necessary<br/>information to solve<br/>customer inqueries
+                  </div>
+                </div>
+
+                {/* Center - Main Processing Flow */}
+                <div className="lg:col-span-6 space-y-4">
+                  {/* Top Row - Smart Inbox and Copilot */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <Card className="p-8 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                      <h3 className="text-2xl font-bold text-center">Smart Inbox</h3>
+                    </Card>
+                    <Card className="p-8 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                      <h3 className="text-2xl font-bold text-center">Copilot</h3>
+                    </Card>
+                  </div>
+
+                  {/* Workflows */}
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <h3 className="text-2xl font-bold text-center">Workflows</h3>
+                  </Card>
+
+                  {/* Mail or CRM System */}
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <h3 className="text-2xl font-bold text-center">Mail or CRM System</h3>
+                  </Card>
+
+                  {/* RAG with Policies */}
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <h3 className="text-xl font-bold text-center mb-2">Rag</h3>
+                    <p className="text-sm text-center">
+                      Car policies, Ammendments of work contracts, company bike policies, lease plans etc.
+                    </p>
+                  </Card>
+                </div>
+
+                {/* Right Side - Quality Monitoring */}
+                <div className="lg:col-span-3 space-y-4">
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <h3 className="text-xl font-bold text-center">Chat Monitor</h3>
+                  </Card>
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <h3 className="text-xl font-bold text-center">Evals</h3>
+                  </Card>
+                  <Card className="p-6 bg-[hsl(200,70%,35%)] border-[hsl(200,70%,25%)] text-white">
+                    <h3 className="text-xl font-bold text-center">FAQs</h3>
+                  </Card>
+                  <div className="text-sm text-muted-foreground text-center pt-4">
+                    Continuous Quality<br/>Improvement
+                  </div>
+                </div>
+              </div>
+
+              {/* Flow Labels */}
+              <div className="mt-8 flex justify-between items-center text-sm text-muted-foreground">
+                <div className="text-center">
+                  <div className="font-semibold mb-1">Request from</div>
+                  <div>Customer/Partner or user</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold">Retrieves Mails</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Business Model Section */}
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
