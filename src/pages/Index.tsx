@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight, Zap, Shield, TrendingUp, Users } from "lucide-react";
 import videoThumbnail from "@/assets/video-thumbnail.png";
+import andreasReichert from "@/assets/andreas-reichert.png";
+import viktorShcherban from "@/assets/viktor-shcherban.png";
 const Index = () => {
   const features = [{
     title: "Phone and Chatbot",
@@ -63,10 +65,12 @@ const Index = () => {
   const founders = [{
     name: "Andreas Reichert",
     role: "CEO",
+    image: andreasReichert,
     experience: ["8 years of leadership in product & B2B SaaS marketing", "Led 10+ digital ventures as Venture Architect", "Co-founder of MOBIKO (market leader in Germany)", "Closed Series A Investment round with MOBIKO"]
   }, {
     name: "Viktor Shcherban",
     role: "CTO",
+    image: viktorShcherban,
     experience: ["CTO & Software Developer since 2006", "Founded and co-founded 5 companies", "Created istat24.com powered by IP telephony", "Expert in RAG AI assistants and LLM-powered apps"]
   }];
   return <div className="min-h-screen">
@@ -604,9 +608,11 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
                   <div className="mb-6">
-                    <div className="w-20 h-20 rounded-full bg-gradient-accent mb-4 flex items-center justify-center">
-                      <Users className="h-10 w-10 text-white" />
-                    </div>
+                    <img 
+                      src={founder.image} 
+                      alt={`${founder.name} - ${founder.role}`}
+                      className="w-20 h-20 rounded-full object-cover mb-4"
+                    />
                     <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
