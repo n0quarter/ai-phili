@@ -109,14 +109,13 @@ const Index = () => {
               AI-Powered Corporate Mobility
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground">
-              Findus
+              PHILI
             </h1>
             <p className="text-2xl md:text-3xl mb-4 text-primary-foreground/90 font-medium">
-              The AI Customer Agent and Copilot for Corporate Mobility
+              The AI Customer Agent & Copilot for Corporate Mobility
             </p>
             <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">
-              Next-generation copilot for modern mobility teams. Automate orchestration, 
-              reduce overhead, and scale your mobility operations seamlessly.
+              The first vertical AI layer unifying all corporate mobility benefits into intelligent automation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all">
@@ -155,11 +154,11 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 animate-slide-up">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Why <span className="text-gradient">Findus</span>?
+                Why <span className="text-gradient">PHILI</span>?
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Where generic copilots and chatbots fall short with shallow answers and unreliable workflows, 
-                Findus goes further.
+                PHILI goes further — understanding your mobility ecosystem deeply.
               </p>
             </div>
 
@@ -204,69 +203,363 @@ const Index = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
-                The Problem
+                Problem 1
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Customer Support is <span className="text-electric">Broken</span>
+                Corporate Mobility Has Fragmented — And No One Has <span className="text-electric">Functional AI Support</span>
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Today's mobility account management is plagued by inefficiency
-              </p>
             </div>
 
             <Card className="p-8 md:p-12 border-2 border-border/50">
               <div className="space-y-6">
+                <p className="text-lg font-medium mb-6">
+                  Companies now offer a mix of cars, bikes, budgets, subscriptions, EV charging and mobility cards.
+                </p>
+                <p className="text-lg font-medium mb-6">
+                  This creates a massive operational burden:
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-muted-foreground">
+                      Fleet management software providers lack AI agents that understand mobility workflows
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-muted-foreground">
+                      Car & bike leasing providers only understand their own (car OR bike, not both)
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-muted-foreground">
+                      No system unifies contract data, SLAs, policies and workflows across all mobility benefits
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-muted-foreground">
+                      Admins and drivers receive inconsistent answers across multiple portals
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-muted-foreground">
+                      Account Managers drown in manual case handling and reporting
+                    </p>
+                  </li>
+                </ul>
+                <p className="text-lg font-bold mt-8 text-center">
+                  Corporate mobility is multi-stakeholder and multi-product — but AI support today is siloed and non-functional.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Solution
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                PHILI — The First Vertical AI Agent & Copilot for <span className="text-electric">Corporate Mobility</span>
+              </h2>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-12">
+              <p className="text-lg mb-8 font-medium">
+                Phili unifies all mobility benefits (car, bike, budget, subscription, EV) into a single AI layer.
+              </p>
+              
+              <div className="space-y-8">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
                     1
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Email & Call Chaos</h4>
-                    <p className="text-muted-foreground">
-                      "I have lost my charging card?" (Fleet management)
-                      <br />
-                      "My company bike is broken, what should I do now?" (HR Benefit Manager)
-                      <br />
-                      "What is my accommodation policy for New York?" (Travel Management)
+                    <h4 className="text-xl font-bold mb-3">AI Customer Support Agent</h4>
+                    <p className="text-muted-foreground text-lg">
+                      Handles around <span className="font-bold text-foreground">40% of driver requests autonomously</span>, understands contracts & workflows.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
                     2
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Manual Document Lookup</h4>
-                    <p className="text-muted-foreground">
-                      Requests arrive in shared Outlook inboxes requiring manual evaluation of policies, lease plans, and contracts
+                    <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
+                    <p className="text-muted-foreground text-lg">
+                      Fleet insights, renewal alerts, SLA deviations, automated reporting.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
                     3
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Multiple Touchpoints</h4>
-                    <p className="text-muted-foreground">
-                      Average request requires numerous back-and-forth emails and phone calls with ~2 days resolution time
+                    <h4 className="text-xl font-bold mb-3">Voice AI Assistant</h4>
+                    <p className="text-muted-foreground text-lg">
+                      Fully automated hotline for mobility user, workshops and logistics.
                     </p>
                   </div>
                 </div>
+              </div>
 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-electric/10 flex items-center justify-center text-electric font-bold">
-                    4
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">No Knowledge Hub</h4>
-                    <p className="text-muted-foreground">
-                      No centralized place to access mobility knowledge for faster upselling and strategic insights
-                    </p>
-                  </div>
+              <div className="mt-10 pt-8 border-t border-border">
+                <p className="text-xl font-bold text-center text-gradient">
+                  Phili becomes the operational brain behind Mobility Operations, reducing support cost 40–60% while improving SLAs.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Now Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Market Timing
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Why <span className="text-gradient">Now</span>?
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-3 mb-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-bold">Mobility complexity is rising dramatically</span> (mixed fleets, multi-provider ecosystems)
+                  </p>
                 </div>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-3 mb-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-bold">Support volumes +30–40% YoY</span>
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-3 mb-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-bold">Talent shortage</span> across fleet operations
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-3 mb-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-bold">AI (RAG, agents, voice assistants) is production-ready</span>
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 md:col-span-2">
+                <div className="flex gap-3 mb-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-bold">No vertical AI exists</span> for mobility documentation, SLAs or workflows, <span className="underline">only generic ticketing and agent builder</span>
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 md:col-span-2">
+                <div className="flex gap-3 mb-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-bold">First level support has very low margins</span> when ran without automation
+                  </p>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Value Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Impact
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Product <span className="text-gradient">Value</span>
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Phili delivers measurable operational impact
+              </p>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <ul className="space-y-6">
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">50–70% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">20–35% productivity uplift</span> for Account Managers
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility benefits
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Consistent SLA execution</span> across providers
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Automated reporting and renewal workflows</span>
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Full audit trails + AI voice transcripts</span>
+                  </p>
+                </li>
+              </ul>
+            </Card>
+
+            <div className="text-center">
+              <p className="text-2xl font-bold text-gradient">
+                Phili removes entire layers of manual workload.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Competitive Landscape Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Competitive Analysis
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Competitive <span className="text-electric">Landscape</span>
+              </h2>
+            </div>
+
+            <div className="space-y-6 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-xl font-bold mb-4">Generic Ticketing (Zendesk, Intercom):</h3>
+                <p className="text-muted-foreground text-lg">
+                  Not mobility-specific, no contract understanding.
+                </p>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <h3 className="text-xl font-bold mb-4">Generic AI Platforms (Cognigy, Ada, Ultimate):</h3>
+                <p className="text-muted-foreground text-lg">
+                  Require heavy customization, no fleet or mobility benefit logic.
+                </p>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <h3 className="text-xl font-bold mb-4">Mobility Software (Fleet, Leasing, Bike Providers):</h3>
+                <p className="text-muted-foreground text-lg">
+                  Only solve THEIR processes (bike OR car) and offer no functioning agents yet. No unified mobility support.
+                </p>
+              </Card>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-electric/30 bg-electric/5">
+              <p className="text-xl font-bold text-center">
+                Phili is the first unified AI layer for ALL corporate mobility benefits (car + bike + budget + subscription).
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ICP Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Target Market
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Ideal Customer <span className="text-gradient">Profile</span>
+              </h2>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <h3 className="text-2xl font-bold mb-8">Ideal Customers:</h3>
+              <ul className="space-y-4 mb-12">
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Fleet Outsourcing Providers (2,000–100,000 vehicles)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Full-Service Leasing Companies
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Inhouse Fleets (1,000–30,000 vehicles)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Mobility Providers (auto, bike, budgets, subscription)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Mobility consulting firms
+                  </p>
+                </li>
+              </ul>
+
+              <div className="pt-8 border-t border-border">
+                <p className="text-lg font-bold">
+                  Traits: &gt;1,000 vehicles, high ticket volume, multi-stakeholder workflows, automation readiness.
+                </p>
               </div>
             </Card>
           </div>
@@ -378,11 +671,15 @@ const Index = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Massive Market Opportunity
+                Market for Fleets Only
               </h2>
-              <p className="text-xl text-muted-foreground mb-12">
-                AI for Mobility & Fleet Support across Europe
+              <p className="text-xl text-muted-foreground mb-4">
+                Professionally Managed Vehicles in Europe: <span className="font-bold text-foreground">18M</span>
               </p>
+              <ul className="text-lg text-muted-foreground space-y-2 max-w-2xl mx-auto">
+                <li>• 12M externally managed fleets</li>
+                <li>• 6M large inhouse fleets</li>
+              </ul>
             </div>
             
             {/* TAM SAM SOM Visual Funnel */}
@@ -411,12 +708,12 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-electric/20"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
-                      <span className="text-3xl font-bold text-gradient">€5.74B</span>
+                      <span className="text-3xl font-bold text-gradient">€874M</span>
                       <span className="text-sm font-semibold text-electric">TAM</span>
                     </div>
                     <div className="text-base font-semibold mb-1">Total Addressable Market</div>
                     <p className="text-sm text-muted-foreground max-w-md">
-                      Based on 23 million company vehicles × €249.60 AI savings potential per year
+                      874M€/year (4€/vehicle/month)
                     </p>
                   </div>
                 </div>
@@ -425,12 +722,12 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-electric/40"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
-                      <span className="text-3xl font-bold text-gradient">€2.01B</span>
+                      <span className="text-3xl font-bold text-gradient">€306M</span>
                       <span className="text-sm font-semibold text-electric">SAM</span>
                     </div>
                     <div className="text-base font-semibold mb-1">Serviceable Addressable Market</div>
                     <p className="text-sm text-muted-foreground max-w-md">
-                      Approximately 35% of fleets in Europe are outsourced and directly monetizable
+                      306M€/year (35%)
                     </p>
                   </div>
                 </div>
@@ -439,16 +736,24 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-electric"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
-                      <span className="text-3xl font-bold text-gradient">€201M</span>
+                      <span className="text-3xl font-bold text-gradient">€30.6M</span>
                       <span className="text-sm font-semibold text-electric">SOM</span>
                     </div>
                     <div className="text-base font-semibold mb-1">Serviceable Obtainable Market</div>
                     <p className="text-sm text-muted-foreground max-w-md">
-                      10% realistically addressable market with top 10 service providers
+                      30.6M€/year (10% of SAM)
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Card className="p-6 max-w-2xl mx-auto border-electric/30 bg-electric/5">
+                <p className="text-lg font-bold">
+                  155 customers = full SOM realization (avg. 194k€/year each)
+                </p>
+              </Card>
             </div>
           </div>
         </div>
@@ -463,7 +768,7 @@ const Index = () => {
               Ready to Transform Corporate Mobility?
             </h2>
             <p className="text-xl mb-12 text-primary-foreground/80">
-              Join us in revolutionizing how mobility teams operate. Let's discuss the investment opportunity.
+              Join us in revolutionizing corporate mobility. Let's discuss the investment opportunity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all">
@@ -482,8 +787,8 @@ const Index = () => {
       <footer className="py-12 bg-muted/30 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="text-center text-muted-foreground">
-            <p className="font-semibold text-foreground mb-2">Findus - Dolittle Mobility Manager</p>
-            <p>© 2025 Findus. All rights reserved.</p>
+            <p className="font-semibold text-foreground mb-2">PHILI - AI Customer Agent & Copilot for Corporate Mobility</p>
+            <p>© 2025 PHILI. All rights reserved.</p>
           </div>
         </div>
       </footer>
