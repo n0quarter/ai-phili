@@ -696,7 +696,11 @@ const Index = () => {
                     
                     {/* SOM - Inner Circle */}
                     <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center">
-                      <div className="text-xl font-bold text-white">SOM</div>
+                      <div className="flex flex-col items-center justify-center gap-1">
+                        <div className="text-xl font-bold text-white">TAM</div>
+                        <div className="text-xl font-bold text-white">SAM</div>
+                        <div className="text-xl font-bold text-white">SOM</div>
+                      </div>
                     </div>
                   </div>
                 </div>
