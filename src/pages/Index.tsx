@@ -9,6 +9,7 @@ import aiSupportAgent from "@/assets/ai-support-agent.png";
 import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
+import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
@@ -567,7 +568,7 @@ const Index = () => {
       {/* Competitive Landscape Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
                 Competitive Analysis
@@ -577,28 +578,13 @@ const Index = () => {
               </h2>
             </div>
 
-            <div className="space-y-6 mb-12">
-              <Card className="p-8 border-border/50">
-                <h3 className="text-xl font-bold mb-4">Generic Ticketing (Zendesk, Intercom):</h3>
-                <p className="text-muted-foreground text-lg">
-                  Not mobility-specific, no contract understanding.
-                </p>
-              </Card>
-
-              <Card className="p-8 border-border/50">
-                <h3 className="text-xl font-bold mb-4">Generic AI Platforms (Cognigy, Ada, Ultimate):</h3>
-                <p className="text-muted-foreground text-lg">
-                  Require heavy customization, no fleet or mobility benefit logic.
-                </p>
-              </Card>
-
-              <Card className="p-8 border-border/50">
-                <h3 className="text-xl font-bold mb-4">Mobility Software (Fleet, Leasing, Bike Providers):</h3>
-                <p className="text-muted-foreground text-lg">
-                  Only solve THEIR processes (bike OR car) and offer no functioning agents yet. No unified mobility support.
-                </p>
-              </Card>
-            </div>
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <img 
+                src={competitiveLandscapeMap} 
+                alt="Competitive Landscape Map showing PHILI's position with high comprehensive mobility knowledge and high degree of reliable support automation compared to Generic Ticketing, Generic AI Platforms, and Mobility Software providers" 
+                className="w-full h-auto"
+              />
+            </Card>
 
             <Card className="p-8 md:p-12 border-2 border-electric/30 bg-electric/5">
               <p className="text-xl font-bold text-center">
