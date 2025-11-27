@@ -144,39 +144,34 @@ const Index = () => {
               <Card className="p-8 h-[450px] bg-card">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
-                    <Pie
-                      data={[
-                        { name: "Communication", value: 50 },
-                        { name: "Other Tasks", value: 50 }
-                      ]}
-                      cx="50%"
-                      cy="45%"
-                      labelLine={false}
-                      label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
-                      outerRadius={120}
-                      fill="#8884d8"
-                      dataKey="value"
-                      style={{ fontSize: '18px', fontWeight: 'bold' }}
-                    >
+                    <Pie data={[{
+                    name: "Communication",
+                    value: 50
+                  }, {
+                    name: "Other Tasks",
+                    value: 50
+                  }]} cx="50%" cy="45%" labelLine={false} label={({
+                    name,
+                    percent
+                  }) => `${name}: ${(percent * 100).toFixed(0)}%`} outerRadius={120} fill="#8884d8" dataKey="value" style={{
+                    fontSize: '18px',
+                    fontWeight: 'bold'
+                  }}>
                       <Cell fill="hsl(var(--electric))" stroke="hsl(var(--background))" strokeWidth={3} />
                       <Cell fill="hsl(var(--foreground) / 0.7)" stroke="hsl(var(--background))" strokeWidth={3} />
                     </Pie>
-                    <Tooltip 
-                      contentStyle={{ 
-                        backgroundColor: 'hsl(var(--card))',
-                        border: '1px solid hsl(var(--border))',
-                        borderRadius: '8px',
-                        fontWeight: 'bold',
-                        fontSize: '16px'
-                      }}
-                    />
-                    <Legend 
-                      wrapperStyle={{ 
-                        fontSize: '16px', 
-                        fontWeight: 'bold',
-                        paddingTop: '24px'
-                      }}
-                    />
+                    <Tooltip contentStyle={{
+                    backgroundColor: 'hsl(var(--card))',
+                    border: '1px solid hsl(var(--border))',
+                    borderRadius: '8px',
+                    fontWeight: 'bold',
+                    fontSize: '16px'
+                  }} />
+                    <Legend wrapperStyle={{
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    paddingTop: '24px'
+                  }} />
                   </PieChart>
                 </ResponsiveContainer>
               </Card>
@@ -350,9 +345,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
-                    <p className="text-muted-foreground text-lg">
-                      Fleet insights, renewal alerts, SLA deviations, automated reporting.
-                    </p>
+                    <p className="text-muted-foreground text-lg">Fleet & moility enefit insights, renewal alerts, SLA deviations, automated reporting.</p>
                   </div>
                 </div>
 
@@ -691,11 +684,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
                   <div className="mb-6">
-                    <img 
-                      src={founder.image} 
-                      alt={`${founder.name} - ${founder.role}`}
-                      className="w-20 h-20 rounded-full object-cover mb-4"
-                    />
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-20 h-20 rounded-full object-cover mb-4" />
                     <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
