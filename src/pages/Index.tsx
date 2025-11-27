@@ -613,17 +613,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Table */}
+      {/* Comparison Table */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Comprehensive Feature Set
+                Phili Compared to Generic <span className="text-gradient">Ticketing & AI Systems</span>
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Supporting both Mobility Account Managers and General Management
-              </p>
             </div>
 
             <div className="overflow-x-auto">
@@ -632,30 +629,232 @@ const Index = () => {
                   <table className="min-w-full divide-y divide-border">
                     <thead className="bg-muted/50">
                       <tr>
-                        <th className="px-6 py-4 text-left text-sm font-semibold">Feature</th>
-                        <th className="px-6 py-4 text-center text-sm font-semibold">Mobility Account Manager</th>
-                        <th className="px-6 py-4 text-center text-sm font-semibold">General Management</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Capability</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Zendesk / Intercom / Salesforce</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Generic AI Agents</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Phili – Mobility AI Agent & Copilot</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border bg-card">
-                      {features.map((feature, idx) => <tr key={idx} className="hover:bg-muted/30 transition-colors">
-                          <td className="px-6 py-4">
-                            <div>
-                              <div className="font-medium">{feature.title}</div>
-                              <div className="text-sm text-muted-foreground mt-1">{feature.description}</div>
-                            </div>
-                          </td>
-                          <td className="px-6 py-4 text-center">
-                            {feature.accountManager && <div className="inline-flex items-center justify-center w-6 h-6 rounded bg-growth/10">
-                                <Check className="h-4 w-4 text-growth" />
-                              </div>}
-                          </td>
-                          <td className="px-6 py-4 text-center">
-                            {feature.generalManagement && <div className="inline-flex items-center justify-center w-6 h-6 rounded bg-growth/10">
-                                <Check className="h-4 w-4 text-growth" />
-                              </div>}
-                          </td>
-                        </tr>)}
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Understands mobility documents (leasing, contracts, policies)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No domain understanding</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Needs manual training</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Mobility-RAG trained on leasing & policies</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Automates driver support (tires, damage, cards, inspection)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Manual workflows</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Partial intent routing</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>50–70% automation with process graphs</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">SLA-based multi-client orchestration</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Basic SLAs</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No multi-client logic</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>True multi-brand SLA execution</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Account Manager Copilot (analytics + insights)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No fleet KPIs</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No deep data or reporting</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Renewal alerts, insights, risk scoring</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Fleet data reasoning (vehicles near leasing end, overdue tires, etc.)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Not possible</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Requires custom engineering</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Built-in mobility data models</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Voice-based hotline automation</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Add-on only</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Unstructured</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Integrated Phone AI (299 €/month)</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Workshop, logistics & leasing coordination</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Manual tickets only</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No domain workflows</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>AI-driven workflow orchestration</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Multi-stakeholder mobility ecosystem support</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>1:1 ticketing</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No ecosystem understanding</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Drivers, employers, leasing, shops, logistics</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Cross-product support (auto, bike, budget, subscription)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Separate systems needed</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No unification</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Unified mobility support engine</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">ROI transparency & fleet cost analytics</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Not mobility-specific</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Not process-aware</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span>Full fleet KPI & cost-model analysis</span>
+                          </span>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
