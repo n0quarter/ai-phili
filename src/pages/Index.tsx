@@ -576,13 +576,16 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Competitive <span className="text-electric">Landscape</span>
               </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Phili uniquely combines comprehensive mobility knowledge with reliable AI automation
+              </p>
             </div>
 
             <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
               <img 
                 src={competitiveLandscapeMap} 
                 alt="Competitive Landscape Map showing PHILI's position with high comprehensive mobility knowledge and high degree of reliable support automation compared to Generic Ticketing, Generic AI Platforms, and Mobility Software providers" 
-                className="w-full h-auto"
+                className="w-full h-auto rounded-lg"
               />
             </Card>
 
