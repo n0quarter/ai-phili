@@ -8,6 +8,7 @@ import viktorShcherban from "@/assets/viktor-shcherban.png";
 import aiSupportAgent from "@/assets/ai-support-agent.png";
 import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
+import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
@@ -79,8 +80,8 @@ const Index = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative gradient-hero overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+      <section className="relative overflow-hidden" style={{ backgroundImage: `url(${mobilityBenefitsBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 to-primary/80"></div>
         
         <div className="container mx-auto px-6 py-24 md:py-32 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
