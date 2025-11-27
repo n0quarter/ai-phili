@@ -106,20 +106,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
-              <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
-                <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Fleet Management Communication Data */}
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
@@ -197,57 +183,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Value Proposition */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16 animate-slide-up">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Why <span className="text-gradient">PHILI</span>?
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Where generic copilots and chatbots fall short with shallow answers and unreliable workflows, 
-                PHILI goes further — understanding your mobility ecosystem deeply.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <Card className="p-8 border-border/50 hover:border-electric/50 transition-all hover:shadow-lg">
-                <div className="h-12 w-12 rounded-lg bg-electric/10 flex items-center justify-center mb-6">
-                  <Zap className="h-6 w-6 text-electric" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Understands Context</h3>
-                <p className="text-muted-foreground">
-                  Deep understanding of customers, their contracts, and context for truly actionable insights.
-                </p>
-              </Card>
-
-              <Card className="p-8 border-border/50 hover:border-growth/50 transition-all hover:shadow-lg">
-                <div className="h-12 w-12 rounded-lg bg-growth/10 flex items-center justify-center mb-6">
-                  <Shield className="h-6 w-6 text-growth" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Automates Tasks</h3>
-                <p className="text-muted-foreground">
-                  Execute customer support tasks automatically, turning manual processes into seamless operations.
-                </p>
-              </Card>
-
-              <Card className="p-8 border-border/50 hover:border-primary-light/50 transition-all hover:shadow-lg">
-                <div className="h-12 w-12 rounded-lg bg-primary-light/10 flex items-center justify-center mb-6">
-                  <TrendingUp className="h-6 w-6 text-primary-light" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Scales Effortlessly</h3>
-                <p className="text-muted-foreground">
-                  Handle high-volume mobility programs while cutting operational overhead to a minimum.
-                </p>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Problem Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -309,7 +246,7 @@ const Index = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -368,6 +305,168 @@ const Index = () => {
                 </p>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Elements of Phili Flowchart */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Elements of <span className="text-gradient">PHILI</span> Enabling Maximum Stability and Quality
+              </h2>
+            </div>
+
+            <div className="relative">
+              {/* Main Flowchart Container */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                
+                {/* Left Side - Channels */}
+                <div className="lg:col-span-3 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-primary/20 text-primary border-primary/30">Channels</Badge>
+                  </div>
+                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
+                    <h3 className="text-xl font-bold text-center">Chat or<br />Email</h3>
+                  </Card>
+                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
+                    <h3 className="text-xl font-bold text-center">AI<br />phone<br />Assistant</h3>
+                  </Card>
+                </div>
+
+                {/* Center - Core Elements */}
+                <div className="lg:col-span-6 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-electric/20 text-electric border-electric/30">Core Elements</Badge>
+                  </div>
+                  {/* Top Row - Smart Inbox and Copilot */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <Card className="p-8 bg-electric/90 border-electric text-white">
+                      <h3 className="text-2xl font-bold text-center">Smart Inbox</h3>
+                    </Card>
+                    <Card className="p-8 bg-electric/90 border-electric text-white">
+                      <h3 className="text-2xl font-bold text-center">Copilot</h3>
+                    </Card>
+                  </div>
+
+                  {/* Workflows */}
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-2xl font-bold text-center">Workflows</h3>
+                  </Card>
+
+                  {/* Mail or CRM System */}
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-2xl font-bold text-center">Mail or CRM System Integration</h3>
+                  </Card>
+
+                  {/* RAG with Policies */}
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-xl font-bold text-center mb-2">Rag uploads</h3>
+                    <p className="text-sm text-center">
+                      Car policies, Ammendments of work contracts, company bike policies, lease plans etc.
+                    </p>
+                  </Card>
+                </div>
+
+                {/* Right Side - Quality Backbone */}
+                <div className="lg:col-span-3 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-growth/20 text-growth border-growth/30">Quality Backbone</Badge>
+                  </div>
+                  <Card className="p-6 bg-growth/90 border-growth text-white">
+                    <h3 className="text-xl font-bold text-center">Chat Monitor</h3>
+                  </Card>
+                  <Card className="p-6 bg-growth/90 border-growth text-white">
+                    <h3 className="text-xl font-bold text-center">Evals</h3>
+                  </Card>
+                  <Card className="p-6 bg-growth/90 border-growth text-white">
+                    <h3 className="text-xl font-bold text-center">FAQs</h3>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Value Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Impact
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Product <span className="text-gradient">Value</span>
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Phili delivers measurable operational impact
+              </p>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <ul className="space-y-6">
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">50–70% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">20–35% productivity uplift</span> for Account Managers
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility benefits
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Consistent SLA execution</span> across providers
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Automated reporting and renewal workflows</span>
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Full audit trails + AI voice transcripts</span>
+                  </p>
+                </li>
+              </ul>
+            </Card>
+
+            <div className="text-center">
+              <p className="text-2xl font-bold text-gradient">
+                Phili removes entire layers of manual workload.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
+              <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
+                <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
@@ -444,74 +543,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Product Value Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
-                Impact
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Product <span className="text-gradient">Value</span>
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Phili delivers measurable operational impact
-              </p>
-            </div>
-
-            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
-              <ul className="space-y-6">
-                <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
-                  <p className="text-lg">
-                    <span className="font-bold">50–70% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
-                  <p className="text-lg">
-                    <span className="font-bold">20–35% productivity uplift</span> for Account Managers
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
-                  <p className="text-lg">
-                    <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility benefits
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
-                  <p className="text-lg">
-                    <span className="font-bold">Consistent SLA execution</span> across providers
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
-                  <p className="text-lg">
-                    <span className="font-bold">Automated reporting and renewal workflows</span>
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
-                  <p className="text-lg">
-                    <span className="font-bold">Full audit trails + AI voice transcripts</span>
-                  </p>
-                </li>
-              </ul>
-            </Card>
-
-            <div className="text-center">
-              <p className="text-2xl font-bold text-gradient">
-                Phili removes entire layers of manual workload.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Competitive Landscape Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -555,66 +588,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ICP Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
-                Target Market
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Ideal Customer <span className="text-gradient">Profile</span>
-              </h2>
-            </div>
-
-            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
-              <h3 className="text-2xl font-bold mb-8">Ideal Customers:</h3>
-              <ul className="space-y-4 mb-12">
-                <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg font-medium">
-                    Fleet Outsourcing Providers (2,000–100,000 vehicles)
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg font-medium">
-                    Full-Service Leasing Companies
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg font-medium">
-                    Inhouse Fleets (1,000–30,000 vehicles)
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg font-medium">
-                    Mobility Providers (auto, bike, budgets, subscription)
-                  </p>
-                </li>
-                <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg font-medium">
-                    Mobility consulting firms
-                  </p>
-                </li>
-              </ul>
-
-              <div className="pt-8 border-t border-border">
-                <p className="text-lg font-bold">
-                  Traits: &gt;1,000 vehicles, high ticket volume, multi-stakeholder workflows, automation readiness.
-                </p>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Comparison Table */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -864,43 +839,66 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Founders Section */}
-      <section className="py-24 bg-muted/30">
+      {/* ICP Section */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
-                The Team
+                Target Market
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Experienced Founders
+                Ideal Customer <span className="text-gradient">Profile</span>
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Deep industry expertise combined with technical excellence
-              </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
-                  <div className="mb-6">
-                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-20 h-20 rounded-full object-cover mb-4" />
-                    <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
-                    <p className="text-electric font-semibold">{founder.role}</p>
-                  </div>
-                  <ul className="space-y-3">
-                    {founder.experience.map((item, i) => <li key={i} className="flex gap-3">
-                        <Check className="h-5 w-5 text-growth flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{item}</span>
-                      </li>)}
-                  </ul>
-                </Card>)}
-            </div>
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <h3 className="text-2xl font-bold mb-8">Ideal Customers:</h3>
+              <ul className="space-y-4 mb-12">
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Fleet Outsourcing Providers (2,000–100,000 vehicles)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Full-Service Leasing Companies
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Inhouse Fleets (1,000–30,000 vehicles)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Mobility Providers (auto, bike, budgets, subscription)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Mobility consulting firms
+                  </p>
+                </li>
+              </ul>
+
+              <div className="pt-8 border-t border-border">
+                <p className="text-lg font-bold">
+                  Traits: &gt;1,000 vehicles, high ticket volume, multi-stakeholder workflows, automation readiness.
+                </p>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* Market Opportunity */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -997,90 +995,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Elements of Phili Flowchart */}
-      <section className="py-24 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Elements of <span className="text-gradient">PHILI</span> Enabling Maximum Stability and Quality
-              </h2>
-            </div>
-
-            <div className="relative">
-              {/* Main Flowchart Container */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-                
-                {/* Left Side - Channels */}
-                <div className="lg:col-span-3 space-y-4">
-                  <div className="text-center mb-4">
-                    <Badge className="bg-primary/20 text-primary border-primary/30">Channels</Badge>
-                  </div>
-                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
-                    <h3 className="text-xl font-bold text-center">Chat or<br />Email</h3>
-                  </Card>
-                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
-                    <h3 className="text-xl font-bold text-center">AI<br />phone<br />Assistant</h3>
-                  </Card>
-                </div>
-
-                {/* Center - Core Elements */}
-                <div className="lg:col-span-6 space-y-4">
-                  <div className="text-center mb-4">
-                    <Badge className="bg-electric/20 text-electric border-electric/30">Core Elements</Badge>
-                  </div>
-                  {/* Top Row - Smart Inbox and Copilot */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <Card className="p-8 bg-electric/90 border-electric text-white">
-                      <h3 className="text-2xl font-bold text-center">Smart Inbox</h3>
-                    </Card>
-                    <Card className="p-8 bg-electric/90 border-electric text-white">
-                      <h3 className="text-2xl font-bold text-center">Copilot</h3>
-                    </Card>
-                  </div>
-
-                  {/* Workflows */}
-                  <Card className="p-6 bg-electric/90 border-electric text-white">
-                    <h3 className="text-2xl font-bold text-center">Workflows</h3>
-                  </Card>
-
-                  {/* Mail or CRM System */}
-                  <Card className="p-6 bg-electric/90 border-electric text-white">
-                    <h3 className="text-2xl font-bold text-center">Mail or CRM System Integration</h3>
-                  </Card>
-
-                  {/* RAG with Policies */}
-                  <Card className="p-6 bg-electric/90 border-electric text-white">
-                    <h3 className="text-xl font-bold text-center mb-2">Rag uploads</h3>
-                    <p className="text-sm text-center">
-                      Car policies, Ammendments of work contracts, company bike policies, lease plans etc.
-                    </p>
-                  </Card>
-                </div>
-
-                {/* Right Side - Quality Backbone */}
-                <div className="lg:col-span-3 space-y-4">
-                  <div className="text-center mb-4">
-                    <Badge className="bg-growth/20 text-growth border-growth/30">Quality Backbone</Badge>
-                  </div>
-                  <Card className="p-6 bg-growth/90 border-growth text-white">
-                    <h3 className="text-xl font-bold text-center">Chat Monitor</h3>
-                  </Card>
-                  <Card className="p-6 bg-growth/90 border-growth text-white">
-                    <h3 className="text-xl font-bold text-center">Evals</h3>
-                  </Card>
-                  <Card className="p-6 bg-growth/90 border-growth text-white">
-                    <h3 className="text-xl font-bold text-center">FAQs</h3>
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Business Model Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -1147,6 +1063,68 @@ const Index = () => {
                 High-margin vertical AI SaaS.
               </p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* 5-Year Forecast Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Financial Projections
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                5-Year <span className="text-gradient">Forecast</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Realistic Scenario</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 1:</span>
+                    <span className="text-2xl font-bold">1.5M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 2:</span>
+                    <span className="text-2xl font-bold">4.6M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 3:</span>
+                    <span className="text-2xl font-bold">10.7M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 4:</span>
+                    <span className="text-2xl font-bold">19.9M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 5:</span>
+                    <span className="text-2xl font-bold">30.6M€</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-2 border-growth/30 bg-growth/5">
+                <h3 className="text-2xl font-bold mb-6">Key Factors</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <p className="text-lg">High recurring share</p>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <p className="text-lg">High gross margin (&gt;75%)</p>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <p className="text-lg">Strong upsell potential amongst the modules</p>
+                  </li>
+                </ul>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -1383,67 +1361,20 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5-Year Forecast Section */}
+      {/* Vision Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
-                Financial Projections
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Our Vision
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                5-Year <span className="text-gradient">Forecast</span>
+                <span className="text-gradient">Vision</span>
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-8 border-border/50">
-                <h3 className="text-2xl font-bold mb-6">Realistic Scenario</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-baseline gap-3">
-                    <span className="font-bold text-electric">Year 1:</span>
-                    <span className="text-2xl font-bold">1.5M€</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="font-bold text-electric">Year 2:</span>
-                    <span className="text-2xl font-bold">4.6M€</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="font-bold text-electric">Year 3:</span>
-                    <span className="text-2xl font-bold">10.7M€</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="font-bold text-electric">Year 4:</span>
-                    <span className="text-2xl font-bold">19.9M€</span>
-                  </li>
-                  <li className="flex items-baseline gap-3">
-                    <span className="font-bold text-electric">Year 5:</span>
-                    <span className="text-2xl font-bold">30.6M€</span>
-                  </li>
-                </ul>
-              </Card>
-
-              <Card className="p-8 border-2 border-growth/30 bg-growth/5">
-                <h3 className="text-2xl font-bold mb-6">Key Factors</h3>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
-                    <p className="text-lg">High recurring share</p>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
-                    <p className="text-lg">High gross margin (&gt;75%)</p>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
-                    <p className="text-lg">Strong upsell potential amongst the modules</p>
-                  </li>
-                </ul>
-              </Card>
-            </div>
-
             <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
-              <h3 className="text-2xl font-bold mb-6">Vision</h3>
               <p className="text-lg mb-6">
                 Phili becomes <span className="font-bold text-gradient">the operating system for Corporate Mobility</span>, 
                 automating support, insights & decisions across millions of vehicles and contracts.
@@ -1484,6 +1415,41 @@ const Index = () => {
                 </p>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Founders Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                The Team
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Experienced Founders
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Deep industry expertise combined with technical excellence
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
+                  <div className="mb-6">
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-20 h-20 rounded-full object-cover mb-4" />
+                    <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
+                    <p className="text-electric font-semibold">{founder.role}</p>
+                  </div>
+                  <ul className="space-y-3">
+                    {founder.experience.map((item, i) => <li key={i} className="flex gap-3">
+                        <Check className="h-5 w-5 text-growth flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>)}
+                  </ul>
+                </Card>)}
+            </div>
           </div>
         </div>
       </section>
