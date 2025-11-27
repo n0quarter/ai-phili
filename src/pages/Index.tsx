@@ -10,6 +10,7 @@ import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
+import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
@@ -581,13 +582,9 @@ const Index = () => {
               </p>
             </div>
 
-            <Card className="p-8 md:p-12 border-2 border-electric/20 bg-gradient-to-br from-background to-muted/30 mb-8 hover:border-electric/40 transition-colors">
-              <img 
-                src={competitiveLandscapeMap} 
-                alt="Competitive Landscape Map showing PHILI's position with high comprehensive mobility knowledge and high degree of reliable support automation compared to Generic Ticketing, Generic AI Platforms, and Mobility Software providers" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </Card>
+            <div className="mb-8">
+              <CompetitiveLandscapeChart />
+            </div>
 
             <Card className="p-8 md:p-12 border-2 border-electric/30 bg-electric/5">
               <p className="text-xl font-bold text-center">
