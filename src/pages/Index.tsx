@@ -468,6 +468,22 @@ const Index = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Live Demo
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                See PHILI in <span className="text-gradient">Action</span>
+              </h2>
+              <p className="text-xl text-muted-foreground mb-4">
+                The AI phone assistant and smart inbox are being developed and already available through our Dolittle AI solution.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                <a href="https://dolittle.ai" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-semibold">
+                  Experience how the smart inbox and phone assistant work today (German version) →
+                </a>
+              </p>
+            </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
               <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
                 <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
