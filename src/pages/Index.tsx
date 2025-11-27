@@ -124,22 +124,24 @@ const Index = () => {
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge className="mb-6 bg-electric/20 text-electric border-electric/30">
+            <div className="text-center mb-16">
+              <Badge className="mb-8 bg-electric/20 text-electric border-electric/30">
                 Industry Insights
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
                 The Communication <span className="text-gradient">Challenge</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
                 50% of employees in fleet management spend most of their time on communication 
-                (Flotte.de, bfp Fuhrparkmonitor, Dataforce Insights). Service providers confirm 
-                that the "Driver Helpdesk" is the most demanding and least scalable part of the business.
+                (Flotte.de, bfp Fuhrparkmonitor, Dataforce Insights). 
+              </p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Service providers confirm that the "Driver Helpdesk" is the most demanding and least scalable part of the business.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <Card className="p-8 h-[400px] bg-card">
+              <Card className="p-8 h-[450px] bg-card">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
@@ -148,13 +150,13 @@ const Index = () => {
                         { name: "Other Tasks", value: 50 }
                       ]}
                       cx="50%"
-                      cy="50%"
+                      cy="45%"
                       labelLine={false}
                       label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
-                      outerRadius={130}
+                      outerRadius={120}
                       fill="#8884d8"
                       dataKey="value"
-                      style={{ fontSize: '16px', fontWeight: 'bold' }}
+                      style={{ fontSize: '18px', fontWeight: 'bold' }}
                     >
                       <Cell fill="hsl(var(--electric))" stroke="hsl(var(--background))" strokeWidth={3} />
                       <Cell fill="hsl(var(--foreground) / 0.7)" stroke="hsl(var(--background))" strokeWidth={3} />
@@ -164,30 +166,32 @@ const Index = () => {
                         backgroundColor: 'hsl(var(--card))',
                         border: '1px solid hsl(var(--border))',
                         borderRadius: '8px',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        fontSize: '16px'
                       }}
                     />
                     <Legend 
                       wrapperStyle={{ 
-                        fontSize: '14px', 
-                        fontWeight: 'bold' 
+                        fontSize: '16px', 
+                        fontWeight: 'bold',
+                        paddingTop: '24px'
                       }}
                     />
                   </PieChart>
                 </ResponsiveContainer>
               </Card>
 
-              <div className="space-y-6">
-                <Card className="p-6 border-electric/30 bg-electric/5">
-                  <h3 className="text-xl font-bold mb-3 text-electric">Time Distribution</h3>
-                  <p className="text-muted-foreground">
+              <div className="space-y-8">
+                <Card className="p-8 border-electric/30 bg-electric/5">
+                  <h3 className="text-xl font-bold mb-4 text-electric">Time Distribution</h3>
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     Half of all working hours in fleet management are dedicated to communication tasks, 
                     highlighting the need for automation.
                   </p>
                 </Card>
-                <Card className="p-6 border-border/50">
-                  <h3 className="text-xl font-bold mb-3">Scalability Issue</h3>
-                  <p className="text-muted-foreground">
+                <Card className="p-8 border-border/50">
+                  <h3 className="text-xl font-bold mb-4">Scalability Issue</h3>
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     The Driver Helpdesk represents the most resource-intensive and hardest to scale 
                     aspect of fleet management operations.
                   </p>
