@@ -477,17 +477,17 @@ const Index = () => {
               </h2>
               <p className="text-xl text-muted-foreground mb-4">The AI phone assistant and smart inbox have been developed already and are available through our Dolittle AI solution.</p>
               <p className="text-lg text-muted-foreground">
-                <a href="https://dolittle.ai" target="_blank" rel="noopener noreferrer" className="text-electric hover:underline font-semibold">
-                  Experience how the smart inbox and phone assistant work today (German version) →
-                </a>
+                Experience how the smart inbox and phone assistant work today (German version) in the video below →
               </p>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
-              <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
+            <a href="https://dolittle.ai" target="_blank" rel="noopener noreferrer" className="block">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50 cursor-pointer hover:border-electric/50 transition-colors">
+                <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
                 <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
