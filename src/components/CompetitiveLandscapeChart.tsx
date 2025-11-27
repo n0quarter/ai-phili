@@ -33,19 +33,26 @@ const CompetitiveLandscapeChart = () => {
   ];
 
   return (
-    <div className="relative w-full aspect-[16/10] bg-gradient-to-br from-background to-muted/20 rounded-lg border-2 border-border/50 p-8 md:p-12">
-      {/* Axis Labels */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-sm font-semibold text-foreground/80">
-        High degree of reliable support automation →
-      </div>
-      <div className="absolute left-4 top-1/2 -translate-y-1/2 -rotate-90 text-sm font-semibold text-foreground/80 whitespace-nowrap">
-        High comprehensive mobility knowledge →
-      </div>
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 text-xs text-muted-foreground">
+    <div className="relative w-full aspect-[16/10] bg-gradient-to-br from-background to-muted/20 rounded-lg border-2 border-border/50 p-12 md:p-16">
+      {/* Axis Labels - All Four Sides */}
+      {/* Top */}
+      <div className="absolute top-2 left-1/2 -translate-x-1/2 text-xs md:text-sm text-muted-foreground">
         Little comprehensive mobility knowledge
       </div>
-      <div className="absolute bottom-4 left-8 text-xs text-muted-foreground">
+      
+      {/* Bottom - Left */}
+      <div className="absolute bottom-2 left-12 md:left-16 text-xs md:text-sm text-muted-foreground">
         Low degree of reliable support automation
+      </div>
+      
+      {/* Bottom - Right */}
+      <div className="absolute bottom-2 right-12 md:right-16 text-xs md:text-sm font-semibold text-foreground/80">
+        High degree of reliable support automation →
+      </div>
+      
+      {/* Left */}
+      <div className="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-xs md:text-sm font-semibold text-foreground/80 whitespace-nowrap origin-center">
+        High comprehensive mobility knowledge ↑
       </div>
 
       {/* Grid Lines */}
