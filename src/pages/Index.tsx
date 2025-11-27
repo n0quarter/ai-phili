@@ -80,7 +80,11 @@ const Index = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden" style={{ backgroundImage: `url(${mobilityBenefitsBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="relative overflow-hidden" style={{
+      backgroundImage: `url(${mobilityBenefitsBackground})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/60 to-primary/80"></div>
         
         <div className="container mx-auto px-6 py-24 md:py-32 relative">
@@ -97,15 +101,7 @@ const Index = () => {
             <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">
               The first vertical AI layer unifying all corporate mobility benefits into intelligent automation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all">
-                Schedule a Demo
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8">
-                View Investment Deck
-              </Button>
-            </div>
+            
           </div>
         </div>
       </section>
