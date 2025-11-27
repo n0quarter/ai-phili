@@ -5,6 +5,9 @@ import { Check, ArrowRight, Zap, Shield, TrendingUp, Users } from "lucide-react"
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
 import viktorShcherban from "@/assets/viktor-shcherban.png";
+import aiSupportAgent from "@/assets/ai-support-agent.png";
+import accountManagerCopilot from "@/assets/account-manager-copilot.png";
+import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
@@ -258,52 +261,61 @@ const Index = () => {
               </h2>
             </div>
 
-            <Card className="p-8 md:p-12 border-2 border-border/50 mb-12">
-              <p className="text-lg mb-8 font-medium">
+            <div className="mb-8">
+              <p className="text-lg text-center font-medium">
                 Phili unifies all mobility benefits (car, bike, budget, subscription, EV) into a single AI layer.
               </p>
-              
-              <div className="space-y-8">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <Card className="p-8 border-2 border-border/50 text-center">
+                <div className="mb-6 flex justify-center">
+                  <img src={aiSupportAgent} alt="AI Customer Support Agent" className="w-48 h-48 object-contain" />
+                </div>
+                <div className="mb-4 flex justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
                     1
                   </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-3">AI Customer Support Agent</h4>
-                    <p className="text-muted-foreground text-lg">
-                      Handles around <span className="font-bold text-foreground">40% of driver requests autonomously</span>, understands contracts & workflows.
-                    </p>
-                  </div>
                 </div>
+                <h4 className="text-xl font-bold mb-3">AI Customer Support Agent</h4>
+                <p className="text-muted-foreground text-lg">
+                  Handles around <span className="font-bold text-foreground">40% of driver requests autonomously</span>, understands contracts & workflows.
+                </p>
+              </Card>
 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
+              <Card className="p-8 border-2 border-border/50 text-center">
+                <div className="mb-6 flex justify-center">
+                  <img src={accountManagerCopilot} alt="Account Manager Copilot" className="w-48 h-48 object-contain" />
+                </div>
+                <div className="mb-4 flex justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
                     2
                   </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
-                    <p className="text-muted-foreground text-lg">Fleet & moility enefit insights, renewal alerts, SLA deviations, automated reporting.</p>
-                  </div>
                 </div>
+                <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
+                <p className="text-muted-foreground text-lg">Fleet & moility enefit insights, renewal alerts, SLA deviations, automated reporting.</p>
+              </Card>
 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
+              <Card className="p-8 border-2 border-border/50 text-center">
+                <div className="mb-6 flex justify-center">
+                  <img src={voiceAiAssistant} alt="Voice AI Assistant" className="w-48 h-48 object-contain" />
+                </div>
+                <div className="mb-4 flex justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
                     3
                   </div>
-                  <div>
-                    <h4 className="text-xl font-bold mb-3">Voice AI Assistant</h4>
-                    <p className="text-muted-foreground text-lg">
-                      Fully automated hotline for mobility user, workshops and logistics.
-                    </p>
-                  </div>
                 </div>
-              </div>
-
-              <div className="mt-10 pt-8 border-t border-border">
-                <p className="text-xl font-bold text-center text-gradient">
-                  Phili becomes the operational brain behind Mobility Operations, reducing support cost 40–60% while improving SLAs.
+                <h4 className="text-xl font-bold mb-3">Voice AI Assistant</h4>
+                <p className="text-muted-foreground text-lg">
+                  Fully automated hotline for mobility user, workshops and logistics.
                 </p>
-              </div>
+              </Card>
+            </div>
+
+            <Card className="p-8 border-2 border-electric/30 bg-electric/5">
+              <p className="text-xl font-bold text-center text-gradient">
+                Phili becomes the operational brain behind Mobility Operations, reducing support cost 40–60% while improving SLAs.
+              </p>
             </Card>
           </div>
         </div>
