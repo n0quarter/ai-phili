@@ -5,6 +5,7 @@ import { Check, ArrowRight, Zap, Shield, TrendingUp, Users } from "lucide-react"
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
 import viktorShcherban from "@/assets/viktor-shcherban.png";
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
     title: "Phone and Chatbot",
@@ -114,6 +115,71 @@ const Index = () => {
                 <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fleet Management Communication Data */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="mb-6 bg-electric/20 text-electric border-electric/30">
+                Industry Insights
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                The Communication <span className="text-gradient">Challenge</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+                50% of employees in fleet management spend most of their time on communication 
+                (Flotte.de, bfp Fuhrparkmonitor, Dataforce Insights). Service providers confirm 
+                that the "Driver Helpdesk" is the most demanding and least scalable part of the business.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <Card className="p-8 h-[400px]">
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <Pie
+                      data={[
+                        { name: "Communication", value: 50 },
+                        { name: "Other Tasks", value: 50 }
+                      ]}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                      outerRadius={120}
+                      fill="#8884d8"
+                      dataKey="value"
+                    >
+                      <Cell fill="hsl(var(--electric))" />
+                      <Cell fill="hsl(var(--muted))" />
+                    </Pie>
+                    <Tooltip />
+                    <Legend />
+                  </PieChart>
+                </ResponsiveContainer>
+              </Card>
+
+              <div className="space-y-6">
+                <Card className="p-6 border-electric/30 bg-electric/5">
+                  <h3 className="text-xl font-bold mb-3 text-electric">Time Distribution</h3>
+                  <p className="text-muted-foreground">
+                    Half of all working hours in fleet management are dedicated to communication tasks, 
+                    highlighting the need for automation.
+                  </p>
+                </Card>
+                <Card className="p-6 border-border/50">
+                  <h3 className="text-xl font-bold mb-3">Scalability Issue</h3>
+                  <p className="text-muted-foreground">
+                    The Driver Helpdesk represents the most resource-intensive and hardest to scale 
+                    aspect of fleet management operations.
+                  </p>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
