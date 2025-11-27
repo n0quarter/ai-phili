@@ -139,7 +139,7 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <Card className="p-8 h-[400px]">
+              <Card className="p-8 h-[400px] bg-card">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
@@ -151,15 +151,28 @@ const Index = () => {
                       cy="50%"
                       labelLine={false}
                       label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
-                      outerRadius={120}
+                      outerRadius={130}
                       fill="#8884d8"
                       dataKey="value"
+                      style={{ fontSize: '16px', fontWeight: 'bold' }}
                     >
-                      <Cell fill="hsl(var(--electric))" />
-                      <Cell fill="hsl(var(--muted))" />
+                      <Cell fill="hsl(var(--electric))" stroke="hsl(var(--background))" strokeWidth={3} />
+                      <Cell fill="hsl(var(--foreground) / 0.7)" stroke="hsl(var(--background))" strokeWidth={3} />
                     </Pie>
-                    <Tooltip />
-                    <Legend />
+                    <Tooltip 
+                      contentStyle={{ 
+                        backgroundColor: 'hsl(var(--card))',
+                        border: '1px solid hsl(var(--border))',
+                        borderRadius: '8px',
+                        fontWeight: 'bold'
+                      }}
+                    />
+                    <Legend 
+                      wrapperStyle={{ 
+                        fontSize: '14px', 
+                        fontWeight: 'bold' 
+                      }}
+                    />
                   </PieChart>
                 </ResponsiveContainer>
               </Card>
