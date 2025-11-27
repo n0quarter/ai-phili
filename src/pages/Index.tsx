@@ -581,11 +581,11 @@ const Index = () => {
               </p>
             </div>
 
-            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+            <Card className="p-8 md:p-12 border-2 border-electric/20 bg-gradient-to-br from-background to-muted/30 mb-8 hover:border-electric/40 transition-colors">
               <img 
                 src={competitiveLandscapeMap} 
                 alt="Competitive Landscape Map showing PHILI's position with high comprehensive mobility knowledge and high degree of reliable support automation compared to Generic Ticketing, Generic AI Platforms, and Mobility Software providers" 
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg shadow-lg"
               />
             </Card>
 
