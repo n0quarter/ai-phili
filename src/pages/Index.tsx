@@ -98,9 +98,7 @@ const Index = () => {
             <p className="text-2xl md:text-3xl mb-4 text-primary-foreground/90 font-medium">
               The AI Customer Agent & Copilot for Corporate Mobility
             </p>
-            <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">
-              The first vertical AI layer unifying all corporate mobility benefits into intelligent automation.
-            </p>
+            <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">The first AI solution unifying all corporate mobility benefits into intelligent automation.</p>
             
           </div>
         </div>
@@ -290,7 +288,7 @@ const Index = () => {
                   </div>
                 </div>
                 <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
-                <p className="text-muted-foreground text-lg">Fleet & moility enefit insights, renewal alerts, SLA deviations, automated reporting.</p>
+                <p className="text-muted-foreground text-lg">Fleet & mobility benefit insights, renewal alerts, SLA deviations, automated reporting.</p>
               </Card>
 
               <Card className="p-8 border-2 border-border/50 text-center">
