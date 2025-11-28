@@ -1190,7 +1190,7 @@ const Index = () => {
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                   <p className="text-lg">
-                    Land with Account Manager Copilot → Expand to Support Agent
+                    Land with Support Agent → Expand to Account Manager Copilot
                   </p>
                 </li>
                 <li className="flex gap-3">
