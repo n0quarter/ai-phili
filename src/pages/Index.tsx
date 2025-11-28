@@ -381,7 +381,7 @@ const Index = () => {
 
                   {/* Mail or CRM System */}
                   <Card className="p-6 bg-electric/90 border-electric text-white">
-                    <h3 className="text-2xl font-bold text-center">Mail or CRM System Integration</h3>
+                    <h3 className="text-2xl font-bold text-center">Mail,CRM or FM System Integration</h3>
                   </Card>
 
                   {/* RAG with Policies */}
