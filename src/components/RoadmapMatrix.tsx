@@ -129,30 +129,28 @@ const RoadmapMatrix = () => {
               {/* Features for each timeline phase */}
               {timeline.map((milestone) => {
                 const features = block.features[milestone.id as keyof typeof block.features];
-                return (
+                return features.length > 0 ? (
                   <Card 
                     key={milestone.id} 
-                    className={`p-4 border-border/50 min-h-[120px] ${
-                      features.length === 0 ? 'bg-muted/20' : 'bg-card'
-                    }`}
+                    className="p-4 border-border/50 min-h-[120px] bg-card"
                   >
-                    {features.length > 0 ? (
-                      <ul className="space-y-2">
-                        {features.map((feature, idx) => (
-                          <li key={idx} className="flex gap-2 text-sm">
-                            {feature.done ? (
-                              <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                            ) : (
-                              <X className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
-                            )}
-                            <span className={feature.done ? '' : 'text-muted-foreground'}>
-                              {feature.text}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
+                    <ul className="space-y-2">
+                      {features.map((feature, idx) => (
+                        <li key={idx} className="flex gap-2 text-sm">
+                          {feature.done ? (
+                            <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                          ) : (
+                            <X className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
+                          )}
+                          <span className={feature.done ? '' : 'text-muted-foreground'}>
+                            {feature.text}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </Card>
+                ) : (
+                  <div key={milestone.id} />
                 );
               })}
             </div>
