@@ -88,7 +88,7 @@ const FleetManagementGrowthChart = () => {
                 fill: 'hsl(var(--foreground))',
                 fontSize: 16,
                 fontWeight: 'bold',
-                offset: 15
+                offset: 35
               }}
             />
           </ComposedChart>
