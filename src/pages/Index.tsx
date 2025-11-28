@@ -11,6 +11,7 @@ import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
 import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
+import RoadmapMatrix from "@/components/RoadmapMatrix";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
@@ -1197,7 +1198,7 @@ const Index = () => {
       {/* Roadmap Section */}
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
                 Product Roadmap
@@ -1207,163 +1208,7 @@ const Index = () => {
               </h2>
             </div>
 
-            {/* Timeline */}
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute top-12 left-0 right-0 h-1 bg-border"></div>
-              
-              {/* Timeline Stages */}
-              <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-                {/* MVP - December 25 */}
-                <div className="relative">
-                  <div className="flex flex-col items-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-lg mb-3 border-4 border-background shadow-lg">
-                      MVP
-                    </div>
-                    <p className="text-sm font-semibold">December 25</p>
-                  </div>
-                  <Card className="p-6 border-border/50">
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Call capturing and forwarding transcripts to smart inbox</span>
-                      </li>
-                    </ul>
-                  </Card>
-                </div>
-
-                {/* Pilot - May 25 */}
-                <div className="relative">
-                  <div className="flex flex-col items-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-lg mb-3 border-4 border-background shadow-lg">
-                      Pilot
-                    </div>
-                    <p className="text-sm font-semibold">May 25</p>
-                  </div>
-                  <Card className="p-6 border-border/50">
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Automated routing to employees</span>
-                      </li>
-                      <li className="flex gap-2 text-muted-foreground">
-                        <span className="text-xs">✗</span>
-                        <span>Online Receptionist (Chat or Email) - Not developed yet</span>
-                      </li>
-                    </ul>
-                  </Card>
-                </div>
-
-                {/* Market Launch - July 25 */}
-                <div className="relative">
-                  <div className="flex flex-col items-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-white font-bold text-sm mb-3 border-4 border-background shadow-lg">
-                      Market<br />launch
-                    </div>
-                    <p className="text-sm font-semibold">July 25</p>
-                  </div>
-                  <Card className="p-6 border-border/50">
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Chat UI for user interaction</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Connectivity to smart inbox</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Automated Assignment of tickets to employees</span>
-                      </li>
-                    </ul>
-                  </Card>
-                </div>
-
-                {/* Further Development */}
-                <div className="relative">
-                  <div className="flex flex-col items-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs text-center mb-3 border-4 border-background shadow-lg">
-                      Further<br />dev
-                    </div>
-                    <p className="text-sm font-semibold">Ongoing</p>
-                  </div>
-                  <Card className="p-6 border-border/50">
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Similar case handling</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                        <span>Automated workflows</span>
-                      </li>
-                    </ul>
-                  </Card>
-                </div>
-              </div>
-
-              {/* Additional Features */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="p-6 border-border/50">
-                  <h3 className="text-lg font-bold mb-4">Smart In box</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Tagging, commenting and filtering of incoming calls</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>SMS Answers</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Integration of most important LLMs</span>
-                    </li>
-                  </ul>
-                </Card>
-
-                <Card className="p-6 border-border/50">
-                  <h3 className="text-lg font-bold mb-4">CO-pilot</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>RAG upload</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Evals</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Monitoring & Transparency</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Connectivity to one relevant Fleet Management Software provider</span>
-                    </li>
-                  </ul>
-                </Card>
-
-                <Card className="p-6 border-border/50 md:col-span-2">
-                  <h3 className="text-lg font-bold mb-4">Market Launch & Beyond</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Connectivity to first Email & mail system, automate ticket routing, follow-up emails, and escalation processes</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Expansion of connectivity to further relevant partners</span>
-                    </li>
-                    <li className="flex gap-2">
-                      <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
-                      <span>Proactive Upsell recommendations</span>
-                    </li>
-                  </ul>
-                </Card>
-              </div>
-            </div>
+            <RoadmapMatrix />
           </div>
         </div>
       </section>
