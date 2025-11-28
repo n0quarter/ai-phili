@@ -150,21 +150,12 @@ const Index = () => {
                     const radius = outerRadius + 30;
                     const x = cx + radius * Math.cos(-midAngle * RADIAN);
                     const y = cy + radius * Math.sin(-midAngle * RADIAN);
-                    return (
-                      <text
-                        x={x}
-                        y={y}
-                        fill="hsl(var(--foreground))"
-                        textAnchor="middle"
-                        dominantBaseline="middle"
-                        style={{
-                          fontSize: '18px',
-                          fontWeight: 'bold'
-                        }}
-                      >
+                    return <text x={x} y={y} fill="hsl(var(--foreground))" textAnchor="middle" dominantBaseline="middle" style={{
+                      fontSize: '18px',
+                      fontWeight: 'bold'
+                    }}>
                         {`${name}: ${(percent * 100).toFixed(0)}%`}
-                      </text>
-                    );
+                      </text>;
                   }} outerRadius={120} fill="#8884d8" dataKey="value">
                       <Cell fill="hsl(var(--electric))" stroke="hsl(var(--background))" strokeWidth={3} />
                       <Cell fill="hsl(var(--foreground) / 0.7)" stroke="hsl(var(--background))" strokeWidth={3} />
@@ -935,8 +926,7 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Market for Fleets (EU + USA)
               </h2>
-              <p className="text-xl text-muted-foreground mb-4">
-                Total Professionally Managed Vehicles: <span className="font-bold text-foreground">53M</span>
+              <p className="text-xl text-muted-foreground mb-4">Total Commercial Vehicles: 53M<span className="font-bold text-foreground">53M</span>
               </p>
               <p className="text-lg text-muted-foreground">
                 Focus on professionally managed fleets
@@ -960,36 +950,17 @@ const Index = () => {
                 </div>
 
                 {/* Connecting Lines - SVG overlay */}
-                <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible" style={{ zIndex: 10 }}>
+                <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible" style={{
+                zIndex: 10
+              }}>
                   {/* Line from TAM circle (outer, top-right edge) to label */}
-                  <line 
-                    x1="340" 
-                    y1="110" 
-                    x2="420" 
-                    y2="80" 
-                    stroke="hsl(var(--electric) / 0.3)" 
-                    strokeWidth="2"
-                  />
+                  <line x1="340" y1="110" x2="420" y2="80" stroke="hsl(var(--electric) / 0.3)" strokeWidth="2" />
                   
                   {/* Line from SAM circle (middle, right edge) to label */}
-                  <line 
-                    x1="290" 
-                    y1="200" 
-                    x2="420" 
-                    y2="200" 
-                    stroke="hsl(var(--electric) / 0.5)" 
-                    strokeWidth="2"
-                  />
+                  <line x1="290" y1="200" x2="420" y2="200" stroke="hsl(var(--electric) / 0.5)" strokeWidth="2" />
                   
                   {/* Line from SOM circle (inner, bottom-right edge) to label */}
-                  <line 
-                    x1="260" 
-                    y1="270" 
-                    x2="420" 
-                    y2="320" 
-                    stroke="hsl(var(--electric))" 
-                    strokeWidth="2"
-                  />
+                  <line x1="260" y1="270" x2="420" y2="320" stroke="hsl(var(--electric))" strokeWidth="2" />
                 </svg>
               </div>
 
