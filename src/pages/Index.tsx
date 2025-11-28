@@ -1174,10 +1174,10 @@ const Index = () => {
 
             <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
               <h3 className="text-2xl font-bold mb-6">Tier 1 Markets (fastest adoption)</h3>
-              <p className="text-lg mb-8 font-medium">DE, UK, NL, BE</p>
+              <p className="text-lg mb-8 font-medium">🇩🇪 Germany, 🇫🇷 France</p>
 
               <h3 className="text-2xl font-bold mb-6">Tier 2</h3>
-              <p className="text-lg mb-8 font-medium">FR, ES, IT, PL, Nordics</p>
+              <p className="text-lg mb-8 font-medium">🇺🇸 US</p>
 
               <h3 className="text-2xl font-bold mb-6">Go-to-Market Motions:</h3>
               <ul className="space-y-4">
