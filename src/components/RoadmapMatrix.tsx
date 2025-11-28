@@ -116,7 +116,7 @@ const RoadmapMatrix = () => {
         </div>
 
         {/* Matrix Grid */}
-        <div className="space-y-0">
+        <div className="space-y-6">
           {buildingBlocks.map((block, blockIdx) => (
             <div key={blockIdx} className="grid grid-cols-[200px_repeat(4,1fr)] gap-4">
               {/* Building block label */}
