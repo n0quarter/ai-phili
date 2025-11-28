@@ -963,19 +963,20 @@ const Index = () => {
                 <ul className="space-y-3">
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-lg">Support Agent (Mail or chat): 4€/user/month<span className="font-semibold">Support Agent (Mail or chat):</span> 4€/vehicle/month
+                    <p className="text-lg">
+                      <span className="font-semibold">AI Customer Support Agent:</span> 4€/vehicle/month
                     </p>
                   </li>
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                     <p className="text-lg">
-                      <span className="font-semibold">Support Voice AI:</span> 299€/month + 0.20€/min
+                      <span className="font-semibold">Voice AI Assistant:</span> 299€/month + 0.20€/min
                     </p>
                   </li>
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                     <p className="text-lg">
-                      <span className="font-semibold">AM Copilot:</span> 30€/AM/month
+                      <span className="font-semibold">Account Manager Copilot:</span> 30€/AM/month
                     </p>
                   </li>
                 </ul>
