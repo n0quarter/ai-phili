@@ -49,7 +49,7 @@ const RoadmapMatrix = () => {
         ],
         pilot: [
           { text: "Connectivity to first Email & CRM system", done: true },
-          { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
+          { text: "SLA handling", done: true }
         ],
         market: [
           { text: "Hypercare", done: true }
@@ -71,7 +71,7 @@ const RoadmapMatrix = () => {
         ],
         pilot: [
           { text: "Connectivity to first Email & CRM system", done: true },
-          { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
+          { text: "SLA handling", done: true }
         ],
         market: [
           { text: "Hypercare", done: true }
