@@ -926,10 +926,11 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Market for Fleets (EU + USA)
               </h2>
-              <p className="text-xl text-muted-foreground mb-4">Total Commercial Vehicles: 53M<span className="font-bold text-foreground">53M</span>
+              <p className="text-xl text-muted-foreground mb-4">
+                Total Commercial Vehicles: <span className="font-bold text-foreground">53M</span>
               </p>
               <p className="text-lg text-muted-foreground">
-                Focus on professionally managed fleets
+                Professionally managed fleets: <span className="font-bold text-foreground">27M</span>
               </p>
             </div>
             
