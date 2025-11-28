@@ -10,9 +10,9 @@ import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
-import fleetManagementMarketGrowth from "@/assets/fleet-management-market-growth.png";
 import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
 import RoadmapMatrix from "@/components/RoadmapMatrix";
+import FleetManagementGrowthChart from "@/components/FleetManagementGrowthChart";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 const Index = () => {
   const features = [{
@@ -603,21 +603,7 @@ const Index = () => {
             </div>
 
             {/* Fleet Management Market Growth Chart */}
-            <Card className="p-8 border-2 border-electric/30 bg-card">
-              <div className="text-center mb-8">
-                <h3 className="text-3xl font-bold mb-4">Fleet Management Market Growth</h3>
-                <p className="text-lg text-muted-foreground">
-                  AI, electrification and telematics driving 16% CAGR through 2034
-                </p>
-              </div>
-              <div className="flex justify-center">
-                <img 
-                  src={fleetManagementMarketGrowth} 
-                  alt="Fleet Management Market 2021-2034 showing 16% CAGR growth driven by AI, electrification and telematics" 
-                  className="w-full max-w-5xl rounded-lg shadow-lg"
-                />
-              </div>
-            </Card>
+            <FleetManagementGrowthChart />
           </div>
         </div>
       </section>
