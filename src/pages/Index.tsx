@@ -918,8 +918,79 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Market Opportunity */}
+      {/* Business Model Section */}
       <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+                Business Model
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Revenue <span className="text-gradient">Model</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Pricing</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Support Agent (Mail or chat):</span> 4€/vehicle/month
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Support Voice AI:</span> 299€/month + 0.20€/min
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">AM Copilot:</span> 30€/AM/month
+                    </p>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Key Metrics</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Average Revenue per Customer:</span> ~194k€/year
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <p className="text-lg"><span className="font-semibold">Customer count for full SOM:</span> ~202
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Recurring revenue share:</span> &gt;80%
+                    </p>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+
+            <Card className="p-8 border-2 border-growth/30 bg-growth/5">
+              <p className="text-xl font-bold text-center">
+                High-margin vertical AI SaaS.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Market Opportunity */}
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -1022,77 +1093,6 @@ const Index = () => {
                 </p>
               </Card>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Business Model Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
-                Business Model
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Revenue <span className="text-gradient">Model</span>
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-8 border-border/50">
-                <h3 className="text-2xl font-bold mb-6">Pricing</h3>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">Support Agent (Mail or chat):</span> 4€/vehicle/month
-                    </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">Support Voice AI:</span> 299€/month + 0.20€/min
-                    </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">AM Copilot:</span> 30€/AM/month
-                    </p>
-                  </li>
-                </ul>
-              </Card>
-
-              <Card className="p-8 border-border/50">
-                <h3 className="text-2xl font-bold mb-6">Key Metrics</h3>
-                <ul className="space-y-3">
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">Average Revenue per Customer:</span> ~194k€/year
-                    </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
-                    <p className="text-lg"><span className="font-semibold">Customer count for full SOM:</span> ~202
-                    </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">Recurring revenue share:</span> &gt;80%
-                    </p>
-                  </li>
-                </ul>
-              </Card>
-            </div>
-
-            <Card className="p-8 border-2 border-growth/30 bg-growth/5">
-              <p className="text-xl font-bold text-center">
-                High-margin vertical AI SaaS.
-              </p>
-            </Card>
           </div>
         </div>
       </section>
@@ -1233,8 +1233,43 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Vision Section */}
+      {/* Founders Section */}
       <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                The Team
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Experienced Founders
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Deep industry expertise combined with technical excellence
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
+                  <div className="mb-6">
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-32 h-32 rounded-full object-cover mb-4" />
+                    <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
+                    <p className="text-electric font-semibold">{founder.role}</p>
+                  </div>
+                  <ul className="space-y-3">
+                    {founder.experience.map((item, i) => <li key={i} className="flex gap-3">
+                        <Check className="h-5 w-5 text-growth flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>)}
+                  </ul>
+                </Card>)}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -1287,41 +1322,6 @@ const Index = () => {
                 </p>
               </div>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Founders Section */}
-      <section className="py-24 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
-                The Team
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Experienced Founders
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Deep industry expertise combined with technical excellence
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
-                  <div className="mb-6">
-                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-20 h-20 rounded-full object-cover mb-4" />
-                    <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
-                    <p className="text-electric font-semibold">{founder.role}</p>
-                  </div>
-                  <ul className="space-y-3">
-                    {founder.experience.map((item, i) => <li key={i} className="flex gap-3">
-                        <Check className="h-5 w-5 text-growth flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{item}</span>
-                      </li>)}
-                  </ul>
-                </Card>)}
-            </div>
           </div>
         </div>
       </section>
