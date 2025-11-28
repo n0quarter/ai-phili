@@ -216,7 +216,7 @@ const Index = () => {
                   Companies now offer a mix of cars, bikes, budgets, subscriptions, EV charging and mobility cards.
                 </p>
                 <p className="text-lg font-medium mb-6">
-                  This creates a massive operational burden:
+                  After talking to employees and management of leading 7 providers in fleet & mobility management, they described the following problems:
                 </p>
                 <ul className="space-y-4">
                   <li className="flex gap-3">
