@@ -146,15 +146,15 @@ const Index = () => {
                     innerRadius,
                     outerRadius
                   }) => {
-                    const RADIAN = Math.PI / 180;
-                    const radius = outerRadius + 30;
+                     const RADIAN = Math.PI / 180;
+                    const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
                     const x = cx + radius * Math.cos(-midAngle * RADIAN);
                     const y = cy + radius * Math.sin(-midAngle * RADIAN);
-                    return <text x={x} y={y} fill="hsl(var(--foreground))" textAnchor="middle" dominantBaseline="middle" style={{
-                      fontSize: '18px',
+                    return <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="middle" style={{
+                      fontSize: '24px',
                       fontWeight: 'bold'
                     }}>
-                        {`${name}: ${(percent * 100).toFixed(0)}%`}
+                        {`${(percent * 100).toFixed(0)}%`}
                       </text>;
                   }} outerRadius={120} fill="#8884d8" dataKey="value">
                       <Cell fill="hsl(var(--electric))" stroke="hsl(var(--background))" strokeWidth={3} />
