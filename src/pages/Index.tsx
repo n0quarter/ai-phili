@@ -222,9 +222,7 @@ const Index = () => {
                 <ul className="space-y-4">
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      Fleet management software providers lack AI agents that understand mobility workflows
-                    </p>
+                    <p className="text-muted-foreground">Fleet management software providers lack AI agents that understand mobility workflows and actually work</p>
                   </li>
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
