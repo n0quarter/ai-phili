@@ -965,8 +965,7 @@ const Index = () => {
                 <ul className="space-y-3">
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">Support Agent (Mail or chat):</span> 4€/vehicle/month
+                    <p className="text-lg">Support Agent (Mail or chat): 4€/user/month<span className="font-semibold">Support Agent (Mail or chat):</span> 4€/vehicle/month
                     </p>
                   </li>
                   <li className="flex gap-3">
