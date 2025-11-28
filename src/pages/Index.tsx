@@ -146,7 +146,7 @@ const Index = () => {
                     innerRadius,
                     outerRadius
                   }) => {
-                     const RADIAN = Math.PI / 180;
+                    const RADIAN = Math.PI / 180;
                     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
                     const x = cx + radius * Math.cos(-midAngle * RADIAN);
                     const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -671,7 +671,7 @@ const Index = () => {
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
                             <span className="text-growth font-bold text-xl">✓</span>
-                            <span>50–70% automation with process graphs</span>
+                            <span>40–60% automation with process graphs</span>
                           </span>
                         </td>
                       </tr>
