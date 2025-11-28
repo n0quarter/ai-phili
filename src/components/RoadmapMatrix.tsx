@@ -90,7 +90,7 @@ const RoadmapMatrix = () => {
         {/* Timeline Header */}
         <div className="grid grid-cols-[200px_repeat(4,1fr)] gap-4 mb-8">
           {/* Empty corner cell */}
-          <div className="font-bold text-2xl">Road map</div>
+          <div></div>
           
           {/* Timeline milestones */}
           {timeline.map((milestone, idx) => (
