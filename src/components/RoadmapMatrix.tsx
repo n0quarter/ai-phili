@@ -24,9 +24,13 @@ const RoadmapMatrix = () => {
     {
       name: "Online Receptionist (Chat or Email)",
       features: {
-        mvp: [],
-        pilot: [
+        mvp: [
           { text: "Not developed yet", done: false }
+        ],
+        pilot: [
+          { text: "Chat UI for user interaction", done: true },
+          { text: "Connectivity to smart inbox", done: true },
+          { text: "Automated Assignment of tickets to employees", done: true }
         ],
         market: [
           { text: "Chat UI for user interaction", done: true },
@@ -43,7 +47,10 @@ const RoadmapMatrix = () => {
           { text: "Tagging, commenting and filtering of incoming calls", done: true },
           { text: "SMS Answers", done: true }
         ],
-        pilot: [],
+        pilot: [
+          { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
+          { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
+        ],
         market: [
           { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
           { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
@@ -66,7 +73,9 @@ const RoadmapMatrix = () => {
         pilot: [
           { text: "Automated routing to employees", done: true }
         ],
-        market: [],
+        market: [
+          { text: "Automated routing to employees", done: true }
+        ],
         further: [
           { text: "Similar case handling", done: true },
           { text: "Automated workflows", done: true }
