@@ -98,13 +98,27 @@ const CompetitiveLandscapeChart = () => {
               }`}
             />
             
+            {/* Horizontal connecting line from circle border to label */}
+            <div 
+              className={`absolute top-1/2 -translate-y-1/2 h-0.5 ${
+                competitor.highlight ? 'bg-electric' : 'bg-border'
+              }`}
+              style={{
+                left: '0.5rem',
+                width: '60px'
+              }}
+            />
+            
             {/* Label Card */}
             <Card
-              className={`absolute left-1/2 -translate-x-1/2 mt-3 px-3 py-2 whitespace-nowrap transition-all duration-300 ${
+              className={`absolute top-1/2 -translate-y-1/2 px-3 py-2 whitespace-nowrap transition-all duration-300 ${
                 competitor.highlight
                   ? 'bg-electric text-white border-electric font-bold shadow-lg'
                   : 'bg-card border-border/50 group-hover:border-border group-hover:shadow-md'
               }`}
+              style={{
+                left: '68px'
+              }}
             >
               <div className="text-sm font-semibold">{competitor.name}</div>
               {competitor.subtitle && (
@@ -113,11 +127,6 @@ const CompetitiveLandscapeChart = () => {
                 </div>
               )}
             </Card>
-
-            {/* Connecting line from dot to label */}
-            <div className={`absolute left-1/2 -translate-x-1/2 top-2 w-0.5 h-3 ${
-              competitor.highlight ? 'bg-electric' : 'bg-border'
-            }`} />
           </div>
         ))}
       </div>
