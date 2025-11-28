@@ -99,6 +99,9 @@ const FleetManagementGrowthChart = () => {
         <p className="text-sm text-muted-foreground font-medium">
           Fleet Management Market, 2021 – 2034 (USD Billion)
         </p>
+        <p className="text-xs text-muted-foreground mt-2">
+          Source: ©Global Market Insights 2034 report
+        </p>
       </div>
     </Card>
   );
