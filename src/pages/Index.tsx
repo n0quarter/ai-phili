@@ -1337,20 +1337,22 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-hero relative overflow-hidden">
+      <section className="py-16 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         <div className="container mx-auto px-6 relative">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-foreground">
               Ready to Transform Corporate Mobility?
             </h2>
-            <p className="text-xl mb-12 text-primary-foreground/80">
+            <p className="text-xl mb-8 text-primary-foreground/80">
               Join us in revolutionizing corporate mobility. Let's discuss the investment opportunity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all">
-                Contact Us
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all" asChild>
+                <a href="https://meetings.hubspot.com/areichert/dolittleai" target="_blank" rel="noopener noreferrer">
+                  Contact Us
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8">
                 Download Pitch Deck
