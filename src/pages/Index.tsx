@@ -1117,23 +1117,23 @@ const Index = () => {
                 <ul className="space-y-3">
                   <li className="flex items-baseline gap-3">
                     <span className="font-bold text-electric">Year 1:</span>
-                    <span className="text-2xl font-bold">1.5M€</span>
+                    <span className="text-2xl font-bold">1.9M€</span>
                   </li>
                   <li className="flex items-baseline gap-3">
                     <span className="font-bold text-electric">Year 2:</span>
-                    <span className="text-2xl font-bold">4.6M€</span>
+                    <span className="text-2xl font-bold">5.9M€</span>
                   </li>
                   <li className="flex items-baseline gap-3">
                     <span className="font-bold text-electric">Year 3:</span>
-                    <span className="text-2xl font-bold">10.7M€</span>
+                    <span className="text-2xl font-bold">13.7M€</span>
                   </li>
                   <li className="flex items-baseline gap-3">
                     <span className="font-bold text-electric">Year 4:</span>
-                    <span className="text-2xl font-bold">19.9M€</span>
+                    <span className="text-2xl font-bold">25.6M€</span>
                   </li>
                   <li className="flex items-baseline gap-3">
                     <span className="font-bold text-electric">Year 5:</span>
-                    <span className="text-2xl font-bold">30.6M€</span>
+                    <span className="text-2xl font-bold">39.3M€</span>
                   </li>
                 </ul>
               </Card>
