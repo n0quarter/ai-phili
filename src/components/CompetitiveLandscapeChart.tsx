@@ -98,17 +98,6 @@ const CompetitiveLandscapeChart = () => {
               }`}
             />
             
-            {/* Horizontal connecting line from circle border to label */}
-            <div 
-              className={`absolute top-1/2 -translate-y-1/2 h-[2px] ${
-                competitor.highlight ? 'bg-electric' : 'bg-border'
-              }`}
-              style={{
-                left: '8px',
-                width: '120px'
-              }}
-            />
-            
             {/* Label Card */}
             <Card
               className={`absolute top-1/2 -translate-y-1/2 px-3 py-2 whitespace-nowrap transition-all duration-300 ${
