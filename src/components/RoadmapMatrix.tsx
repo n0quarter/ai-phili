@@ -33,9 +33,7 @@ const RoadmapMatrix = () => {
           { text: "Automated Assignment of tickets to employees", done: true }
         ],
         market: [
-          { text: "Chat UI for user interaction", done: true },
-          { text: "Connectivity to smart inbox", done: true },
-          { text: "Automated Assignment of tickets to employees", done: true }
+          { text: "Hypercare", done: true }
         ],
         further: []
       }
@@ -52,8 +50,7 @@ const RoadmapMatrix = () => {
           { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
         ],
         market: [
-          { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
-          { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
+          { text: "Hypercare", done: true }
         ],
         further: [
           { text: "Expansion of connectivity to further relevant partners", done: true },
@@ -74,7 +71,7 @@ const RoadmapMatrix = () => {
           { text: "Automated routing to employees", done: true }
         ],
         market: [
-          { text: "Automated routing to employees", done: true }
+          { text: "Hypercare", done: true }
         ],
         further: [
           { text: "Similar case handling", done: true },
