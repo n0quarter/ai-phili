@@ -911,15 +911,14 @@ const Index = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Market for Fleets Only
+                Market for Fleets (EU + USA)
               </h2>
               <p className="text-xl text-muted-foreground mb-4">
-                Professionally Managed Vehicles in Europe: <span className="font-bold text-foreground">18M</span>
+                Total Professionally Managed Vehicles: <span className="font-bold text-foreground">53M</span>
               </p>
-              <ul className="text-lg text-muted-foreground space-y-2 max-w-2xl mx-auto">
-                <li>• 12M externally managed fleets</li>
-                <li>• 6M large inhouse fleets</li>
-              </ul>
+              <p className="text-lg text-muted-foreground">
+                Focus on professionally managed fleets
+              </p>
             </div>
             
             {/* TAM SAM SOM Visual Funnel */}
@@ -948,12 +947,12 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-electric/20"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
-                      <span className="text-3xl font-bold text-gradient">€874M</span>
+                      <span className="text-3xl font-bold text-gradient">€2.54B</span>
                       <span className="text-sm font-semibold text-electric">TAM</span>
                     </div>
                     <div className="text-base font-semibold mb-1">Total Addressable Market</div>
                     <p className="text-sm text-muted-foreground max-w-md">
-                      874M€/year (4€/vehicle/month)
+                      53M vehicles (EU + USA)
                     </p>
                   </div>
                 </div>
@@ -964,12 +963,12 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-electric/40"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
-                      <span className="text-3xl font-bold text-gradient">€306M</span>
+                      <span className="text-3xl font-bold text-gradient">€1.30B</span>
                       <span className="text-sm font-semibold text-electric">SAM</span>
                     </div>
                     <div className="text-base font-semibold mb-1">Serviceable Addressable Market</div>
                     <p className="text-sm text-muted-foreground max-w-md">
-                      306M€/year (35%)
+                      27M vehicles (professionally managed)
                     </p>
                   </div>
                 </div>
@@ -980,12 +979,12 @@ const Index = () => {
                   <div className="w-3 h-3 rounded-full bg-electric"></div>
                   <div className="flex-1">
                     <div className="flex items-baseline gap-3 mb-1">
-                      <span className="text-3xl font-bold text-gradient">€30.6M</span>
+                      <span className="text-3xl font-bold text-gradient">€39.3M</span>
                       <span className="text-sm font-semibold text-electric">SOM</span>
                     </div>
                     <div className="text-base font-semibold mb-1">Serviceable Obtainable Market</div>
                     <p className="text-sm text-muted-foreground max-w-md">
-                      30.6M€/year (10% of SAM)
+                      810,000 vehicles (3% market penetration)
                     </p>
                   </div>
                 </div>
@@ -995,7 +994,7 @@ const Index = () => {
             <div className="text-center mt-12">
               <Card className="p-6 max-w-2xl mx-auto border-electric/30 bg-electric/5">
                 <p className="text-lg font-bold">
-                  155 customers = full SOM realization (avg. 194k€/year each)
+                  Target: 810,000 vehicles across EU and USA markets
                 </p>
               </Card>
             </div>
