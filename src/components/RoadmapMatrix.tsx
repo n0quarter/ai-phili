@@ -52,7 +52,6 @@ const RoadmapMatrix = () => {
           { text: "Hypercare", done: true }
         ],
         further: [
-          { text: "Expansion of connectivity to further relevant partners", done: true },
           { text: "Proactive Upsell recommendations", done: true }
         ]
       }
@@ -75,7 +74,8 @@ const RoadmapMatrix = () => {
         ],
         further: [
           { text: "Similar case handling", done: true },
-          { text: "Automated workflows", done: true }
+          { text: "Automated workflows", done: true },
+          { text: "Expansion of connectivity to further relevant partners", done: true }
         ]
       }
     }
