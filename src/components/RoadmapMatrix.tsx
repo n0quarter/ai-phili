@@ -102,12 +102,14 @@ const RoadmapMatrix = () => {
               
               {/* Milestone node */}
               <div className="relative z-10 flex flex-col items-center">
-                <div className={`w-24 h-24 rounded-full flex items-center justify-center text-white font-bold text-sm mb-2 border-4 border-background shadow-lg ${
+                <div className={`w-32 h-32 rounded-full flex items-center justify-center text-white font-bold text-sm mb-2 border-4 border-background shadow-lg px-2 ${
                   idx === timeline.length - 1 ? 'bg-primary' : 'bg-electric'
                 }`}>
-                  {milestone.label.split('\n').map((line, i) => (
-                    <span key={i} className="block text-center leading-tight">{line}</span>
-                  ))}
+                  <div className="text-center leading-tight">
+                    {milestone.label.split('\n').map((line, i) => (
+                      <span key={i} className="block">{line}</span>
+                    ))}
+                  </div>
                 </div>
                 <p className="text-sm font-semibold">{milestone.date}</p>
               </div>
