@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign } from "lucide-react";
+import ChatSimulation from "@/components/ChatSimulation";
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
 import viktorShcherban from "@/assets/viktor-shcherban.png";
@@ -104,6 +105,7 @@ const Index = () => {
             </p>
             <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">The first AI solution unifying all corporate mobility benefits into intelligent automation.</p>
             
+            <ChatSimulation />
           </div>
         </div>
       </section>
