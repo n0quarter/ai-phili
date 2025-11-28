@@ -16,7 +16,9 @@ const RoadmapMatrix = () => {
         mvp: [
           { text: "Call capturing and forwarding transcripts to smart inbox", done: true }
         ],
-        pilot: [],
+        pilot: [
+          { text: "Automated routing to employees", done: true }
+        ],
         market: [],
         further: []
       }
@@ -68,7 +70,8 @@ const RoadmapMatrix = () => {
           { text: "Monitoring & Transparency", done: true }
         ],
         pilot: [
-          { text: "Automated routing to employees", done: true }
+          { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
+          { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
         ],
         market: [
           { text: "Hypercare", done: true }
