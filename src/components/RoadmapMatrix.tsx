@@ -48,7 +48,7 @@ const RoadmapMatrix = () => {
           { text: "SMS Answers", done: true }
         ],
         pilot: [
-          { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
+          { text: "Connectivity to first Email & CRM system", done: true },
           { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
         ],
         market: [
@@ -70,7 +70,7 @@ const RoadmapMatrix = () => {
           { text: "Monitoring & Transparency", done: true }
         ],
         pilot: [
-          { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
+          { text: "Connectivity to first Email & CRM system", done: true },
           { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
         ],
         market: [
