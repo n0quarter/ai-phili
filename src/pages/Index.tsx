@@ -1342,7 +1342,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-foreground">
               Ready to Transform Corporate Mobility?
             </h2>
-            <p className="text-xl mb-8 text-primary-foreground/80">
+            <p className="text-xl mb-4 text-primary-foreground/80">
               Join us in revolutionizing corporate mobility. Let's discuss the investment opportunity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
