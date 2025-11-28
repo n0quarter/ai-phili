@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight, Zap, Shield, TrendingUp, Users } from "lucide-react";
+import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign } from "lucide-react";
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
 import viktorShcherban from "@/assets/viktor-shcherban.png";
@@ -10,6 +10,7 @@ import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
+import fleetManagementMarketGrowth from "@/assets/fleet-management-market-growth.png";
 import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
 import RoadmapMatrix from "@/components/RoadmapMatrix";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
@@ -521,61 +522,102 @@ const Index = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 mb-16">
               <Card className="p-8 border-border/50">
-                <div className="flex gap-3 mb-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-bold">Mobility complexity is rising dramatically</span> (mixed fleets, multi-provider ecosystems)
-                  </p>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <Network className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">Mobility complexity is rising dramatically</span> (mixed fleets, multi-provider ecosystems)
+                    </p>
+                  </div>
                 </div>
               </Card>
 
               <Card className="p-8 border-border/50">
-                <div className="flex gap-3 mb-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-bold">Support volumes +30–40% YoY</span>
-                  </p>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">Support volumes +30–40% YoY</span>
+                    </p>
+                  </div>
                 </div>
               </Card>
 
               <Card className="p-8 border-border/50">
-                <div className="flex gap-3 mb-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-bold">Talent shortage</span> across fleet operations
-                  </p>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <UserX className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">Talent shortage</span> across fleet operations
+                    </p>
+                  </div>
                 </div>
               </Card>
 
               <Card className="p-8 border-border/50">
-                <div className="flex gap-3 mb-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-bold">AI (RAG, agents, voice assistants) is production-ready</span>
-                  </p>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <Bot className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">AI (RAG, agents, voice assistants) is production-ready</span>
+                    </p>
+                  </div>
                 </div>
               </Card>
 
               <Card className="p-8 border-border/50 md:col-span-2">
-                <div className="flex gap-3 mb-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-bold">No vertical AI exists</span> for mobility documentation, SLAs or workflows, <span className="underline">only generic ticketing and agent builder</span>
-                  </p>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <AlertTriangle className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">No vertical AI exists</span> for mobility documentation, SLAs or workflows, <span className="underline">only generic ticketing and agent builder</span>
+                    </p>
+                  </div>
                 </div>
               </Card>
 
               <Card className="p-8 border-border/50 md:col-span-2">
-                <div className="flex gap-3 mb-4">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-bold">First level support has very low margins</span> when ran without automation
-                  </p>
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <DollarSign className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">First level support has very low margins</span> when ran without automation
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>
+
+            {/* Fleet Management Market Growth Chart */}
+            <Card className="p-8 border-2 border-electric/30 bg-card">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold mb-4">Fleet Management Market Growth</h3>
+                <p className="text-lg text-muted-foreground">
+                  AI, electrification and telematics driving 16% CAGR through 2034
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src={fleetManagementMarketGrowth} 
+                  alt="Fleet Management Market 2021-2034 showing 16% CAGR growth driven by AI, electrification and telematics" 
+                  className="w-full max-w-5xl rounded-lg shadow-lg"
+                />
+              </div>
+            </Card>
           </div>
         </div>
       </section>
