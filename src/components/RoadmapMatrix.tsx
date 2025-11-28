@@ -47,10 +47,7 @@ const RoadmapMatrix = () => {
           { text: "Tagging, commenting and filtering of incoming calls", done: true },
           { text: "SMS Answers", done: true }
         ],
-        pilot: [
-          { text: "Connectivity to first Email & CRM system, automate ticket routing, follow-up emails, and escalation processes", done: true },
-          { text: "Connectivity to one relevant Fleet Management Software provider", done: true }
-        ],
+        pilot: "shared", // Indicates this cell is merged with the one below
         market: [
           { text: "Hypercare", done: true }
         ],
@@ -127,14 +124,25 @@ const RoadmapMatrix = () => {
               {/* Features for each timeline phase */}
               {timeline.map((milestone) => {
                 const features = block.features[milestone.id as keyof typeof block.features];
+                
+                // Check if this is a shared cell
+                if (features === "shared") {
+                  return <div key={milestone.id} className="hidden" />;
+                }
+                
+                // Check if the next block shares this cell
+                const nextBlock = buildingBlocks[blockIdx + 1];
+                const isSharedWithNext = nextBlock?.features[milestone.id as keyof typeof nextBlock.features] === "shared";
+                
                 return (
                   <Card 
                     key={milestone.id} 
                     className={`p-4 border-border/50 min-h-[120px] ${
-                      features.length === 0 ? 'bg-muted/20' : 'bg-card'
-                    }`}
+                      Array.isArray(features) && features.length === 0 ? 'bg-muted/20' : 'bg-card'
+                    } ${isSharedWithNext ? 'row-span-2' : ''}`}
+                    style={isSharedWithNext ? { gridRow: `span 2` } : {}}
                   >
-                    {features.length > 0 ? (
+                    {Array.isArray(features) && features.length > 0 ? (
                       <ul className="space-y-2">
                         {features.map((feature, idx) => (
                           <li key={idx} className="flex gap-2 text-sm">
