@@ -95,11 +95,6 @@ const RoadmapMatrix = () => {
           {/* Timeline milestones */}
           {timeline.map((milestone, idx) => (
             <div key={milestone.id} className="relative">
-              {/* Timeline line */}
-              {idx < timeline.length - 1 && (
-                <div className="absolute top-10 left-1/2 w-full h-0.5 bg-border z-0" />
-              )}
-              
               {/* Milestone node */}
               <div className="relative z-10 flex flex-col items-center">
                 <div className={`w-32 h-32 rounded-full flex items-center justify-center text-white font-bold text-sm mb-2 border-4 border-background shadow-lg px-2 ${
