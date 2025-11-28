@@ -1075,8 +1075,7 @@ const Index = () => {
                   </li>
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
-                    <p className="text-lg">
-                      <span className="font-semibold">Customer count for full SOM:</span> ~155
+                    <p className="text-lg">Customer count for full SOM: ~202<span className="font-semibold">Customer count for full SOM:</span> ~155
                     </p>
                   </li>
                   <li className="flex gap-3">
