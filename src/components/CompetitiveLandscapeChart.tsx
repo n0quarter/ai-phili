@@ -100,12 +100,12 @@ const CompetitiveLandscapeChart = () => {
             
             {/* Horizontal connecting line from circle border to label */}
             <div 
-              className={`absolute top-1/2 -translate-y-1/2 h-0.5 ${
+              className={`absolute top-1/2 -translate-y-1/2 h-[2px] ${
                 competitor.highlight ? 'bg-electric' : 'bg-border'
               }`}
               style={{
-                left: '0.5rem',
-                width: '60px'
+                left: '8px',
+                width: '120px'
               }}
             />
             
@@ -117,7 +117,7 @@ const CompetitiveLandscapeChart = () => {
                   : 'bg-card border-border/50 group-hover:border-border group-hover:shadow-md'
               }`}
               style={{
-                left: '68px'
+                left: '130px'
               }}
             >
               <div className="text-sm font-semibold">{competitor.name}</div>
