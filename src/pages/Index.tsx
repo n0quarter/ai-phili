@@ -435,7 +435,7 @@ const Index = () => {
                 <li className="flex gap-4">
                   <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
                   <p className="text-lg">
-                    <span className="font-bold">50–70% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
+                    <span className="font-bold">40-60% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
                   </p>
                 </li>
                 <li className="flex gap-4">
