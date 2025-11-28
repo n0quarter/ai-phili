@@ -40,7 +40,7 @@ const CompetitiveLandscapeChart = () => {
       </div>
       
       {/* Y-Axis Label - Far Left, Outside Graph */}
-      <div className="absolute -left-8 md:-left-10 top-1/2 -translate-y-1/2 -rotate-90 text-sm md:text-base font-semibold text-foreground whitespace-nowrap origin-center">
+      <div className="absolute -left-16 md:-left-20 top-1/2 -translate-y-1/2 -rotate-90 text-sm md:text-base font-semibold text-foreground whitespace-nowrap origin-center">
         Comprehension of Context in Mobility
       </div>
       
