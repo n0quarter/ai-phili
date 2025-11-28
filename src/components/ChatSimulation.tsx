@@ -33,6 +33,35 @@ const ChatSimulation = () => {
       { role: 'assistant' as const, content: 'Analyzing tire maintenance schedules...', delay: 2000 },
       { role: 'assistant' as const, content: customers, delay: 2500 },
       { role: 'assistant' as const, content: 'Should I prepare a reminder email for all the drivers and the admins of these customers?', delay: 2000 },
+      { role: 'user' as const, content: 'Yes, please do.', delay: 1500 },
+      { role: 'assistant' as const, content: 'Drafting personalized reminder emails...', delay: 1500 },
+      { 
+        role: 'assistant' as const, 
+        content: `📧 Email Draft Ready
+
+Subject: Tire Change Reminder - Action Required
+
+Dear [Driver Name],
+
+This is a friendly reminder that your company vehicle [Vehicle Details] is due for a tire change in December.
+
+📅 Scheduled Date: [Due Date]
+🚗 Vehicle: [Vehicle Model & License Plate]
+🏢 Company: [Company Name]
+
+To schedule your appointment:
+1. Contact your preferred service center
+2. Or reply to this email and we'll arrange it for you
+
+Your fleet administrator has been copied on this email for coordination.
+
+Best regards,
+PHILI - Your Corporate Mobility Assistant
+
+---
+This email will be sent to all 10 drivers and their respective fleet administrators.`, 
+        delay: 2500 
+      },
     ];
 
     if (currentStep < steps.length) {
@@ -66,7 +95,7 @@ const ChatSimulation = () => {
                     ? 'bg-electric text-white ml-auto' 
                     : 'bg-muted text-foreground'
                 }`}>
-                  <p className="text-sm leading-relaxed">{message.content}</p>
+                  <p className="text-sm leading-relaxed whitespace-pre-line">{message.content}</p>
                 </div>
               ) : (
                 <div className="bg-muted rounded-2xl px-4 py-3 space-y-2">
