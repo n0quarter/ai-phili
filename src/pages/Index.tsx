@@ -1102,9 +1102,7 @@ const Index = () => {
 
             <div className="text-center mt-12">
               <Card className="p-6 max-w-2xl mx-auto border-electric/30 bg-electric/5">
-                <p className="text-lg font-bold">
-                  Target: 810,000 vehicles across EU and USA markets
-                </p>
+                <p className="text-lg font-bold">Target: 810,000 vehicles/user across EU and USA markets</p>
               </Card>
             </div>
           </div>
@@ -1197,9 +1195,7 @@ const Index = () => {
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    Partner with Fleet Outsourcing Providers & Leasing Networks
-                  </p>
+                  <p className="text-lg">Partner with Fleet Management Software providers & Leasing Networks</p>
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
