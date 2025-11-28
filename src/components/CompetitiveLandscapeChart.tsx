@@ -39,22 +39,25 @@ const CompetitiveLandscapeChart = () => {
         Degree of reliable support automation
       </div>
       
-      {/* Y-Axis Label - Centered and Rotated */}
-      <div className="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-sm md:text-base font-semibold text-foreground whitespace-nowrap origin-center">
+      {/* Y-Axis Label - Left Side, Outside Graph */}
+      <div className="absolute -left-2 top-1/2 -translate-y-1/2 -rotate-90 text-sm md:text-base font-semibold text-foreground whitespace-nowrap origin-center">
         Comprehension of Context in Mobility
       </div>
       
-      {/* Low/High Labels Inside Graph */}
-      <div className="absolute left-16 md:left-20 bottom-16 md:bottom-20 text-xs md:text-sm text-muted-foreground">
-        low
-      </div>
-      <div className="absolute right-16 md:right-20 bottom-16 md:bottom-20 text-xs md:text-sm text-muted-foreground">
-        high
-      </div>
+      {/* Low/High Labels at Axis Midpoints */}
+      {/* Y-axis labels */}
       <div className="absolute left-16 md:left-20 top-16 md:top-20 text-xs md:text-sm text-muted-foreground">
         low
       </div>
       <div className="absolute left-16 md:left-20 top-1/2 -translate-y-1/2 text-xs md:text-sm text-muted-foreground">
+        high
+      </div>
+      
+      {/* X-axis labels */}
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-16 md:bottom-20 text-xs md:text-sm text-muted-foreground">
+        low
+      </div>
+      <div className="absolute right-16 md:right-20 top-1/2 -translate-y-1/2 text-xs md:text-sm text-muted-foreground">
         high
       </div>
 
