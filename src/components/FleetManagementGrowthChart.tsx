@@ -4,19 +4,19 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 const FleetManagementGrowthChart = () => {
   const data = [
     { year: "2021", value: 17.5 },
-    { year: "2022", value: 18.6 },
-    { year: "2023", value: 21.4 },
-    { year: "2024", value: 23.3 },
-    { year: "2025", value: 25.5 },
-    { year: "2026", value: 27.8 },
-    { year: "2027", value: 30.3 },
-    { year: "2028", value: 33.1 },
-    { year: "2029", value: 36.2 },
-    { year: "2030", value: 39.5 },
-    { year: "2031", value: 43.2 },
-    { year: "2032", value: 47.2 },
-    { year: "2033", value: 51.6 },
-    { year: "2034", value: 56.4 },
+    { year: "2022", value: 20.0 },
+    { year: "2023", value: 22.8 },
+    { year: "2024", value: 26.0 },
+    { year: "2025", value: 29.6 },
+    { year: "2026", value: 33.8 },
+    { year: "2027", value: 38.5 },
+    { year: "2028", value: 43.9 },
+    { year: "2029", value: 50.1 },
+    { year: "2030", value: 57.1 },
+    { year: "2031", value: 65.1 },
+    { year: "2032", value: 74.2 },
+    { year: "2033", value: 84.6 },
+    { year: "2034", value: 97.6 },
   ];
 
   return (
@@ -24,7 +24,7 @@ const FleetManagementGrowthChart = () => {
       <div className="text-center mb-8">
         <h3 className="text-3xl font-bold mb-4">Fleet Management Market Growth</h3>
         <p className="text-lg text-muted-foreground">
-          AI, electrification and telematics driving 16% CAGR through 2034
+          AI, electrification and telematics driving 14% CAGR through 2034
         </p>
       </div>
       
@@ -80,10 +80,10 @@ const FleetManagementGrowthChart = () => {
             />
             <ReferenceDot 
               x="2029" 
-              y={36.2} 
+              y={50.1} 
               r={0}
               label={{ 
-                value: 'CAGR\n16%', 
+                value: 'CAGR\n14%', 
                 position: 'top',
                 fill: 'hsl(var(--foreground))',
                 fontSize: 16,
