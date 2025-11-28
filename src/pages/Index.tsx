@@ -79,7 +79,7 @@ const Index = () => {
     name: "Viktor Shcherban",
     role: "CTO",
     image: viktorShcherban,
-    experience: ["CTO & Software Developer since 2006", "Founded and co-founded 5 companies", "Created istat24.com powered by IP telephony", "Expert in RAG AI assistants and LLM-powered apps"]
+    experience: ["CTO & Software Developer since 2006", "Founded and co-founded 5 companies (4 still operational, 1 exited to NASDAQ listed company)", "Created istat24.com powered by IP telephony", "Expert in RAG AI assistants and LLM-powered apps"]
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
