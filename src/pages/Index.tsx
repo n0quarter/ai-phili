@@ -1252,7 +1252,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
                   <div className="mb-6">
-                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-32 h-32 rounded-full object-cover mb-4" />
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-32 h-32 rounded-full object-contain bg-muted/30 mb-4" />
                     <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
