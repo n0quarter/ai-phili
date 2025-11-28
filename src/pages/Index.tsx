@@ -945,22 +945,52 @@ const Index = () => {
             
             {/* TAM SAM SOM Visual Funnel */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-16">
-              {/* Nested Circles */}
+              {/* Nested Circles with connecting lines */}
               <div className="relative w-[400px] h-[400px] flex items-center justify-center animate-fade-in">
                 {/* TAM - Outer Circle */}
                 <div className="absolute w-[380px] h-[380px] rounded-full bg-electric/20 flex items-center justify-center">
-                  <div className="absolute top-[80px] text-2xl font-bold text-white">TAM</div>
                 </div>
                 
                 {/* SAM - Middle Circle */}
                 <div className="absolute w-[280px] h-[280px] rounded-full bg-electric/40 flex items-center justify-center">
-                  <div className="absolute text-2xl font-bold text-white">SAM</div>
                 </div>
                 
                 {/* SOM - Inner Circle */}
                 <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center">
-                  <div className="absolute text-2xl font-bold text-white">SOM</div>
                 </div>
+
+                {/* Connecting Lines - SVG overlay */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible" style={{ zIndex: 10 }}>
+                  {/* Line from TAM circle (outer, top-right edge) to label */}
+                  <line 
+                    x1="340" 
+                    y1="110" 
+                    x2="420" 
+                    y2="80" 
+                    stroke="hsl(var(--electric) / 0.3)" 
+                    strokeWidth="2"
+                  />
+                  
+                  {/* Line from SAM circle (middle, right edge) to label */}
+                  <line 
+                    x1="290" 
+                    y1="200" 
+                    x2="420" 
+                    y2="200" 
+                    stroke="hsl(var(--electric) / 0.5)" 
+                    strokeWidth="2"
+                  />
+                  
+                  {/* Line from SOM circle (inner, bottom-right edge) to label */}
+                  <line 
+                    x1="260" 
+                    y1="270" 
+                    x2="420" 
+                    y2="320" 
+                    stroke="hsl(var(--electric))" 
+                    strokeWidth="2"
+                  />
+                </svg>
               </div>
 
               {/* Labels and Values */}
