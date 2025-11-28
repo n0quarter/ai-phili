@@ -70,15 +70,7 @@ const FleetManagementGrowthChart = () => {
                 formatter: (value: number) => value.toFixed(1)
               }}
             />
-            <Line 
-              type="linear" 
-              dataKey="value" 
-              stroke="hsl(var(--foreground))" 
-              strokeWidth={2}
-              dot={false}
-              strokeDasharray="5 5"
-            />
-            <ReferenceDot 
+            <ReferenceDot
               x="2029" 
               y={50.1} 
               r={0}
