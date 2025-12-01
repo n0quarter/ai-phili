@@ -103,7 +103,7 @@ const Index = () => {
             <p className="text-2xl md:text-3xl mb-4 text-primary-foreground/90 font-medium">
               The AI Customer Agent & Copilot for Corporate Mobility
             </p>
-            <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">Reducing support communication effort by 40-60%. Lifting Account Manager productivity up to the next level.</p>
+            <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">Reducing support communication effort by 40-60% of modern corporate mobility teams. Lifting up Account Manager's productivity to the next level.</p>
             
             <ChatSimulation />
           </div>
