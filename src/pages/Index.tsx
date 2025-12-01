@@ -316,9 +316,8 @@ const Index = () => {
             </div>
 
             <Card className="p-8 border-2 border-electric/30 bg-electric/5">
-              <p className="text-xl font-bold text-center text-gradient">
-                Phili becomes the operational brain behind Mobility Operations, reducing support cost 40–60% while improving SLAs.
-              </p>
+              <p className="text-xl font-bold text-center text-gradient">Phili becomes the operational brain behind Mobility Operations, reducing support cost 40–60% while improving SLAs fullfillment
+.</p>
             </Card>
           </div>
         </div>
