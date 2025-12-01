@@ -738,7 +738,7 @@ const Index = () => {
                       </tr>
 
                       <tr className="hover:bg-muted/30 transition-colors">
-                        <td className="px-6 py-5 font-medium">Fleet data reasoning (vehicles near leasing end, overdue tires, etc.)</td>
+                        <td className="px-6 py-5 font-medium">Mobility & Fleet data reasoning (vehicles near leasing end, overdue tires, etc.)</td>
                         <td className="px-6 py-5 text-muted-foreground">
                           <span className="inline-flex items-center gap-2">
                             <span className="text-destructive font-bold text-xl">✗</span>
