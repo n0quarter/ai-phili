@@ -267,9 +267,7 @@ const Index = () => {
             </div>
 
             <div className="mb-8">
-              <p className="text-lg text-center font-medium">
-                Phili unifies all mobility benefits (car, bike, budget, subscription, EV) into a single AI layer.
-              </p>
+              <p className="text-lg text-center font-medium">Phili unifies all corporate mobility offerings (car, bike, budget, subscription, EV, logistics) into a single AI layer.</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
