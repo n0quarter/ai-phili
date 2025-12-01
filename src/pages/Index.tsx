@@ -848,7 +848,7 @@ const Index = () => {
                       </tr>
 
                       <tr className="hover:bg-muted/30 transition-colors">
-                        <td className="px-6 py-5 font-medium">ROI transparency & fleet cost analytics</td>
+                        <td className="px-6 py-5 font-medium">ROI transparency & corporate mobility cost analytics</td>
                         <td className="px-6 py-5 text-muted-foreground">
                           <span className="inline-flex items-center gap-2">
                             <span className="text-destructive font-bold text-xl">✗</span>
@@ -864,7 +864,7 @@ const Index = () => {
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
                             <span className="text-growth font-bold text-xl">✓</span>
-                            <span>Full fleet KPI & cost-model analysis</span>
+                            <span>Full corporate mobility KPI & cost-model analysis</span>
                           </span>
                         </td>
                       </tr>
