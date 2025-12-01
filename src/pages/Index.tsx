@@ -282,7 +282,7 @@ const Index = () => {
                 </div>
                 <h4 className="text-xl font-bold mb-3">AI Customer Support Agent</h4>
                 <p className="text-muted-foreground text-lg">
-                  Handles around <span className="font-bold text-foreground">40% of driver requests autonomously</span>, understands contracts & workflows.
+                  Handles around <span className="font-bold text-foreground">40% of drivers/user requests autonomously</span>, understands contracts & workflows.
                 </p>
               </Card>
 
