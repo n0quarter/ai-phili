@@ -121,10 +121,7 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
                 The Communication <span className="text-gradient">Challenge</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-                50% of employees in fleet management spend most of their time on communication 
-                (Flotte.de, bfp Fuhrparkmonitor, Dataforce Insights). 
-              </p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">50% of employees in fleet management spend most of their time on communication (Sources:Flotte.de, bfp Fuhrparkmonitor, Dataforce Insights).</p>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Service providers confirm that the "Driver Helpdesk" is the most demanding and least scalable part of the business.
               </p>
@@ -216,9 +213,7 @@ const Index = () => {
                 <p className="text-lg font-medium mb-6">
                   Companies now offer a mix of cars, bikes, budgets, subscriptions, EV charging and mobility cards.
                 </p>
-                <p className="text-lg font-medium mb-6">
-                  After talking to employees and management of leading 7 providers in fleet & mobility management, they described the following problems:
-                </p>
+                <p className="text-lg font-medium mb-6">After talking to employees and management of 7 providers in fleet & mobility management, they described the following problems:</p>
                 <ul className="space-y-4">
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
