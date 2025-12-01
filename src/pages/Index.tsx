@@ -296,7 +296,7 @@ const Index = () => {
                   </div>
                 </div>
                 <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
-                <p className="text-muted-foreground text-lg">Fleet & mobility benefit insights, renewal alerts, SLA deviations, automated reporting.</p>
+                <p className="text-muted-foreground text-lg">Fleet & mobility insights, renewal alerts, SLA deviations, automated reporting.</p>
               </Card>
 
               <Card className="p-8 border-2 border-border/50 text-center">
