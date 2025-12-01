@@ -228,7 +228,7 @@ const Index = () => {
                   <li className="flex gap-3">
                     <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                     <p className="text-muted-foreground">
-                      No system unifies contract data, SLAs, policies and workflows across all mobility benefits
+                      No system unifies contract data, SLAs, policies and workflows across all corporate mobility offerings
                     </p>
                   </li>
                   <li className="flex gap-3">
