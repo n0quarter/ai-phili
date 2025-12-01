@@ -486,14 +486,17 @@ const Index = () => {
                 Experience how the smart inbox and phone assistant work today (German version) in the video below →
               </p>
             </div>
-            <a href="https://drive.google.com/drive/folders/17FtSHYqxxdlz4OpMvZhd3WcNVb0clFiJ" target="_blank" rel="noopener noreferrer" className="block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50 cursor-pointer hover:border-electric/50 transition-colors">
-                <video className="w-full aspect-video object-cover" controls poster={videoThumbnail}>
-                <source src="YOUR_VIDEO_URL_HERE" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/ugCvrj9Byho"
+                  title="PHILI Demo Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
