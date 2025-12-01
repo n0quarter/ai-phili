@@ -666,7 +666,7 @@ const Index = () => {
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
                             <span className="text-growth font-bold text-xl">✓</span>
-                            <span>Mobility-RAG trained on leasing & policies</span>
+                            <span>Mobility-Agent trained on leasing & policies</span>
                           </span>
                         </td>
                       </tr>
