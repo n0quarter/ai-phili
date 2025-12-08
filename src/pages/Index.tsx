@@ -484,7 +484,7 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 See PHILI in <span className="text-gradient">Action</span>
               </h2>
-              <p className="text-xl text-muted-foreground mb-4">The AI phone assistant and smart inbox have been developed already and are available through our Dolittle AI solution.</p>
+              <p className="text-xl text-muted-foreground mb-4">The AI phone assistant and smart inbox have been developed already and are available through our Dolittle AI solution developed by Andreas & Viktor (the Founders).</p>
               <p className="text-lg text-muted-foreground">
                 Experience how the smart inbox and phone assistant work today (German version) in the video below →
               </p>
