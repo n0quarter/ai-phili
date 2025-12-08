@@ -76,7 +76,7 @@ const Index = () => {
     name: "Andreas Reichert",
     role: "CEO",
     image: andreasReichert,
-    experience: ["8 years of leadership in product & B2B SaaS Mobility Tech", "Led 10+ digital ventures as Venture Architect", "Co-founder of MOBIKO (market leader in Germany)", "Closed Series A Investment round with MOBIKO"]
+    experience: ["8 years of leadership in product & B2B SaaS Mobility Tech", "Led 10+ digital ventures as Venture Architect", "Co-Founder & CEO of award-winning corporate mobility platform MOBIKO", "Closed Series A Investment round with MOBIKO"]
   }, {
     name: "Viktor Shcherban",
     role: "CTO",
