@@ -490,14 +490,10 @@ const Index = () => {
               </p>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/ugCvrj9Byho"
-                  title="PHILI Demo Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+              <div className="relative w-full" style={{
+              paddingBottom: '56.25%'
+            }}>
+                <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/ugCvrj9Byho" title="PHILI Demo Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>
@@ -1205,9 +1201,7 @@ const Index = () => {
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    Integrate with Fleet Management software, Mail & CRMs
-                  </p>
+                  <p className="text-lg">Integrate with providers of Fleet Management Software, Mail & CRMs</p>
                 </li>
               </ul>
 
