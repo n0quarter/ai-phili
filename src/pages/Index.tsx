@@ -1206,7 +1206,7 @@ const Index = () => {
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                   <p className="text-lg">
-                    Integrate with fleet CRMs, telematics, workshop networks, leasing systems
+                    Integrate with Fleet Management software, Mail & CRMs
                   </p>
                 </li>
               </ul>
