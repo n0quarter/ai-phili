@@ -610,9 +610,7 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Competitive <span className="text-electric">Landscape</span>
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Phili uniquely combines comprehensive mobility knowledge with reliable AI automation
-              </p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Phili uniquely combines comprehensive mobility knowledge with reliable AI automation. Generic AI Platforms & Ticketing systems don't offer reliable support quality, cause they need too many integrations with foreign systems and therfoe often lack comprehension of moility relevant context.</p>
             </div>
 
             <div className="mb-8">
