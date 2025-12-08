@@ -902,7 +902,7 @@ const Index = () => {
                 <li className="flex gap-4">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                   <p className="text-lg font-medium">
-                    Fleet Outsourcing Providers (2,000–100,000 vehicles)
+                    Fleet Outsourcing Providers (2,000–3,000,000 vehicles)
                   </p>
                 </li>
                 <li className="flex gap-4">
