@@ -330,6 +330,9 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Elements of <span className="text-gradient">PHILI</span> Enabling Maximum Stability and Quality
               </h2>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto">
+                PHILI ensures consistent and reliable communication outcomes across all channels by providing most of the framework elements—such as chat, phone assistant, smart inbox, and copilot—natively, minimizing integration effort with external systems.
+              </p>
             </div>
 
             <div className="relative">
