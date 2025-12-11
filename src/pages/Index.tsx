@@ -19,13 +19,7 @@ import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
 import RoadmapMatrix from "@/components/RoadmapMatrix";
 import FleetManagementGrowthChart from "@/components/FleetManagementGrowthChart";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 const Index = () => {
   const features = [{
     title: "Phone and Chatbot",
@@ -233,11 +227,7 @@ const Index = () => {
                     {/* Step 1 */}
                     <CarouselItem>
                       <div className="relative h-[400px] rounded-xl overflow-hidden">
-                        <img 
-                          src={processStep1} 
-                          alt="Document Search" 
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
+                        <img src={processStep1} alt="Document Search" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
                         <div className="absolute inset-0 flex flex-col justify-end p-8">
                           <div className="flex items-center gap-4 mb-4">
@@ -257,11 +247,7 @@ const Index = () => {
                     {/* Step 2 */}
                     <CarouselItem>
                       <div className="relative h-[400px] rounded-xl overflow-hidden">
-                        <img 
-                          src={processStep2} 
-                          alt="Customer Notification" 
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
+                        <img src={processStep2} alt="Customer Notification" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
                         <div className="absolute inset-0 flex flex-col justify-end p-8">
                           <div className="flex items-center gap-4 mb-4">
@@ -281,11 +267,7 @@ const Index = () => {
                     {/* Step 3 */}
                     <CarouselItem>
                       <div className="relative h-[400px] rounded-xl overflow-hidden">
-                        <img 
-                          src={processStep3} 
-                          alt="Follow-up Questions" 
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
+                        <img src={processStep3} alt="Follow-up Questions" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
                         <div className="absolute inset-0 flex flex-col justify-end p-8">
                           <div className="flex items-center gap-4 mb-4">
@@ -305,11 +287,7 @@ const Index = () => {
                     {/* Step 4 */}
                     <CarouselItem>
                       <div className="relative h-[400px] rounded-xl overflow-hidden">
-                        <img 
-                          src={processStep4} 
-                          alt="Repetition" 
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
+                        <img src={processStep4} alt="Repetition" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
                         <div className="absolute inset-0 flex flex-col justify-end p-8">
                           <div className="flex items-center gap-4 mb-4">
@@ -716,8 +694,7 @@ const Index = () => {
             </div>
 
             <Card className="p-8 md:p-12 border-2 border-electric/30 bg-electric/5">
-              <p className="text-lg md:text-xl text-muted-foreground text-center leading-relaxed">
-                Phili is the first unified AI layer for <span className="font-bold text-electric">ALL corporate mobility benefits</span> (car + bike + budget + subscription) and owns the most relevant sources for support quality (<span className="font-bold text-electric">phone, chat, inbox & copilot</span>).
+              <p className="text-lg md:text-xl text-muted-foreground text-center leading-relaxed">Phili is the first unified AI layer for ALL corporate mobility offerings and owns the most relevant sources for support quality (phone, chat, inbox & copilot).<span className="font-bold text-electric">ALL corporate mobility benefits</span> (car + bike + budget + subscription) and owns the most relevant sources for support quality (<span className="font-bold text-electric">phone, chat, inbox & copilot</span>).
               </p>
             </Card>
           </div>
@@ -1308,11 +1285,9 @@ const Index = () => {
                     <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-full max-w-sm aspect-[3/4] rounded-2xl object-cover object-center bg-muted/30 mb-6 shadow-lg" />
                     <div className="flex items-center gap-2 mb-1">
                       <h3 className="text-2xl font-bold">{founder.name}</h3>
-                      {founder.linkedin && (
-                        <a href={founder.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-electric transition-colors">
-                          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        </a>
-                      )}
+                      {founder.linkedin && <a href={founder.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-electric transition-colors">
+                          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                        </a>}
                     </div>
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
