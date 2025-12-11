@@ -514,7 +514,7 @@ const Index = () => {
                 <li className="flex gap-4">
                   <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
-                    <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility benefits
+                    <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility offerings
                   </p>
                 </li>
                 <li className="flex gap-4">
