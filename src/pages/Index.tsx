@@ -87,12 +87,12 @@ const Index = () => {
     name: "Andreas Reichert",
     role: "CEO",
     image: andreasReichert,
-    experience: ["8 years of leadership in product & B2B SaaS Mobility Tech", "Led 10+ digital ventures as Venture Architect", "Co-Founder & CEO of award-winning & market-leading corporate mobility platform MOBIKO", "Closed Series A Investment round with MOBIKO"]
+    bio: "With 8 years of leadership in B2B SaaS Mobility Tech, Andreas has led over 10 digital ventures as a Venture Architect. As Co-Founder & CEO of MOBIKO, he built an award-winning corporate mobility platform and successfully closed a Series A investment round."
   }, {
     name: "Viktor Shcherban",
     role: "CTO",
     image: viktorShcherban,
-    experience: ["CTO & Software Developer since 2006", "Founded and co-founded 5 companies (4 still operational, 1 exited to NASDAQ listed company)", "Created istat24.com powered by IP telephony", "Expert in RAG AI assistants and LLM-powered apps"]
+    bio: "A software developer and CTO since 2006, Viktor has founded or co-founded 5 companies — 4 still operational and 1 exited to a NASDAQ-listed company. He specializes in RAG AI assistants and LLM-powered applications."
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
@@ -1302,17 +1302,12 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
-                  <div className="mb-6">
-                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-32 h-32 rounded-full object-cover object-top bg-muted/30 mb-4" />
+                  <div className="flex flex-col items-center text-center mb-6">
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-48 h-48 rounded-2xl object-cover object-top bg-muted/30 mb-6 shadow-lg" />
                     <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
-                  <ul className="space-y-3">
-                    {founder.experience.map((item, i) => <li key={i} className="flex gap-3">
-                        <Check className="h-5 w-5 text-growth flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{item}</span>
-                      </li>)}
-                  </ul>
+                  <p className="text-muted-foreground leading-relaxed">{founder.bio}</p>
                 </Card>)}
             </div>
           </div>
