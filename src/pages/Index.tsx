@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign, FileSearch, Mail, Phone, RefreshCw } from "lucide-react";
+import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign, FileSearch, Mail, Phone, RefreshCw, ChevronLeft, ChevronRight } from "lucide-react";
 import ChatSimulation from "@/components/ChatSimulation";
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
@@ -11,10 +11,21 @@ import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
+import processStep1 from "@/assets/process-step-1-documents.jpg";
+import processStep2 from "@/assets/process-step-2-notify.jpg";
+import processStep3 from "@/assets/process-step-3-inquiries.jpg";
+import processStep4 from "@/assets/process-step-4-repeat.jpg";
 import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
 import RoadmapMatrix from "@/components/RoadmapMatrix";
 import FleetManagementGrowthChart from "@/components/FleetManagementGrowthChart";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 const Index = () => {
   const features = [{
     title: "Phone and Chatbot",
@@ -208,78 +219,125 @@ const Index = () => {
               </h2>
             </div>
 
-            <Card className="p-8 md:p-12 border-2 border-border/50">
-              <div className="space-y-8">
+            <Card className="p-4 md:p-8 border-2 border-border/50">
+              <div className="space-y-6">
                 <p className="text-lg font-medium text-center">
-                  Der manuelle Prozess bei Fahrzeugrückgaben heute:
+                  The manual process for vehicle returns today:
                 </p>
                 
-                {/* Flow Diagram */}
-                <div className="grid md:grid-cols-4 gap-4">
-                  {/* Step 1 */}
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-electric/10 flex items-center justify-center mb-4">
-                      <FileSearch className="w-8 h-8 text-electric" />
-                    </div>
-                    <div className="bg-electric text-white text-sm font-bold px-3 py-1 rounded-full mb-3">1</div>
-                    <h4 className="font-bold mb-2 text-sm">Dokumentensuche</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Account Manager sucht in Leasingverträgen, Car Policies & Werkstattverträgen nach Rückgabe-Infos
-                    </p>
-                  </div>
-                  
-                  {/* Arrow */}
-                  <div className="hidden md:flex items-center justify-center -mx-8">
-                    <ArrowRight className="w-6 h-6 text-muted-foreground absolute left-1/2 top-12 -translate-x-1/2" />
-                  </div>
-                  
-                  {/* Step 2 */}
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-electric/10 flex items-center justify-center mb-4">
-                      <Mail className="w-8 h-8 text-electric" />
-                    </div>
-                    <div className="bg-electric text-white text-sm font-bold px-3 py-1 rounded-full mb-3">2</div>
-                    <h4 className="font-bold mb-2 text-sm">Kundeninformation</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Account Manager informiert Kunde über anstehende Fahrzeugrückgabe
-                    </p>
-                  </div>
-                  
-                  {/* Step 3 */}
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-electric/10 flex items-center justify-center mb-4">
-                      <Phone className="w-8 h-8 text-electric" />
-                    </div>
-                    <div className="bg-electric text-white text-sm font-bold px-3 py-1 rounded-full mb-3">3</div>
-                    <h4 className="font-bold mb-2 text-sm">Rückfragen</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Kunde/Fahrer schreibt E-Mail oder ruft bei Rückfragen an
-                    </p>
-                  </div>
-                  
-                  {/* Step 4 */}
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
-                      <RefreshCw className="w-8 h-8 text-destructive" />
-                    </div>
-                    <div className="bg-destructive text-white text-sm font-bold px-3 py-1 rounded-full mb-3">4</div>
-                    <h4 className="font-bold mb-2 text-sm">Wiederholung</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Account Manager wiederholt dies für jeden Kunden einzeln
-                    </p>
-                  </div>
-                </div>
+                {/* Process Carousel */}
+                <Carousel className="w-full max-w-4xl mx-auto">
+                  <CarouselContent>
+                    {/* Step 1 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep1} 
+                          alt="Document Search" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <FileSearch className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 1</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Document Search</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager searches through leasing contracts, car policies & workshop agreements for return requirements
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 2 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep2} 
+                          alt="Customer Notification" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <Mail className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 2</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Customer Notification</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager informs customer about upcoming vehicle return
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 3 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep3} 
+                          alt="Follow-up Questions" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <Phone className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 3</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Follow-up Inquiries</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Customer or driver emails or calls Account Manager with questions
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 4 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep4} 
+                          alt="Repetition" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-destructive flex items-center justify-center">
+                              <RefreshCw className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-destructive text-white text-lg font-bold px-4 py-2 rounded-full">Step 4</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Endless Repetition</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager must repeat this entire process for every single customer
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
                 
                 {/* Problem Statement */}
                 <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-6 mt-8">
                   <div className="flex items-start gap-4">
                     <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-bold text-destructive mb-2">Das Problem:</p>
+                      <p className="font-bold text-destructive mb-2">The Problem:</p>
                       <p className="text-muted-foreground">
-                        Aktuelle CRM- und Fuhrparkmanagementsysteme analysieren keine Daten kundenübergreifend und schlagen keine Antworten vor. 
-                        Die Betreuung pro Fahrzeug kostet heute <span className="font-bold text-foreground">30-50€</span>. 
-                        Bei durchschnittlich einer Anfrage pro Fahrzeug pro Monat bleibt durch Hin-und-Her-Kommunikation kaum Marge — <span className="font-bold text-destructive">unprofitables Geschäft</span>.
+                        Current CRM and fleet management systems don't analyze data across customers and don't suggest answers. 
+                        Support per vehicle costs <span className="font-bold text-foreground">€30-50</span> today. 
+                        With an average of one inquiry per vehicle per month, back-and-forth communication leaves almost no margin — <span className="font-bold text-destructive">unprofitable business</span>.
                       </p>
                     </div>
                   </div>
