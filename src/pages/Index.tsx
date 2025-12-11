@@ -1395,7 +1395,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all" asChild>
                 <a href="https://meetings.hubspot.com/areichert/dolittleai" target="_blank" rel="noopener noreferrer">
-                  Contact Us
+                  Book an Appointment
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
