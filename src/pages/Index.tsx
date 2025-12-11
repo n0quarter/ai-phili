@@ -1146,7 +1146,7 @@ const Index = () => {
                   </li>
                   <li className="flex gap-3">
                     <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
-                    <p className="text-lg">High gross margin (>80%)</p>
+                    <p className="text-lg">High gross margin (&gt;80%)</p>
                   </li>
                   <li className="flex gap-3">
                     <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
