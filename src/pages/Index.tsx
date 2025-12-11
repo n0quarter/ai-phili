@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign } from "lucide-react";
+import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign, FileSearch, Mail, Phone, RefreshCw, ChevronLeft, ChevronRight } from "lucide-react";
 import ChatSimulation from "@/components/ChatSimulation";
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
@@ -11,10 +11,21 @@ import accountManagerCopilot from "@/assets/account-manager-copilot.png";
 import voiceAiAssistant from "@/assets/voice-ai-assistant.png";
 import mobilityBenefitsBackground from "@/assets/mobility-benefits-background.jpg";
 import competitiveLandscapeMap from "@/assets/competitive-landscape-map.png";
+import processStep1 from "@/assets/process-step-1-documents.jpg";
+import processStep2 from "@/assets/process-step-2-notify.jpg";
+import processStep3 from "@/assets/process-step-3-inquiries.jpg";
+import processStep4 from "@/assets/process-step-4-repeat.jpg";
 import CompetitiveLandscapeChart from "@/components/CompetitiveLandscapeChart";
 import RoadmapMatrix from "@/components/RoadmapMatrix";
 import FleetManagementGrowthChart from "@/components/FleetManagementGrowthChart";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 const Index = () => {
   const features = [{
     title: "Phone and Chatbot",
@@ -204,47 +215,133 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">Problem </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Corporate Mobility Has Fragmented — And No One Has <span className="text-electric">Functional AI Support</span>
+                Support for Customers & Drivers is an <span className="text-electric">Unprofitable but Yet Needed</span> Business Today
               </h2>
             </div>
 
-            <Card className="p-8 md:p-12 border-2 border-border/50">
+            <Card className="p-4 md:p-8 border-2 border-border/50">
               <div className="space-y-6">
-                <p className="text-lg font-medium mb-6">
-                  Companies now offer a mix of cars, bikes, budgets, subscriptions, EV charging and mobility cards.
+                <p className="text-lg font-medium text-center">
+                  The manual process for vehicle returns today:
                 </p>
-                <p className="text-lg font-medium mb-6">After talking to employees and management of 7 providers in fleet & mobility management, they described the following problems:</p>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">Fleet management software providers lack AI agents that understand mobility workflows and actually work</p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">Example - The manual process for vehicle returns today:</p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      No system unifies contract data, SLAs, policies and workflows across all corporate mobility offerings
-                    </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      Admins and drivers receive inconsistent answers across multiple portals
-                    </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      Account Managers drown in manual case handling and reporting
-                    </p>
-                  </li>
-                </ul>
-                <p className="text-lg font-bold mt-8 text-center">
-                  Corporate mobility is multi-stakeholder and multi-product — but AI support today is siloed and non-functional.
-                </p>
+                
+                {/* Process Carousel */}
+                <Carousel className="w-full max-w-4xl mx-auto">
+                  <CarouselContent>
+                    {/* Step 1 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep1} 
+                          alt="Document Search" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <FileSearch className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 1</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Document Search</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager searches through leasing contracts, car policies & workshop agreements for return requirements
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 2 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep2} 
+                          alt="Customer Notification" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <Mail className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 2</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Customer Notification</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager informs customer about upcoming vehicle return
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 3 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep3} 
+                          alt="Follow-up Questions" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <Phone className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 3</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Follow-up Inquiries</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Customer or driver emails or calls Account Manager with questions
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 4 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img 
+                          src={processStep4} 
+                          alt="Repetition" 
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-destructive flex items-center justify-center">
+                              <RefreshCw className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-destructive text-white text-lg font-bold px-4 py-2 rounded-full">Step 4</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Endless Repetition</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager must repeat this entire process for every single customer
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
+                
+                {/* Problem Statement */}
+                <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-6 mt-8">
+                  <div className="flex items-start gap-4">
+                    <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-bold text-destructive mb-2">The Problem:</p>
+                      <p className="text-muted-foreground">
+                        Current CRM and fleet management systems don't analyze data across customers and don't suggest answers. 
+                        Support per vehicle costs <span className="font-bold text-foreground">€30-50</span> today. 
+                        With an average of one inquiry per vehicle per month, back-and-forth communication leaves almost no margin — <span className="font-bold text-destructive">unprofitable business</span>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
