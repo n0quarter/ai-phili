@@ -92,7 +92,7 @@ const Index = () => {
     name: "Viktor Shcherban",
     role: "CTO",
     image: viktorShcherban,
-    bio: "A software developer and CTO since 2006, Viktor has founded or co-founded 5 companies — 4 still operational and 1 exited to a NASDAQ-listed company. He specializes in RAG AI assistants and LLM-powered applications."
+    bio: "A software developer and CTO since 2006, Viktor has founded or co-founded 5 companies — 4 still operational and 1 exited to a NASDAQ-listed company. He specializes in RAG AI assistants and LLM-powered applications, and has held numerous workshops teaching developers in generative AI coding."
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
