@@ -714,7 +714,9 @@ const Index = () => {
             </div>
 
             <Card className="p-8 md:p-12 border-2 border-electric/30 bg-electric/5">
-              <p className="text-xl font-bold text-center">Phili is the first unified AI layer for ALL corporate mobility benefits (car + bike + budget + subscription) and owns the most relevant sources for support quality (phone, chat, inbox & copilot).</p>
+              <p className="text-lg md:text-xl text-muted-foreground text-center leading-relaxed">
+                Phili is the first unified AI layer for <span className="font-bold text-electric">ALL corporate mobility benefits</span> (car + bike + budget + subscription) and owns the most relevant sources for support quality (<span className="font-bold text-electric">phone, chat, inbox & copilot</span>).
+              </p>
             </Card>
           </div>
         </div>
