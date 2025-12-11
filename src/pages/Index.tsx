@@ -919,49 +919,6 @@ const Index = () => {
                         </td>
                       </tr>
 
-                      <tr className="hover:bg-muted/30 transition-colors">
-                        <td className="px-6 py-5 font-medium">Cross-product support (auto, bike, budget, subscription)</td>
-                        <td className="px-6 py-5 text-muted-foreground">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-destructive font-bold text-xl">✗</span>
-                            <span>Separate systems needed</span>
-                          </span>
-                        </td>
-                        <td className="px-6 py-5 text-muted-foreground">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-destructive font-bold text-xl">✗</span>
-                            <span>No unification</span>
-                          </span>
-                        </td>
-                        <td className="px-6 py-5 font-medium">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
-                            <span>Unified mobility support engine</span>
-                          </span>
-                        </td>
-                      </tr>
-
-                      <tr className="hover:bg-muted/30 transition-colors">
-                        <td className="px-6 py-5 font-medium">ROI transparency & corporate mobility cost analytics</td>
-                        <td className="px-6 py-5 text-muted-foreground">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-destructive font-bold text-xl">✗</span>
-                            <span>Not mobility-specific</span>
-                          </span>
-                        </td>
-                        <td className="px-6 py-5 text-muted-foreground">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-destructive font-bold text-xl">✗</span>
-                            <span>Not process-aware</span>
-                          </span>
-                        </td>
-                        <td className="px-6 py-5 font-medium">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
-                            <span>Full corporate mobility KPI & cost-model analysis</span>
-                          </span>
-                        </td>
-                      </tr>
                     </tbody>
                   </table>
                 </div>
