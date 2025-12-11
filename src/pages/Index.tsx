@@ -337,9 +337,8 @@ const Index = () => {
                     <div>
                       <p className="font-bold text-foreground text-lg mb-3">The Problem:</p>
                       <p className="text-muted-foreground leading-relaxed">
-                        Current CRM and fleet management systems don't analyze data across customers and don't suggest answers. 
-                        Support per vehicle costs <span className="font-bold text-electric">€30-50</span> today. 
-                        With an average of one inquiry per vehicle per month, back-and-forth communication leaves almost no margin — <span className="font-bold text-electric">unprofitable business</span>.
+                        Current CRM and fleet management systems lack cross-customer analytics and automated response suggestions. 
+                        At <span className="font-bold text-electric">€30-50 per vehicle</span> in support costs and one inquiry per vehicle monthly, margins erode quickly — <span className="font-bold text-electric">making support unprofitable</span>.
                       </p>
                     </div>
                   </div>
