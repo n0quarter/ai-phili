@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign } from "lucide-react";
+import { Check, ArrowRight, Zap, Shield, TrendingUp, Users, Network, Headset, UserX, Bot, AlertTriangle, DollarSign, FileSearch, Mail, Phone, RefreshCw } from "lucide-react";
 import ChatSimulation from "@/components/ChatSimulation";
 import videoThumbnail from "@/assets/video-thumbnail.png";
 import andreasReichert from "@/assets/andreas-reichert.png";
@@ -209,44 +209,81 @@ const Index = () => {
             </div>
 
             <Card className="p-8 md:p-12 border-2 border-border/50">
-              <div className="space-y-6">
-                <p className="text-lg font-medium mb-6">
-                  Companies now offer a mix of cars, bikes, budgets, subscriptions, EV charging and mobility cards.
+              <div className="space-y-8">
+                <p className="text-lg font-medium text-center">
+                  Der manuelle Prozess bei Fahrzeugrückgaben heute:
                 </p>
-                <p className="text-lg font-medium mb-6">After talking to employees and management of 7 providers in fleet & mobility management, they described the following problems:</p>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">Fleet management software providers lack AI agents that understand mobility workflows and actually work</p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      Car & bike leasing providers only understand their own (car OR bike, not both)
+                
+                {/* Flow Diagram */}
+                <div className="grid md:grid-cols-4 gap-4">
+                  {/* Step 1 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-electric/10 flex items-center justify-center mb-4">
+                      <FileSearch className="w-8 h-8 text-electric" />
+                    </div>
+                    <div className="bg-electric text-white text-sm font-bold px-3 py-1 rounded-full mb-3">1</div>
+                    <h4 className="font-bold mb-2 text-sm">Dokumentensuche</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Account Manager sucht in Leasingverträgen, Car Policies & Werkstattverträgen nach Rückgabe-Infos
                     </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      No system unifies contract data, SLAs, policies and workflows across all corporate mobility offerings
+                  </div>
+                  
+                  {/* Arrow */}
+                  <div className="hidden md:flex items-center justify-center -mx-8">
+                    <ArrowRight className="w-6 h-6 text-muted-foreground absolute left-1/2 top-12 -translate-x-1/2" />
+                  </div>
+                  
+                  {/* Step 2 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-electric/10 flex items-center justify-center mb-4">
+                      <Mail className="w-8 h-8 text-electric" />
+                    </div>
+                    <div className="bg-electric text-white text-sm font-bold px-3 py-1 rounded-full mb-3">2</div>
+                    <h4 className="font-bold mb-2 text-sm">Kundeninformation</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Account Manager informiert Kunde über anstehende Fahrzeugrückgabe
                     </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      Admins and drivers receive inconsistent answers across multiple portals
+                  </div>
+                  
+                  {/* Step 3 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-electric/10 flex items-center justify-center mb-4">
+                      <Phone className="w-8 h-8 text-electric" />
+                    </div>
+                    <div className="bg-electric text-white text-sm font-bold px-3 py-1 rounded-full mb-3">3</div>
+                    <h4 className="font-bold mb-2 text-sm">Rückfragen</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Kunde/Fahrer schreibt E-Mail oder ruft bei Rückfragen an
                     </p>
-                  </li>
-                  <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                    <p className="text-muted-foreground">
-                      Account Managers drown in manual case handling and reporting
+                  </div>
+                  
+                  {/* Step 4 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+                      <RefreshCw className="w-8 h-8 text-destructive" />
+                    </div>
+                    <div className="bg-destructive text-white text-sm font-bold px-3 py-1 rounded-full mb-3">4</div>
+                    <h4 className="font-bold mb-2 text-sm">Wiederholung</h4>
+                    <p className="text-muted-foreground text-sm">
+                      Account Manager wiederholt dies für jeden Kunden einzeln
                     </p>
-                  </li>
-                </ul>
-                <p className="text-lg font-bold mt-8 text-center">
-                  Corporate mobility is multi-stakeholder and multi-product — but AI support today is siloed and non-functional.
-                </p>
+                  </div>
+                </div>
+                
+                {/* Problem Statement */}
+                <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-6 mt-8">
+                  <div className="flex items-start gap-4">
+                    <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-bold text-destructive mb-2">Das Problem:</p>
+                      <p className="text-muted-foreground">
+                        Aktuelle CRM- und Fuhrparkmanagementsysteme analysieren keine Daten kundenübergreifend und schlagen keine Antworten vor. 
+                        Die Betreuung pro Fahrzeug kostet heute <span className="font-bold text-foreground">30-50€</span>. 
+                        Bei durchschnittlich einer Anfrage pro Fahrzeug pro Monat bleibt durch Hin-und-Her-Kommunikation kaum Marge — <span className="font-bold text-destructive">unprofitables Geschäft</span>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
