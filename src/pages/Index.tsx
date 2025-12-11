@@ -215,7 +215,7 @@ const Index = () => {
             <div className="text-center mb-16">
               <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">Problem </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Corporate Mobility Has Fragmented — And No One Has <span className="text-electric">Functional AI Support</span>
+                Support for Customers & Drivers is an <span className="text-electric">Unprofitable but Yet Needed</span> Business Today
               </h2>
             </div>
 
