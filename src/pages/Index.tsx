@@ -1303,7 +1303,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
                   <div className="flex flex-col items-center text-center mb-6">
-                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-full max-w-sm h-80 rounded-2xl object-cover object-top bg-muted/30 mb-6 shadow-lg" />
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-full max-w-sm aspect-[3/4] rounded-2xl object-cover object-center bg-muted/30 mb-6 shadow-lg" />
                     <h3 className="text-2xl font-bold mb-1">{founder.name}</h3>
                     <p className="text-electric font-semibold">{founder.role}</p>
                   </div>
