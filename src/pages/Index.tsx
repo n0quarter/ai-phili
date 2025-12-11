@@ -87,7 +87,7 @@ const Index = () => {
     name: "Andreas Reichert",
     role: "CEO",
     image: andreasReichert,
-    bio: "With 8 years of leadership in B2B SaaS Mobility Tech, Andreas has led over 10 digital ventures as a Venture Architect. As Co-Founder & CEO of MOBIKO, he established the market leader for mobility budget solutions for employee mobility and successfully closed a Series A investment round. He has an extensive industry network to fleet management providers and mobility consulting firms, and serves as a board member of the bfp Forum."
+    bio: "With 8 years of leadership in B2B SaaS Mobility Tech, Andreas has led over 10 corporate ventures as a Venture Architect. As Co-Founder & CEO of MOBIKO, he established the market leader for mobility budget solutions for employee mobility and successfully closed a Series A investment round. He has an extensive industry network to fleet management providers and mobility consulting firms, and serves as a board member of the bfp Forum."
   }, {
     name: "Viktor Shcherban",
     role: "CTO",
