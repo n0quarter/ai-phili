@@ -329,15 +329,17 @@ const Index = () => {
                 </Carousel>
                 
                 {/* Problem Statement */}
-                <div className="bg-destructive/5 border border-destructive/20 rounded-lg p-6 mt-8">
-                  <div className="flex items-start gap-4">
-                    <AlertTriangle className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
+                <div className="bg-card border border-border/50 rounded-2xl p-8 mt-8">
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-full bg-electric/10 flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-electric" />
+                    </div>
                     <div>
-                      <p className="font-bold text-destructive mb-2">The Problem:</p>
-                      <p className="text-muted-foreground">
+                      <p className="font-bold text-foreground text-lg mb-3">The Problem:</p>
+                      <p className="text-muted-foreground leading-relaxed">
                         Current CRM and fleet management systems don't analyze data across customers and don't suggest answers. 
-                        Support per vehicle costs <span className="font-bold text-foreground">€30-50</span> today. 
-                        With an average of one inquiry per vehicle per month, back-and-forth communication leaves almost no margin — <span className="font-bold text-destructive">unprofitable business</span>.
+                        Support per vehicle costs <span className="font-bold text-electric">€30-50</span> today. 
+                        With an average of one inquiry per vehicle per month, back-and-forth communication leaves almost no margin — <span className="font-bold text-electric">unprofitable business</span>.
                       </p>
                     </div>
                   </div>
