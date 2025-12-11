@@ -94,7 +94,7 @@ const Index = () => {
     role: "CTO",
     image: viktorShcherban,
     linkedin: "https://www.linkedin.com/in/shcherbanviktor/",
-    bio: "With nearly two decades as a software developer and CTO, Viktor has founded or co-founded 5 companies — 4 still thriving, plus Timberbase which successfully exited to a NASDAQ-listed company. A recognized expert in RAG AI assistants and LLM-powered applications, he trains developers across enterprises through his popular generative AI coding workshops."
+    bio: "With nearly two decades as a software developer and CTO, Viktor has founded or co-founded 5 companies — 4 still thriving, plus Timberbase which successfully exited to a NASDAQ-listed company. He is a recognized expert in RAG AI assistants and LLM-powered applications, and trains developers across enterprises through his popular generative AI coding workshops."
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
