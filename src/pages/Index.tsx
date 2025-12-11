@@ -943,9 +943,7 @@ const Index = () => {
                 </li>
                 <li className="flex gap-4">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg font-medium">
-                    Mobility Providers (auto, bike, budgets, subscription)
-                  </p>
+                  <p className="text-lg font-medium">Mobility Providers (car subscription, car rental etc.)</p>
                 </li>
                 <li className="flex gap-4">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
