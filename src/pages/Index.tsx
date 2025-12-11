@@ -356,7 +356,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
                 Solution
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -487,15 +487,15 @@ const Index = () => {
                 {/* Right Side - Quality Backbone */}
                 <div className="lg:col-span-3 space-y-4">
                   <div className="text-center mb-4">
-                    <Badge className="bg-growth/20 text-growth border-growth/30">Quality Backbone</Badge>
+                    <Badge className="bg-electric/20 text-electric border-electric/30">Quality Backbone</Badge>
                   </div>
-                  <Card className="p-6 bg-growth/90 border-growth text-white">
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
                     <h3 className="text-xl font-bold text-center">Chat Monitor</h3>
                   </Card>
-                  <Card className="p-6 bg-growth/90 border-growth text-white">
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
                     <h3 className="text-xl font-bold text-center">Evals</h3>
                   </Card>
-                  <Card className="p-6 bg-growth/90 border-growth text-white">
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
                     <h3 className="text-xl font-bold text-center">FAQs</h3>
                   </Card>
                 </div>
@@ -510,7 +510,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
                 Impact
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -524,37 +524,37 @@ const Index = () => {
             <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
               <ul className="space-y-6">
                 <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
                     <span className="font-bold">40-60% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
                   </p>
                 </li>
                 <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
                     <span className="font-bold">20–35% productivity uplift</span> for Account Managers
                   </p>
                 </li>
                 <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
                     <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility benefits
                   </p>
                 </li>
                 <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
                     <span className="font-bold">Consistent SLA execution</span> across providers
                   </p>
                 </li>
                 <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
                     <span className="font-bold">Automated reporting and renewal workflows</span>
                   </p>
                 </li>
                 <li className="flex gap-4">
-                  <Check className="h-6 w-6 text-growth flex-shrink-0 mt-1" />
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
                   <p className="text-lg">
                     <span className="font-bold">Full audit trails + AI voice transcripts</span>
                   </p>
@@ -763,7 +763,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>Mobility-Agent trained on leasing & policies</span>
                           </span>
                         </td>
@@ -785,7 +785,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>40–60% automation with process graphs</span>
                           </span>
                         </td>
@@ -807,7 +807,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>True multi-brand SLA execution</span>
                           </span>
                         </td>
@@ -829,7 +829,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>Renewal alerts, insights, risk scoring</span>
                           </span>
                         </td>
@@ -851,7 +851,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>Built-in mobility data models</span>
                           </span>
                         </td>
@@ -873,7 +873,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>Integrated Phone AI (299 €/month)</span>
                           </span>
                         </td>
@@ -895,7 +895,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>AI-driven workflow orchestration</span>
                           </span>
                         </td>
@@ -917,7 +917,7 @@ const Index = () => {
                         </td>
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
-                            <span className="text-growth font-bold text-xl">✓</span>
+                            <span className="text-electric font-bold text-xl">✓</span>
                             <span>Drivers, employers, leasing, shops, logistics</span>
                           </span>
                         </td>
@@ -995,7 +995,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
                 Business Model
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -1032,18 +1032,18 @@ const Index = () => {
                 <h3 className="text-2xl font-bold mb-6">Key Metrics</h3>
                 <ul className="space-y-3">
                   <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                     <p className="text-lg">
                       <span className="font-semibold">Average Revenue per Customer:</span> ~194k€/year
                     </p>
                   </li>
                   <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                     <p className="text-lg"><span className="font-semibold">Customer count for full SOM:</span> ~202
                     </p>
                   </li>
                   <li className="flex gap-3">
-                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-growth mt-2"></div>
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                     <p className="text-lg">
                       <span className="font-semibold">Recurring revenue share:</span> &gt;80%
                     </p>
@@ -1052,7 +1052,7 @@ const Index = () => {
               </Card>
             </div>
 
-            <Card className="p-8 border-2 border-growth/30 bg-growth/5">
+            <Card className="p-8 border-2 border-electric/30 bg-electric/5">
               <p className="text-xl font-bold text-center">
                 High-margin vertical AI SaaS.
               </p>
@@ -1159,7 +1159,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-growth/10 text-growth border-growth/30">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
                 Financial Projections
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -1194,19 +1194,19 @@ const Index = () => {
                 </ul>
               </Card>
 
-              <Card className="p-8 border-2 border-growth/30 bg-growth/5">
+              <Card className="p-8 border-2 border-electric/30 bg-electric/5">
                 <h3 className="text-2xl font-bold mb-6">Key Factors</h3>
                 <ul className="space-y-3">
                   <li className="flex gap-3">
-                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <Check className="h-5 w-5 text-electric flex-shrink-0 mt-1" />
                     <p className="text-lg">High recurring share</p>
                   </li>
                   <li className="flex gap-3">
-                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <Check className="h-5 w-5 text-electric flex-shrink-0 mt-1" />
                     <p className="text-lg">High gross margin (&gt;80%)</p>
                   </li>
                   <li className="flex gap-3">
-                    <Check className="h-5 w-5 text-growth flex-shrink-0 mt-1" />
+                    <Check className="h-5 w-5 text-electric flex-shrink-0 mt-1" />
                     <p className="text-lg">Strong upsell potential amongst the modules</p>
                   </li>
                 </ul>
@@ -1295,7 +1295,7 @@ const Index = () => {
                 The Team
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Experienced Founders
+                Experienced <span className="text-electric">Founders</span>
               </h2>
               <p className="text-xl text-muted-foreground">
                 Deep industry expertise combined with technical excellence

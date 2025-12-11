@@ -133,7 +133,7 @@ const RoadmapMatrix = () => {
                       {features.map((feature, idx) => (
                         <li key={idx} className="flex gap-2 text-sm">
                           {feature.done ? (
-                            <Check className="h-4 w-4 text-growth flex-shrink-0 mt-0.5" />
+                            <Check className="h-4 w-4 text-electric flex-shrink-0 mt-0.5" />
                           ) : (
                             <X className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
                           )}
