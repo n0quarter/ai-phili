@@ -297,9 +297,7 @@ const Index = () => {
                             <div className="bg-destructive text-white text-lg font-bold px-4 py-2 rounded-full">Step 4</div>
                           </div>
                           <h4 className="text-2xl font-bold text-white mb-3">Endless Repetition</h4>
-                          <p className="text-white/90 text-lg max-w-2xl">
-                            Account Manager must repeat this entire process for every single customer
-                          </p>
+                          <p className="text-white/90 text-lg max-w-2xl">Account Manager must repeat this entire process for every single customer & driver</p>
                         </div>
                       </div>
                     </CarouselItem>
