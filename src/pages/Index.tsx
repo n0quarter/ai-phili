@@ -1270,7 +1270,7 @@ const Index = () => {
                 Experienced <span className="text-electric">Founders</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Andreas & Viktor founded Dolittle AI together, building conversational AI and generative AI solutions for industries like insurance, mobility consulting, and hotels.
+                Andreas & Viktor founded Dolittle AI together, building conversational AI and generative AI solutions for industries like insurance, mobility consulting, and hotels. They combine deep industry knowledge in mobility tech with technical excellence in generative and conversational AI.
               </p>
             </div>
 
