@@ -849,7 +849,7 @@ const Index = () => {
                         <td className="px-6 py-5 font-medium">
                           <span className="inline-flex items-center gap-2">
                             <span className="text-electric font-bold text-xl">✓</span>
-                            <span>Integrated Phone AI (299 €/month)</span>
+                            <span>Integrated Phone AI</span>
                           </span>
                         </td>
                       </tr>
