@@ -1269,8 +1269,8 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Experienced <span className="text-electric">Founders</span>
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Deep industry expertise combined with technical excellence
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Andreas & Viktor founded Dolittle AI together, building conversational AI and generative AI solutions for industries like insurance, mobility consulting, and hotels.
               </p>
             </div>
 
