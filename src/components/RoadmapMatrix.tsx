@@ -72,7 +72,8 @@ const RoadmapMatrix = () => {
         ],
         pilot: [
           { text: "Connectivity to first Email & CRM system", done: true },
-          { text: "SLA handling", done: true }
+          { text: "SLA handling", done: true },
+          { text: "Internal chat for customer insights and AI suggested answers", done: true }
         ],
         market: [
           { text: "Hypercare", done: true }
