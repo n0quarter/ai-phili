@@ -82,7 +82,7 @@ const Index = () => {
     role: "CEO",
     image: andreasReichert,
     linkedin: "https://www.linkedin.com/in/andreas-reichert-07038785/",
-    bio: "With 8 years of leadership experience at MOBIKO in B2B SaaS Mobility Tech, Andreas has led over 10 corporate ventures as a Venture Architect. As Co-Founder & CEO, he established MOBIKO as a corporate venture for Audi Business Innovation, Baloise, and the Startup family office, building the market leader for mobility budget solutions for employee mobility and successfully closing a Series A investment round. He has an extensive industry network to fleet management providers and mobility consulting firms, and serves as a board member of the bfp Forum."
+    bio: "Andreas has 8 years of leadership experience at MOBIKO in B2B SaaS Mobility Tech and has led over 10 corporate ventures as a Venture Architect. As Co-Founder & CEO, he established MOBIKO as a corporate venture with Audi Business Innovation, Baloise, and the Startup family office, building the market leader for mobility budget solutions for employee mobility. With MOBIKO he successfully closed a Series A investment round and won various mobility & employer awards. He has an extensive industry network to fleet management providers and mobility consulting firms, and serves as a board member of the bfp Forum."
   }, {
     name: "Viktor Shcherban",
     role: "CTO",
