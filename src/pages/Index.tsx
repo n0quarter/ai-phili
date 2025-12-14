@@ -1328,7 +1328,7 @@ const Index = () => {
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">20% Business Development Start with our pilot customer  and find fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
+                  <p className="text-lg">20% Business Development in order to onboard pilot customer and find fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
                   </p>
                 </li>
                 <li className="flex gap-3">
