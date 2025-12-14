@@ -82,13 +82,13 @@ const Index = () => {
     role: "CEO",
     image: andreasReichert,
     linkedin: "https://www.linkedin.com/in/andreas-reichert-07038785/",
-    bio: "As Co-Founder & CEO of MOBIKO, Andreas established the company as Germany's market leader for employee mobility budgets, backed by Audi Business Innovation, Baloise, and a leading family office. He closed a Series A round and secured multiple industry awards. Beyond MOBIKO, Andreas has launched 10+ corporate ventures as Venture Architect and serves on the board of bfp Forum (Germany's leading fleet management association), giving him direct access to key decision-makers at fleet operators, leasing providers, and mobility consultancies—Phili's core target customers."
+    bio: "Andreas has 8 years of leadership experience at MOBIKO in B2B SaaS Mobility Tech and has led over 10 corporate ventures as a Venture Architect. As Co-Founder & CEO, he established MOBIKO as a corporate venture with Audi Business Innovation, Baloise, and the Startup family office, building the market leader for mobility budget solutions for employee mobility. With MOBIKO he successfully closed a Series A investment round and won various mobility & employer awards. He has an extensive industry network to fleet management providers and mobility consulting firms, and serves as a board member of the bfp Forum."
   }, {
     name: "Viktor Shcherban",
     role: "CTO",
     image: viktorShcherban,
     linkedin: "https://www.linkedin.com/in/shcherbanviktor/",
-    bio: "Viktor – Serial founder & AI-first technologist Viktor has founded or co-founded 5 companies over two decades as a developer and CTO—4 still operating, plus Timberbase (successful exit to a NASDAQ-listed company). He's a recognized expert in RAG-based AI systems and LLM applications, with hands-on experience building production-grade AI products. Viktor trains enterprise developers on generative AI through sought-after workshops, keeping Phili at the cutting edge of what's technically possible. Why this matters for Phili: Viktor can build what competitors can't. While others bolt chatbots onto legacy systems, he architects AI-native solutions from the ground up—exactly what scalable, multi-system fleet support requires."
+    bio: "With nearly two decades as a software developer and CTO, Viktor has founded or co-founded 5 companies — 4 still thriving, plus Timberbase which successfully exited to a NASDAQ-listed company. He is a recognized expert in RAG AI assistants and LLM-powered applications, and trains developers across enterprises through his popular generative AI coding workshops."
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
@@ -1314,8 +1314,8 @@ const Index = () => {
 
               <h3 className="text-2xl font-bold mb-6 mt-8">Investment Ask</h3>
               <div className="bg-electric/10 p-6 rounded-lg mb-6">
-                <p className="text-3xl font-bold text-electric mb-2">€250,000</p>
-                <p className="text-lg font-semibold">Angel Investment</p>
+                <p className="text-3xl font-bold text-electric mb-2">€500,000</p>
+                <p className="text-lg font-semibold">Seed Investment</p>
               </div>
 
               <h3 className="text-xl font-bold mb-4">Use of Funds:</h3>
@@ -1328,8 +1328,7 @@ const Index = () => {
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
+                  <p className="text-lg">20% Business Development Start with our pilot customer  and find fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -1341,8 +1340,7 @@ const Index = () => {
               </ul>
 
               <div className="mt-8 pt-8 border-t border-border">
-                <p className="text-lg">
-                  <span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), 
+                <p className="text-lg">Next moves: To expand Voice inbox to omni channel (Chat & Email), build first CRM & Mail integration, and train Copilot on Fleet specific cases with our pilot customer.<span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), 
                   build first CRM & Mail integration, and train Copilot on Fleet specific cases
                 </p>
               </div>
