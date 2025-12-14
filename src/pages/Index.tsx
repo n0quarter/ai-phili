@@ -20,839 +20,1329 @@ import RoadmapMatrix from "@/components/RoadmapMatrix";
 import FleetManagementGrowthChart from "@/components/FleetManagementGrowthChart";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
 const Index = () => {
-  const marketData = [
-    { name: "Fleet Management Software", value: 35, color: "#9b87f5" },
-    { name: "Mobility Benefits", value: 25, color: "#7E69AB" },
-    { name: "Traditional Leasing", value: 40, color: "#6E59A5" },
-  ];
-
-  const testimonials = [
-    {
-      quote: "The AI support has transformed how we handle customer inquiries. Response times are down 80%.",
-      author: "Sarah Chen",
-      role: "Head of Customer Success",
-      company: "TechFleet Solutions"
-    },
-    {
-      quote: "Integration was seamless and the ROI was visible within the first month.",
-      author: "Michael Torres",
-      role: "Operations Director",
-      company: "Global Mobility Corp"
-    },
-    {
-      quote: "Our team can now focus on strategic initiatives instead of repetitive support tasks.",
-      author: "Emma Schmidt",
-      role: "VP of Operations",
-      company: "FleetPro International"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-electric to-purple-600 rounded-lg"></div>
-              <span className="text-xl font-bold bg-gradient-to-r from-electric to-purple-600 bg-clip-text text-transparent">
-                Lovable
-              </span>
-            </div>
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#features" className="text-gray-600 hover:text-electric transition-colors">Features</a>
-              <a href="#solutions" className="text-gray-600 hover:text-electric transition-colors">Solutions</a>
-              <a href="#pricing" className="text-gray-600 hover:text-electric transition-colors">Pricing</a>
-              <a href="#about" className="text-gray-600 hover:text-electric transition-colors">About</a>
-              <Button className="bg-electric hover:bg-electric/90">Get Started</Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+  const features = [{
+    title: "Phone and Chatbot",
+    description: "Answers user questions based on previous conversations and contract information",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Upload of user FAQs",
+    description: "Easy integration of frequently asked questions",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Upload or APIs to relevant contracts",
+    description: "Car policies, leasing contracts, company bike contracts, travel policies",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Copilot chat",
+    description: "Get insights in customer use cases",
+    accountManager: true,
+    generalManagement: true
+  }, {
+    title: "Task planner",
+    description: "Shows open customer issues including recommendations with next steps",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Automated workflows",
+    description: "Execute ticket handling to third parties such as making appointments with garages or ordering lost charging cards",
+    accountManager: true,
+    generalManagement: false
+  }, {
+    title: "Upselling recommendations",
+    description: "Smart suggestions for service expansion",
+    accountManager: true,
+    generalManagement: true
+  }, {
+    title: "Usage and cost analysis",
+    description: "Comprehensive analytics and insights",
+    accountManager: false,
+    generalManagement: true
+  }, {
+    title: "Full transparency on AI decisions",
+    description: "Chat monitoring for each interaction",
+    accountManager: false,
+    generalManagement: true
+  }, {
+    title: "Continuous improvement evals",
+    description: "For continuous improvement of chat quality",
+    accountManager: false,
+    generalManagement: true
+  }, {
+    title: "GDPR and AI act compliant",
+    description: "Data handling and hosting",
+    accountManager: false,
+    generalManagement: true
+  }];
+  const founders = [{
+    name: "Andreas Reichert",
+    role: "CEO",
+    image: andreasReichert,
+    linkedin: "https://www.linkedin.com/in/andreas-reichert-07038785/",
+    bio: "Andreas has 8 years of leadership experience at MOBIKO in B2B SaaS Mobility Tech and has led over 10 corporate ventures as a Venture Architect. As Co-Founder & CEO, he established MOBIKO as a corporate venture with Audi Business Innovation, Baloise, and the Startup family office, building the market leader for mobility budget solutions for employee mobility. With MOBIKO he successfully closed a Series A investment round and won various mobility & employer awards. He has an extensive industry network to fleet management providers and mobility consulting firms, and serves as a board member of the bfp Forum."
+  }, {
+    name: "Viktor Shcherban",
+    role: "CTO",
+    image: viktorShcherban,
+    linkedin: "https://www.linkedin.com/in/shcherbanviktor/",
+    bio: "With nearly two decades as a software developer and CTO, Viktor has founded or co-founded 5 companies — 4 still thriving, plus Timberbase which successfully exited to a NASDAQ-listed company. He is a recognized expert in RAG AI assistants and LLM-powered applications, and trains developers across enterprises through his popular generative AI coding workshops."
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center space-y-8 animate-fade-in">
-            <Badge className="bg-electric/10 text-electric border-electric/20 hover:bg-electric/20">
-              🚀 Revolutionizing Fleet Management Support
+      <section className="relative overflow-hidden" style={{
+      backgroundImage: `url(${mobilityBenefitsBackground})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 to-primary/80"></div>
+        
+        <div className="container mx-auto px-6 py-24 md:py-32 relative">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <Badge className="mb-6 bg-electric/20 text-electric border-electric/30 hover:bg-electric/30">
+              AI-Powered Corporate Mobility
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              AI-Powered Support for
-              <span className="block bg-gradient-to-r from-electric to-purple-600 bg-clip-text text-transparent">
-                Fleet Management
-              </span>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground">
+              PHILI
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Transform your customer support with intelligent AI agents that handle inquiries 24/7, 
-              reduce costs by 70%, and delight your customers.
+            <p className="text-2xl md:text-3xl mb-4 text-primary-foreground/90 font-medium">
+              The AI Customer Agent & Copilot for Corporate Mobility
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-electric hover:bg-electric/90 text-lg px-8">
-                Start Free Trial
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
-                Watch Demo
-              </Button>
-            </div>
-            <div className="flex items-center justify-center gap-8 pt-8 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-electric" />
-                <span>No credit card required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-electric" />
-                <span>14-day free trial</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-electric" />
-                <span>Cancel anytime</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Demo Section */}
-      <section className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
-            <img 
-              src={videoThumbnail} 
-              alt="Product Demo" 
-              className="w-full h-auto"
-            />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <div className="w-0 h-0 border-l-[20px] border-l-electric border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { value: "70%", label: "Cost Reduction" },
-              { value: "24/7", label: "Availability" },
-              { value: "80%", label: "Faster Response" },
-              { value: "95%", label: "Customer Satisfaction" },
-            ].map((stat, index) => (
-              <Card key={index} className="p-8 text-center hover:shadow-lg transition-shadow">
-                <div className="text-4xl font-bold bg-gradient-to-r from-electric to-purple-600 bg-clip-text text-transparent mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Problem Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-red-50 to-orange-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-red-100 text-red-700 border-red-200 mb-4">
-              The Challenge
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Fleet Management Support is Broken
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Traditional support models can't keep up with the demands of modern fleet management
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: UserX,
-                title: "High Support Costs",
-                description: "Maintaining 24/7 human support teams is expensive and unsustainable",
-                color: "text-red-600"
-              },
-              {
-                icon: AlertTriangle,
-                title: "Slow Response Times",
-                description: "Customers wait hours or days for answers to simple questions",
-                color: "text-orange-600"
-              },
-              {
-                icon: TrendingUp,
-                title: "Scaling Challenges",
-                description: "Growing customer base overwhelms support capacity",
-                color: "text-red-600"
-              },
-              {
-                icon: DollarSign,
-                title: "Revenue Leakage",
-                description: "Poor support leads to customer churn and lost opportunities",
-                color: "text-orange-600"
-              },
-              {
-                icon: FileSearch,
-                title: "Inconsistent Answers",
-                description: "Different agents provide different information to customers",
-                color: "text-red-600"
-              },
-              {
-                icon: RefreshCw,
-                title: "Repetitive Inquiries",
-                description: "Support teams waste time on the same questions over and over",
-                color: "text-orange-600"
-              }
-            ].map((problem, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow bg-white">
-                <problem.icon className={`h-12 w-12 ${problem.color} mb-4`} />
-                <h3 className="text-xl font-semibold mb-3">{problem.title}</h3>
-                <p className="text-gray-600">{problem.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section id="solutions" className="py-20 px-6 bg-gradient-to-br from-electric/5 to-purple-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Our Solution
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Three AI Agents, Infinite Possibilities
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Specialized AI agents working together to transform your customer support
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {[
-              {
-                image: aiSupportAgent,
-                title: "AI Support Agent",
-                description: "Handles customer inquiries instantly via chat, email, and web",
-                features: ["24/7 Availability", "Instant Responses", "Multi-language Support"]
-              },
-              {
-                image: accountManagerCopilot,
-                title: "Account Manager Copilot",
-                description: "Empowers your team with AI-assisted customer management",
-                features: ["Smart Insights", "Automated Tasks", "Proactive Alerts"]
-              },
-              {
-                image: voiceAiAssistant,
-                title: "Voice AI Assistant",
-                description: "Natural phone conversations that feel human",
-                features: ["Natural Speech", "Call Routing", "Sentiment Analysis"]
-              }
-            ].map((agent, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow bg-white">
-                <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={agent.image} 
-                    alt={agent.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-semibold mb-3">{agent.title}</h3>
-                  <p className="text-gray-600 mb-4">{agent.description}</p>
-                  <ul className="space-y-2">
-                    {agent.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2">
-                        <Check className="h-5 w-5 text-electric flex-shrink-0" />
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Card>
-            ))}
-          </div>
-
-          {/* Interactive Demo */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold mb-4">See It In Action</h3>
-              <p className="text-gray-600">Try our AI Support Agent with a real fleet management scenario</p>
-            </div>
+            <p className="text-lg md:text-xl mb-12 text-primary-foreground/80 max-w-3xl mx-auto">Reducing support communication effort by 40-60% for modern corporate mobility teams. Lifting Account Managers' productivity to the next level.</p>
+            
             <ChatSimulation />
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Features
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Everything You Need to Succeed
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Zap,
-                title: "Lightning Fast",
-                description: "Respond to customer inquiries in seconds, not hours"
-              },
-              {
-                icon: Shield,
-                title: "Enterprise Security",
-                description: "Bank-level encryption and compliance with GDPR, SOC 2"
-              },
-              {
-                icon: Network,
-                title: "Seamless Integration",
-                description: "Connect with your existing CRM, helpdesk, and tools"
-              },
-              {
-                icon: TrendingUp,
-                title: "Smart Analytics",
-                description: "Deep insights into customer behavior and support metrics"
-              },
-              {
-                icon: Users,
-                title: "Team Collaboration",
-                description: "AI and humans working together for best results"
-              },
-              {
-                icon: Headset,
-                title: "Multi-Channel",
-                description: "Support via chat, email, phone, and social media"
-              }
-            ].map((feature, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <feature.icon className="h-12 w-12 text-electric mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Process
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              How It Works
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get started in minutes, not months
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                image: processStep1,
-                step: "1",
-                title: "Upload Documents",
-                description: "Share your fleet management documentation and FAQs"
-              },
-              {
-                image: processStep2,
-                step: "2",
-                title: "AI Training",
-                description: "Our AI learns your business in minutes"
-              },
-              {
-                image: processStep3,
-                step: "3",
-                title: "Handle Inquiries",
-                description: "AI agents start supporting your customers"
-              },
-              {
-                image: processStep4,
-                step: "4",
-                title: "Continuous Improvement",
-                description: "System learns and improves from every interaction"
-              }
-            ].map((step, index) => (
-              <div key={index} className="relative">
-                <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="aspect-square overflow-hidden">
-                    <img 
-                      src={step.image} 
-                      alt={step.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="w-12 h-12 bg-electric text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">
-                      {step.step}
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                    <p className="text-gray-600">{step.description}</p>
-                  </div>
-                </Card>
-                {index < 3 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                    <ArrowRight className="h-8 w-8 text-electric" />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Market Opportunity Section */}
-      <section className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Market Opportunity
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              A Growing Market Ready for Disruption
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 className="text-3xl font-bold mb-6">Fleet Management Software Market</h3>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold">$34.6B Market Size (2024)</p>
-                    <p className="text-gray-600">Growing at 15.5% CAGR through 2030</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Users className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold">500K+ Fleet Operators Globally</p>
-                    <p className="text-gray-600">All need better customer support solutions</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <DollarSign className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold">$2.8B Support Cost Opportunity</p>
-                    <p className="text-gray-600">Potential savings from AI automation</p>
-                  </div>
-                </div>
-              </div>
-              <FleetManagementGrowthChart />
+      {/* Fleet Management Communication Data */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-8 bg-electric/20 text-electric border-electric/30">
+                Industry Insights
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                The Communication <span className="text-gradient">Challenge</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">50% of employees in fleet management spend most of their time on communication (Sources:Flotte.de, bfp Fuhrparkmonitor, Dataforce Insights).</p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Service providers confirm that the "Driver Helpdesk" is the most demanding and least scalable part of the business.
+              </p>
             </div>
-            <div>
-              <ResponsiveContainer width="100%" height={400}>
-                <PieChart>
-                  <Pie
-                    data={marketData}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={({ name, value }) => `${name}: ${value}%`}
-                    outerRadius={120}
-                    fill="#8884d8"
-                    dataKey="value"
-                  >
-                    {marketData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.color} />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                  <Legend />
-                </PieChart>
-              </ResponsiveContainer>
-              <p className="text-center text-gray-600 mt-4">
-                Market Distribution by Segment
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <Card className="p-8 h-[450px] bg-card">
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <Pie data={[{
+                    name: "Communication",
+                    value: 50
+                  }, {
+                    name: "Other Tasks",
+                    value: 50
+                  }]} cx="50%" cy="45%" labelLine={false} label={({
+                    name,
+                    percent,
+                    cx,
+                    cy,
+                    midAngle,
+                    innerRadius,
+                    outerRadius
+                  }) => {
+                    const RADIAN = Math.PI / 180;
+                    const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+                    const x = cx + radius * Math.cos(-midAngle * RADIAN);
+                    const y = cy + radius * Math.sin(-midAngle * RADIAN);
+                    return <text x={x} y={y} fill="white" textAnchor="middle" dominantBaseline="middle" style={{
+                      fontSize: '24px',
+                      fontWeight: 'bold'
+                    }}>
+                        {`${(percent * 100).toFixed(0)}%`}
+                      </text>;
+                  }} outerRadius={120} fill="#8884d8" dataKey="value">
+                      <Cell fill="hsl(var(--electric))" stroke="hsl(var(--background))" strokeWidth={3} />
+                      <Cell fill="hsl(var(--foreground) / 0.7)" stroke="hsl(var(--background))" strokeWidth={3} />
+                    </Pie>
+                    <Tooltip contentStyle={{
+                    backgroundColor: 'hsl(var(--card))',
+                    border: '1px solid hsl(var(--border))',
+                    borderRadius: '8px',
+                    fontWeight: 'bold',
+                    fontSize: '16px'
+                  }} />
+                    <Legend wrapperStyle={{
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    paddingTop: '24px'
+                  }} />
+                  </PieChart>
+                </ResponsiveContainer>
+              </Card>
+
+              <div className="space-y-8">
+                <Card className="p-8 border-electric/30 bg-electric/5">
+                  <h3 className="text-xl font-bold mb-4 text-electric">Time Distribution</h3>
+                  <p className="text-muted-foreground leading-relaxed text-base">
+                    Half of all working hours in fleet management are dedicated to communication tasks, 
+                    highlighting the need for automation.
+                  </p>
+                </Card>
+                <Card className="p-8 border-border/50">
+                  <h3 className="text-xl font-bold mb-4">Scalability Issue</h3>
+                  <p className="text-muted-foreground leading-relaxed text-base">
+                    The Driver Helpdesk represents the most resource-intensive and hardest to scale 
+                    aspect of fleet management operations.
+                  </p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">Problem </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Support for Customers & Drivers is an <span className="text-electric">Unprofitable but Yet Needed</span> Business Today
+              </h2>
+            </div>
+
+            <Card className="p-4 md:p-8 border-2 border-border/50">
+              <div className="space-y-6">
+                <p className="text-lg font-medium text-center">
+                  The manual process for vehicle returns today:
+                </p>
+                
+                {/* Process Carousel */}
+                <Carousel className="w-full max-w-4xl mx-auto">
+                  <CarouselContent>
+                    {/* Step 1 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img src={processStep1} alt="Document Search" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <FileSearch className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 1</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Document Search</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager searches through leasing contracts, car policies & workshop agreements for return requirements
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 2 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img src={processStep2} alt="Customer Notification" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <Mail className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 2</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Customer Notification</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Account Manager informs customer about upcoming vehicle return
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 3 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img src={processStep3} alt="Follow-up Questions" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-electric flex items-center justify-center">
+                              <Phone className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-electric text-white text-lg font-bold px-4 py-2 rounded-full">Step 3</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Follow-up Inquiries</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">
+                            Customer or driver emails or calls Account Manager with questions
+                          </p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    
+                    {/* Step 4 */}
+                    <CarouselItem>
+                      <div className="relative h-[400px] rounded-xl overflow-hidden">
+                        <img src={processStep4} alt="Repetition" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+                        <div className="absolute inset-0 flex flex-col justify-end p-8">
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="w-14 h-14 rounded-full bg-destructive flex items-center justify-center">
+                              <RefreshCw className="w-7 h-7 text-white" />
+                            </div>
+                            <div className="bg-destructive text-white text-lg font-bold px-4 py-2 rounded-full">Step 4</div>
+                          </div>
+                          <h4 className="text-2xl font-bold text-white mb-3">Endless Repetition</h4>
+                          <p className="text-white/90 text-lg max-w-2xl">Account Manager must repeat this entire process for every single customer & driver</p>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
+                
+                {/* Problem Statement */}
+                <div className="bg-card border border-border/50 rounded-2xl p-8 mt-8">
+                  <div className="flex items-start gap-5">
+                    <div className="w-12 h-12 rounded-full bg-electric/10 flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-electric" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-foreground text-lg mb-3">The Problem:</p>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Current CRM and fleet management systems lack cross-customer analytics and automated response suggestions. 
+                        At <span className="font-bold text-electric">€30-50 per vehicle</span> in support costs and one inquiry per vehicle monthly, margins erode quickly — <span className="font-bold text-electric">making support unprofitable</span>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Solution
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                PHILI — The First Vertical AI Agent & Copilot for <span className="text-electric">Corporate Mobility</span>
+              </h2>
+            </div>
+
+            <div className="mb-8">
+              <p className="text-lg text-center font-medium">Phili unifies all important customer channels and data sources for effective and facilitated communication.</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <Card className="p-8 border-2 border-border/50 text-center">
+                <div className="mb-6 flex justify-center">
+                  <img src={aiSupportAgent} alt="AI Customer Support Agent" className="w-48 h-48 object-contain" />
+                </div>
+                <div className="mb-4 flex justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
+                    1
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold mb-3">AI Customer Support Agent</h4>
+                <p className="text-muted-foreground text-lg">
+                  Handles around <span className="font-bold text-foreground">40% of drivers/user requests autonomously</span>, understands contracts & workflows.
+                </p>
+              </Card>
+
+              <Card className="p-8 border-2 border-border/50 text-center">
+                <div className="mb-6 flex justify-center">
+                  <img src={accountManagerCopilot} alt="Account Manager Copilot" className="w-48 h-48 object-contain" />
+                </div>
+                <div className="mb-4 flex justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
+                    2
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold mb-3">Account Manager Copilot</h4>
+                <p className="text-muted-foreground text-lg">Fleet & mobility insights, renewal alerts, SLA deviations, automated reporting.</p>
+              </Card>
+
+              <Card className="p-8 border-2 border-border/50 text-center">
+                <div className="mb-6 flex justify-center">
+                  <img src={voiceAiAssistant} alt="Voice AI Assistant" className="w-48 h-48 object-contain" />
+                </div>
+                <div className="mb-4 flex justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center text-electric font-bold text-lg">
+                    3
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold mb-3">Voice AI Assistant</h4>
+                <p className="text-muted-foreground text-lg">
+                  Fully automated hotline for mobility user, workshops and logistics.
+                </p>
+              </Card>
+            </div>
+
+            <Card className="p-8 border-2 border-electric/30 bg-electric/5">
+              <p className="text-xl font-bold text-center text-gradient">Phili becomes the operational brain behind Mobility Operations, reducing support cost 40–60% while improving SLAs fullfillment.</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Elements of Phili Flowchart */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Elements of <span className="text-gradient">PHILI</span> Enabling Maximum Stability and Quality
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto">
+                PHILI ensures consistent and reliable communication outcomes across all channels by providing most of the framework elements—such as chat, phone assistant, smart inbox, and copilot—natively, minimizing integration effort with external systems.
+              </p>
+            </div>
+
+            <div className="relative">
+              {/* Main Flowchart Container */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                
+                {/* Left Side - Channels */}
+                <div className="lg:col-span-3 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-primary/20 text-primary border-primary/30">Channels</Badge>
+                  </div>
+                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
+                    <h3 className="text-xl font-bold text-center">Chat or<br />Email</h3>
+                  </Card>
+                  <Card className="p-6 bg-primary/90 border-primary text-white rounded-3xl">
+                    <h3 className="text-xl font-bold text-center">AI<br />phone<br />Assistant</h3>
+                  </Card>
+                </div>
+
+                {/* Center - Core Elements */}
+                <div className="lg:col-span-6 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-electric/20 text-electric border-electric/30">Core Elements</Badge>
+                  </div>
+                  {/* Top Row - Smart Inbox and Copilot */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <Card className="p-8 bg-electric/90 border-electric text-white">
+                      <h3 className="text-2xl font-bold text-center">Smart Inbox</h3>
+                    </Card>
+                    <Card className="p-8 bg-electric/90 border-electric text-white">
+                      <h3 className="text-2xl font-bold text-center">Copilot</h3>
+                    </Card>
+                  </div>
+
+                  {/* Workflows */}
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-2xl font-bold text-center">Workflows</h3>
+                  </Card>
+
+                  {/* Mail or CRM System */}
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-2xl font-bold text-center">Mail,CRM or FM System Integration</h3>
+                  </Card>
+
+                  {/* RAG with Policies */}
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-xl font-bold text-center mb-2">Rag uploads</h3>
+                    <p className="text-sm text-center">
+                      Car policies, Ammendments of work contracts, company bike policies, lease plans etc.
+                    </p>
+                  </Card>
+                </div>
+
+                {/* Right Side - Quality Backbone */}
+                <div className="lg:col-span-3 space-y-4">
+                  <div className="text-center mb-4">
+                    <Badge className="bg-electric/20 text-electric border-electric/30">Quality Backbone</Badge>
+                  </div>
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-xl font-bold text-center">Chat Monitor</h3>
+                  </Card>
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-xl font-bold text-center">Evals</h3>
+                  </Card>
+                  <Card className="p-6 bg-electric/90 border-electric text-white">
+                    <h3 className="text-xl font-bold text-center">FAQs</h3>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Value Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Impact
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Product <span className="text-gradient">Value</span>
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Phili delivers measurable operational impact
+              </p>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <ul className="space-y-6">
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">40-60% automation</span> of first level driver support (damage, tires, delivery, cards, inspection)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">20–35% productivity uplift</span> for Account Managers
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Unified contract & policy intelligence</span> across ALL mobility offerings
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Consistent SLA execution</span> across providers
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Automated reporting and renewal workflows</span>
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
+                  <p className="text-lg">
+                    <span className="font-bold">Full audit trails + AI voice transcripts</span>
+                  </p>
+                </li>
+              </ul>
+            </Card>
+
+            <div className="text-center">
+              <p className="text-2xl font-bold text-gradient">
+                Phili removes entire layers of manual workload.
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Competitive Landscape */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold mb-8 text-center">Competitive Landscape</h3>
-            <CompetitiveLandscapeChart />
-          </div>
-
-          {/* Mobility Benefits Background */}
-          <Card className="overflow-hidden">
-            <div className="grid lg:grid-cols-2 gap-0">
-              <div className="relative h-64 lg:h-auto">
-                <img 
-                  src={mobilityBenefitsBackground} 
-                  alt="Mobility Benefits"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+      {/* Video Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Live Demo
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                See PHILI in <span className="text-gradient">Action</span>
+              </h2>
+              <p className="text-xl text-muted-foreground mb-4">The AI phone assistant and smart inbox have been developed already and are available through our Dolittle AI solution developed by Andreas & Viktor (the Founders).</p>
+              <p className="text-lg text-muted-foreground">
+                Experience how the smart inbox and phone assistant work today (German version) in the video below →
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border/50">
+              <div className="relative w-full" style={{
+              paddingBottom: '56.25%'
+            }}>
+                <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/ugCvrj9Byho" title="PHILI Demo Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold mb-6">Why Mobility Benefits Matter</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Tax Advantages</p>
-                      <p className="text-gray-600">Significant savings for employers and employees</p>
-                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Now Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Market Timing
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Why <span className="text-gradient">Now</span>?
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-16">
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <Network className="w-6 h-6 text-electric" />
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Employee Satisfaction</p>
-                      <p className="text-gray-600">Attractive benefit that improves retention</p>
-                    </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">Mobility complexity is rising dramatically</span> (mixed fleets, multi-provider ecosystems)
+                    </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Sustainability</p>
-                      <p className="text-gray-600">Promotes eco-friendly transportation options</p>
-                    </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-electric" />
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="h-6 w-6 text-electric flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Flexibility</p>
-                      <p className="text-gray-600">Employees choose what works best for them</p>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">Support volumes +30–40% YoY</span>
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <UserX className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">Talent shortage</span> across fleet operations
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <Bot className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">AI (RAG, agents, voice assistants) is production-ready</span>
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 md:col-span-2">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <AlertTriangle className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">No vertical AI exists</span> for mobility documentation, SLAs or workflows, <span className="underline">only generic ticketing and agent builder</span>
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-border/50 md:col-span-2">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-electric/10 flex items-center justify-center">
+                    <DollarSign className="w-6 h-6 text-electric" />
+                  </div>
+                  <div>
+                    <p className="text-lg">
+                      <span className="font-bold">First level support has very low margins</span> when ran without automation
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            {/* Fleet Management Market Growth Chart */}
+            <FleetManagementGrowthChart />
+          </div>
+        </div>
+      </section>
+
+      {/* Competitive Landscape Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Competitive Analysis
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Competitive <span className="text-electric">Landscape</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Phili uniquely combines comprehensive mobility knowledge with reliable AI automation. Generic AI Platforms & Ticketing systems don't offer reliable support quality, cause they need too many integrations with foreign systems and therefore often lack comprehension of mobility relevant context.</p>
+            </div>
+
+            <div className="mb-8">
+              <CompetitiveLandscapeChart />
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-electric/30 bg-electric/5">
+              <p className="text-lg md:text-xl text-foreground/80 text-center leading-relaxed font-medium tracking-tight">Phili is the first unified AI layer for ALL corporate mobility offerings and owns the most relevant sources for support quality (phone, chat, inbox & copilot).</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Phili Compared to Generic <span className="text-gradient">Ticketing & AI Systems</span>
+              </h2>
+            </div>
+
+            <div className="overflow-x-auto">
+              <div className="inline-block min-w-full align-middle">
+                <div className="overflow-hidden border border-border rounded-lg">
+                  <table className="min-w-full divide-y divide-border">
+                    <thead className="bg-muted/50">
+                      <tr>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Capability</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Zendesk / Intercom / Salesforce</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Generic AI Agents</th>
+                        <th className="px-6 py-4 text-left text-sm font-bold">Phili – Mobility AI Agent & Copilot</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border bg-card">
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Understands mobility documents (leasing, contracts, policies)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No domain understanding</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Needs manual training</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>Mobility-Agent trained on leasing & policies</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Automates driver support (tires, damage, cards, inspection)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Manual workflows</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Partial intent routing</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>40–60% automation with process graphs</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">SLA-based multi-client orchestration</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Basic SLAs</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No multi-client logic</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>True multi-brand SLA execution</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Account Manager Copilot (analytics + insights)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No fleet KPIs</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No deep data or reporting</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>Renewal alerts, insights, risk scoring</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Mobility & Fleet data reasoning (vehicles near leasing end, overdue tires, etc.)</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Not possible</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Requires custom engineering</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>Built-in mobility data models</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Voice-based hotline automation</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Add-on only</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-amber-500 font-bold text-xl">◆</span>
+                            <span>Unstructured</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>Integrated Phone AI</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Workshop, logistics & leasing coordination</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>Manual tickets only</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No domain workflows</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>AI-driven workflow orchestration</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr className="hover:bg-muted/30 transition-colors">
+                        <td className="px-6 py-5 font-medium">Multi-stakeholder mobility ecosystem support</td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>1:1 ticketing</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 text-muted-foreground">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-destructive font-bold text-xl">✗</span>
+                            <span>No ecosystem understanding</span>
+                          </span>
+                        </td>
+                        <td className="px-6 py-5 font-medium">
+                          <span className="inline-flex items-center gap-2">
+                            <span className="text-electric font-bold text-xl">✓</span>
+                            <span>Drivers, employers, leasing, shops, logistics</span>
+                          </span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ICP Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Target Market
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Ideal Customer <span className="text-gradient">Profile</span>
+              </h2>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <h3 className="text-2xl font-bold mb-8">Ideal Customers:</h3>
+              <ul className="space-y-4 mb-12">
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Fleet Outsourcing Providers (2,000–3,000,000 vehicles)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Full-Service Leasing Companies
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Inhouse Fleets (1,000–30,000 vehicles)
+                  </p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">Mobility Providers (car subscription, car rental etc.)</p>
+                </li>
+                <li className="flex gap-4">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg font-medium">
+                    Mobility consulting firms
+                  </p>
+                </li>
+              </ul>
+
+              <div className="pt-8 border-t border-border">
+                <p className="text-lg font-bold">
+                  Traits: &gt;1,000 vehicles, high ticket volume, multi-stakeholder workflows, automation readiness.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Model Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Business Model
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Revenue <span className="text-gradient">Model</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Pricing</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">AI Customer Support Agent:</span> 4€/vehicle/month
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Voice AI Assistant:</span> 299€/month + 0.20€/min
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Account Manager Copilot:</span> 30€/AM/month
+                    </p>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Key Metrics</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Average Revenue per Customer:</span> ~194k€/year
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg"><span className="font-semibold">Customer count for full SOM:</span> ~202
+                    </p>
+                  </li>
+                  <li className="flex gap-3">
+                    <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                    <p className="text-lg">
+                      <span className="font-semibold">Recurring revenue share:</span> &gt;80%
+                    </p>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+
+            <Card className="p-8 border-2 border-electric/30 bg-electric/5">
+              <p className="text-xl font-bold text-center">
+                High-margin vertical AI SaaS.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Market Opportunity */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Market for Fleets (EU + USA)
+              </h2>
+              <p className="text-xl text-muted-foreground mb-4">
+                Total Commercial Vehicles: <span className="font-bold text-foreground">53M</span>
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Professionally managed fleets: <span className="font-bold text-foreground">27M</span>
+              </p>
+            </div>
+            
+            {/* TAM SAM SOM Visual Funnel */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-16">
+              {/* Nested Circles with connecting lines */}
+              <div className="relative w-[400px] h-[400px] flex items-center justify-center animate-fade-in">
+                {/* TAM - Outer Circle */}
+                <div className="absolute w-[380px] h-[380px] rounded-full bg-electric/20 flex items-center justify-center">
+                </div>
+                
+                {/* SAM - Middle Circle */}
+                <div className="absolute w-[280px] h-[280px] rounded-full bg-electric/40 flex items-center justify-center">
+                </div>
+                
+                {/* SOM - Inner Circle */}
+                <div className="absolute w-[180px] h-[180px] rounded-full bg-electric flex items-center justify-center">
+                </div>
+
+              </div>
+
+              {/* Labels and Values */}
+              <div className="space-y-8">
+                <div className="flex items-center gap-4 animate-slide-up">
+                  <div className="w-3 h-3 rounded-full bg-electric/20"></div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <span className="text-3xl font-bold text-gradient">€2.54B</span>
+                      <span className="text-sm font-semibold text-electric">TAM</span>
                     </div>
+                    <div className="text-base font-semibold mb-1">Total Addressable Market</div>
+                    <p className="text-sm text-muted-foreground max-w-md">
+                      53M vehicles (EU + USA)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 animate-slide-up" style={{
+                animationDelay: '0.1s'
+              }}>
+                  <div className="w-3 h-3 rounded-full bg-electric/40"></div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <span className="text-3xl font-bold text-gradient">€1.30B</span>
+                      <span className="text-sm font-semibold text-electric">SAM</span>
+                    </div>
+                    <div className="text-base font-semibold mb-1">Serviceable Addressable Market</div>
+                    <p className="text-sm text-muted-foreground max-w-md">
+                      27M vehicles (professionally managed)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 animate-slide-up" style={{
+                animationDelay: '0.2s'
+              }}>
+                  <div className="w-3 h-3 rounded-full bg-electric"></div>
+                  <div className="flex-1">
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <span className="text-3xl font-bold text-gradient">€39.3M</span>
+                      <span className="text-sm font-semibold text-electric">SOM</span>
+                    </div>
+                    <div className="text-base font-semibold mb-1">Serviceable Obtainable Market</div>
+                    <p className="text-sm text-muted-foreground max-w-md">
+                      810,000 vehicles (3% market penetration)
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </Card>
-        </div>
-      </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-electric/5 to-purple-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Testimonials
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Loved by Fleet Managers
-            </h2>
-          </div>
-
-          <Carousel className="max-w-4xl mx-auto">
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index}>
-                  <Card className="p-8 md:p-12 bg-white">
-                    <div className="text-center space-y-6">
-                      <div className="text-4xl text-electric">"</div>
-                      <p className="text-xl md:text-2xl text-gray-700 italic">
-                        {testimonial.quote}
-                      </p>
-                      <div>
-                        <p className="font-semibold text-lg">{testimonial.author}</p>
-                        <p className="text-gray-600">{testimonial.role}</p>
-                        <p className="text-electric font-medium">{testimonial.company}</p>
-                      </div>
-                    </div>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Pricing
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="text-xl text-gray-600">
-              Choose the plan that fits your needs
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Starter",
-                price: "$499",
-                period: "/month",
-                description: "Perfect for small fleets",
-                features: [
-                  "Up to 1,000 conversations/month",
-                  "AI Support Agent",
-                  "Email & Chat support",
-                  "Basic analytics",
-                  "14-day free trial"
-                ]
-              },
-              {
-                name: "Professional",
-                price: "$1,499",
-                period: "/month",
-                description: "For growing businesses",
-                features: [
-                  "Up to 5,000 conversations/month",
-                  "All AI Agents",
-                  "Phone support",
-                  "Advanced analytics",
-                  "Custom integrations",
-                  "Priority support"
-                ],
-                popular: true
-              },
-              {
-                name: "Enterprise",
-                price: "Custom",
-                period: "",
-                description: "For large organizations",
-                features: [
-                  "Unlimited conversations",
-                  "All AI Agents",
-                  "Dedicated account manager",
-                  "Custom AI training",
-                  "SLA guarantees",
-                  "White-label options"
-                ]
-              }
-            ].map((plan, index) => (
-              <Card 
-                key={index} 
-                className={`p-8 relative ${plan.popular ? 'border-2 border-electric shadow-xl scale-105' : ''}`}
-              >
-                {plan.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-electric text-white">
-                    Most Popular
-                  </Badge>
-                )}
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                  <p className="text-gray-600 mb-4">{plan.description}</p>
-                  <div className="flex items-baseline justify-center">
-                    <span className="text-5xl font-bold">{plan.price}</span>
-                    <span className="text-gray-600 ml-2">{plan.period}</span>
-                  </div>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-electric flex-shrink-0 mt-0.5" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button 
-                  className={`w-full ${plan.popular ? 'bg-electric hover:bg-electric/90' : ''}`}
-                  variant={plan.popular ? 'default' : 'outline'}
-                >
-                  {plan.name === 'Enterprise' ? 'Contact Sales' : 'Start Free Trial'}
-                </Button>
+            <div className="text-center mt-12">
+              <Card className="p-6 max-w-2xl mx-auto border-electric/30 bg-electric/5">
+                <p className="text-lg font-bold">Target: 810,000 vehicles/user across EU and USA markets</p>
               </Card>
-            ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5-Year Forecast Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Financial Projections
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                5-Year <span className="text-gradient">Forecast</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-border/50">
+                <h3 className="text-2xl font-bold mb-6">Realistic Scenario</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 1:</span>
+                    <span className="text-2xl font-bold">1.9M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 2:</span>
+                    <span className="text-2xl font-bold">5.9M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 3:</span>
+                    <span className="text-2xl font-bold">13.7M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 4:</span>
+                    <span className="text-2xl font-bold">25.6M€</span>
+                  </li>
+                  <li className="flex items-baseline gap-3">
+                    <span className="font-bold text-electric">Year 5:</span>
+                    <span className="text-2xl font-bold">39.3M€</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 border-2 border-electric/30 bg-electric/5">
+                <h3 className="text-2xl font-bold mb-6">Key Factors</h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-electric flex-shrink-0 mt-1" />
+                    <p className="text-lg">High recurring share</p>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-electric flex-shrink-0 mt-1" />
+                    <p className="text-lg">High gross margin (&gt;80%)</p>
+                  </li>
+                  <li className="flex gap-3">
+                    <Check className="h-5 w-5 text-electric flex-shrink-0 mt-1" />
+                    <p className="text-lg">Strong upsell potential amongst the modules</p>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* GTM Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-electric/10 text-electric border-electric/30">
+                Go-to-Market
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                GTM <span className="text-gradient">Strategy</span>
+              </h2>
+            </div>
+
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <h3 className="text-2xl font-bold mb-6">Tier 1 Markets (fastest adoption)</h3>
+              <p className="text-lg mb-8 font-medium">🇩🇪 Germany, 🇫🇷 France</p>
+
+              <h3 className="text-2xl font-bold mb-6">Tier 2</h3>
+              <p className="text-lg mb-8 font-medium">🇺🇸 US</p>
+
+              <h3 className="text-2xl font-bold mb-6">Go-to-Market Motions:</h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">Partner with Fleet Management Software providers & Leasing Networks</p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">Land with Support Agent → Expand to Account Manager Copilot or the other way around</p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    Add Voice AI for hotline automation and deep operational workflows
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">Integrate with providers of Fleet Management Software, Mail & CRMs</p>
+                </li>
+              </ul>
+
+              <div className="mt-8 pt-8 border-t border-border">
+                <p className="text-lg font-bold">
+                  Sales: Enterprise outbound + channel partners + mobility ecosystems.
+                </p>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* Roadmap Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Product Roadmap
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our Vision for the Future
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're constantly innovating to bring you the best AI-powered support solutions
-            </p>
-          </div>
+      <section className="pt-24 pb-12 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Product Roadmap
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Development <span className="text-gradient">Timeline</span>
+              </h2>
+            </div>
 
-          <RoadmapMatrix />
-
-          <div className="mt-16 grid md:grid-cols-2 gap-8">
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Q1 2025 - Foundation</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Launch MVP</span> with core AI Support Agent functionality
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Onboard pilot customers</span> from fleet management sector
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Integrate with top 3 CRM platforms</span> (Salesforce, HubSpot, Zoho)
-                  </p>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Q2 2025 - Expansion</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Add Voice AI Assistant</span> for phone support
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Multi-language support</span> (German, French, Spanish)
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Advanced analytics dashboard</span> with predictive insights
-                  </p>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Q3 2025 - Intelligence</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Launch Account Manager Copilot</span> for proactive support
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Sentiment analysis</span> and customer health scoring
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">API marketplace</span> for third-party integrations
-                  </p>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Q4 2025 - Scale</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">Enterprise features</span> (SSO, advanced security, compliance)
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">White-label solution</span> for fleet management platforms
-                  </p>
-                </li>
-                <li className="flex gap-3">
-                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">
-                    <span className="font-semibold">20% Business Development</span> Start with our pilot customer and find fleet management software partner for post market launch phase
-                  </p>
-                </li>
-              </ul>
-            </Card>
+            <RoadmapMatrix />
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section id="about" className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <Badge className="bg-electric/10 text-electric border-electric/20 mb-4">
-              Our Team
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Meet the Founders
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experienced entrepreneurs with a passion for AI and customer success
-            </p>
+      {/* Founders Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                The Team
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Experienced <span className="text-electric">Founders</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Andreas & Viktor founded Dolittle AI together, building conversational AI and generative AI solutions for industries like insurance, mobility consulting, and hotels. They combine deep industry knowledge in mobility tech with technical excellence in generative and conversational AI.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {founders.map((founder, idx) => <Card key={idx} className="p-8 border-border/50">
+                  <div className="flex flex-col items-center text-center mb-6">
+                    <img src={founder.image} alt={`${founder.name} - ${founder.role}`} className="w-full max-w-sm aspect-[3/4] rounded-2xl object-cover object-center bg-muted/30 mb-6 shadow-lg" />
+                    <div className="flex items-center gap-2 mb-1">
+                      <h3 className="text-3xl font-bold">{founder.name}</h3>
+                      {founder.linkedin && <a href={founder.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-electric transition-colors">
+                          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                        </a>}
+                    </div>
+                    <p className="text-lg text-electric font-semibold">{founder.role}</p>
+                  </div>
+                  <p className="text-lg text-muted-foreground leading-relaxed">{founder.bio}</p>
+                </Card>)}
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="aspect-square overflow-hidden">
-                <img 
-                  src={andreasReichert} 
-                  alt="Andreas Reichert"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2">Andreas Reichert</h3>
-                <p className="text-electric font-semibold mb-4">Co-Founder & CEO</p>
-                <p className="text-gray-600 mb-4">
-                  Former VP of Product at a leading SaaS company. 15+ years building customer-centric solutions. 
-                  Passionate about using AI to transform customer support.
-                </p>
-                <div className="flex gap-4">
-                  <a href="#" className="text-electric hover:text-electric/80">
-                    <Mail className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="text-electric hover:text-electric/80">
-                    <Network className="h-5 w-5" />
-                  </a>
-                </div>
-              </div>
-            </Card>
+      {/* Vision Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
+                Our Vision
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="text-gradient">Vision</span>
+              </h2>
+            </div>
 
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="aspect-square overflow-hidden">
-                <img 
-                  src={viktorShcherban} 
-                  alt="Viktor Shcherban"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+            <Card className="p-8 md:p-12 border-2 border-border/50 mb-8">
+              <p className="text-lg mb-6">
+                Phili becomes <span className="font-bold text-gradient">the operating system for Corporate Mobility</span>, 
+                automating support, insights & decisions across millions of vehicles and contracts.
+              </p>
+
+              <h3 className="text-2xl font-bold mb-6 mt-8">Investment Ask</h3>
+              <div className="bg-electric/10 p-6 rounded-lg mb-6">
+                <p className="text-3xl font-bold text-electric mb-2">€500,000</p>
+                <p className="text-lg font-semibold">Seed Investment</p>
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2">Viktor Shcherban</h3>
-                <p className="text-electric font-semibold mb-4">Co-Founder & CTO</p>
-                <p className="text-gray-600 mb-4">
-                  AI researcher and engineer with PhD in Machine Learning. Previously led AI teams at tech giants. 
-                  Expert in natural language processing and conversational AI.
+
+              <h3 className="text-xl font-bold mb-4">Use of Funds:</h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-semibold">60% Product development</span> (UI, RAGs, FAQ, Monitoring, Evals, Search analysis)
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">20% Business Development Start with our pilot customer  and find fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
+                  </p>
+                </li>
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
+                  <p className="text-lg">
+                    <span className="font-semibold">20% Integrations</span> (CRM & Mail)
+                  </p>
+                </li>
+              </ul>
+
+              <div className="mt-8 pt-8 border-t border-border">
+                <p className="text-lg">Next moves: To expand Voice inbox to omni channel (Chat & Email), build first CRM & Mail integration, and train Copilot on Fleet specific cases with our pilot customer.<span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), 
+                  build first CRM & Mail integration, and train Copilot on Fleet specific cases
                 </p>
-                <div className="flex gap-4">
-                  <a href="#" className="text-electric hover:text-electric/80">
-                    <Mail className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="text-electric hover:text-electric/80">
-                    <Network className="h-5 w-5" />
-                  </a>
-                </div>
               </div>
             </Card>
           </div>
@@ -860,87 +1350,40 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-electric to-purple-600 text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Customer Support?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join hundreds of fleet managers who are already saving time and delighting customers with AI
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-electric hover:bg-gray-100 text-lg px-8">
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8">
-              Schedule Demo
-            </Button>
+      <section className="pt-3 pb-16 bg-gradient-hero relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+        <div className="container mx-auto px-6 relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary-foreground">
+              Ready to Transform Corporate Mobility?
+            </h2>
+            <p className="text-xl mb-4 text-primary-foreground/80">
+              Join us in revolutionizing corporate mobility. Let's discuss the investment opportunity.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-electric hover:bg-electric/90 text-white text-lg px-8 shadow-lg hover:shadow-glow transition-all" asChild>
+                <a href="https://meetings.hubspot.com/areichert/dolittleai" target="_blank" rel="noopener noreferrer">
+                  Book an Appointment
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8">
+                Download Pitch Deck
+              </Button>
+            </div>
           </div>
-          <p className="mt-6 text-sm opacity-75">
-            No credit card required • 14-day free trial • Cancel anytime
-          </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-electric to-purple-600 rounded-lg"></div>
-                <span className="text-xl font-bold text-white">Lovable</span>
-              </div>
-              <p className="text-sm">
-                AI-powered customer support for the fleet management industry
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">Product</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#features" className="hover:text-electric transition-colors">Features</a></li>
-                <li><a href="#solutions" className="hover:text-electric transition-colors">Solutions</a></li>
-                <li><a href="#pricing" className="hover:text-electric transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-electric transition-colors">Roadmap</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#about" className="hover:text-electric transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-electric transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-electric transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-electric transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-electric transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-electric transition-colors">Terms</a></li>
-                <li><a href="#" className="hover:text-electric transition-colors">Security</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm">© 2024 Lovable. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-electric transition-colors">
-                <Network className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-electric transition-colors">
-                <Mail className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-electric transition-colors">
-                <Phone className="h-5 w-5" />
-              </a>
-            </div>
+      <footer className="py-12 bg-muted/30 border-t border-border">
+        <div className="container mx-auto px-6">
+          <div className="text-center text-muted-foreground">
+            <p className="font-semibold text-foreground mb-2">PHILI - AI Customer Agent & Copilot for Corporate Mobility</p>
+            <p>© 2025 PHILI. All rights reserved.</p>
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
