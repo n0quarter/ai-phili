@@ -1340,7 +1340,7 @@ const Index = () => {
               </ul>
 
               <div className="mt-8 pt-8 border-t border-border">
-                <p className="text-lg">Next moves: To expand Voice inbox to omni channel (chat or Email), build first CRM & Mail integration, and train Copilot on Fleet specific cases with first real customer<span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), 
+                <p className="text-lg">Next moves: To expand Voice inbox to omni channel (chat or Email), build first CRM & Mail integration, and train Copilot on Fleet specific cases with pilot customer.<span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), 
                   build first CRM & Mail integration, and train Copilot on Fleet specific cases
                 </p>
               </div>
