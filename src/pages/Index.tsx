@@ -1328,7 +1328,8 @@ const Index = () => {
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">40% Business Development in order to acquire further customers after pilot phase & imtegrate fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
+                  <p className="text-lg">
+                    <span className="font-semibold">40% Business Development</span> in order to acquire further customers after pilot phase & integrate fleet management software partner for post market launch phase
                   </p>
                 </li>
                 <li className="flex gap-3">
@@ -1340,8 +1341,8 @@ const Index = () => {
               </ul>
 
               <div className="mt-8 pt-8 border-t border-border">
-                <p className="text-lg">Next moves: To expand Voice inbox to omni channel (chat or Email), build first CRM & Mail integration, and train Copilot on Fleet specific cases with pilot customer.<span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), 
-                  build first CRM & Mail integration, and train Copilot on Fleet specific cases
+                <p className="text-lg">
+                  <span className="font-bold">Next moves:</span> To expand Voice inbox to omni channel (chat or Email), build first CRM & Mail integration, and train Copilot on Fleet specific cases with pilot customer.
                 </p>
               </div>
             </Card>
