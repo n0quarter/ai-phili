@@ -1323,18 +1323,18 @@ const Index = () => {
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                   <p className="text-lg">
-                    <span className="font-semibold">60% Product development</span> (UI, RAGs, FAQ, Monitoring, Evals, Search analysis)
+                    <span className="font-semibold">50% Product development</span> (UI, RAGs, FAQ, Monitoring, Evals, Search analysis)
                   </p>
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
-                  <p className="text-lg">20% Business Development in order to onboard pilot customer and find fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
+                  <p className="text-lg">40% Business Development in order to acquire further customers after pilot phase & imtegrate fleet management software partner for post market launch phase<span className="font-semibold">20% Business Development</span> in order to find fleet management software partner for post market launch phase
                   </p>
                 </li>
                 <li className="flex gap-3">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-electric mt-2"></div>
                   <p className="text-lg">
-                    <span className="font-semibold">20% Integrations</span> (CRM & Mail)
+                    <span className="font-semibold">10% Integrations</span> (CRM & Mail)
                   </p>
                 </li>
               </ul>
