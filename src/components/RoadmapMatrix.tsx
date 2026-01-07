@@ -3,9 +3,9 @@ import { Check, X } from "lucide-react";
 
 const RoadmapMatrix = () => {
   const timeline = [
-    { id: "mvp", label: "MVP", date: "December 25" },
-    { id: "pilot", label: "Pilot", date: "May 26" },
-    { id: "market", label: "Market\nlaunch", date: "July 26" },
+    { id: "mvp", label: "MVP", date: "Today" },
+    { id: "pilot", label: "Pilot", date: "After 6 months" },
+    { id: "market", label: "Market\nlaunch", date: "After 8 months" },
     { id: "further", label: "Further\ndevelopment", date: "Ongoing" },
   ];
 
